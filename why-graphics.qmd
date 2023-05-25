@@ -1,0 +1,11 @@
+---
+title: "A Title of About 30 Characters"
+subtitle: "A subtitle of about 100 characters or less, but not more, enough to fill around 2 rows of text."
+author: "Otho Mantegazza"
+---
+ 
+
+ci 
+
+ci
+ C

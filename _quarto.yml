@@ -1,0 +1,15 @@
+project:
+  title: "Data Visualization for Scientists"
+  preview:
+    port: 4200
+  output-dir: docs
+  
+format:
+  revealjs:
+    theme: [default, style/custom.scss]
+    template-partials:
+      - style/title-slide.html
+
+
+
+

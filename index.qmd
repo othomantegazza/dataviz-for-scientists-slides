@@ -1,0 +1,5 @@
+---
+format: html
+---
+
+[A Grammar for Graphics](why-graphics.html)
