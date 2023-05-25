@@ -4,8 +4,26 @@ subtitle: "A subtitle of about 100 characters or less, but not more, enough to f
 author: "Otho Mantegazza"
 ---
  
+## Slide Type 1
 
-ci 
+:::: {.columns}
 
-ci
- C
+::: {.column width="33%"}
+### Something
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+:::
+
+::: {.column width="33%"}
+### Something Else
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+:::
+
+::: {.column width="33%"}
+### Otherwise
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+:::
+
+::::

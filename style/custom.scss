@@ -8,7 +8,11 @@
 
 /*-- scss:defaults --*/
 
-$presentation-title-slide-text-align: top;
+$font-family-sans-serif: Helvetica Neue;
+$presentation-font-size-root: 30px;
+$presentation-h2-font-size: 2.34em;
+$presentation-h3-font-size: 1em;
+
 
 
  /*-- scss:rules --*/
@@ -16,14 +20,19 @@ $presentation-title-slide-text-align: top;
  
 :root {
     --title-font: Noto Serif;
-    --accent-color-opaque: #9e019e33;
+    /*--  --accent-color-opaque: #9e019e33; --*/
+    --body-font: Helvetica Neue;
+    --h2-color: #f44702;
+    --accent-color-opaque:  #f4470255;
+    --h2-font-size: 70px;
+    --body-font-weight: 200;
+    
 }
 
 /*-- title slides --*/
 
 .reveal .head-slide {
-   font-family: Helvetica Neue;
-   font-size: 40px;
+   font-family: var(--body-font);
  }
 
 .reveal h1.title {
@@ -54,6 +63,20 @@ p#subtitle {
   float: left;
   padding: 0px;
 }
+
+/*-- body --*/
+
+p {
+  font-weight: var(--body-font-weight);
+}
+
+.reveal h2 {
+  font-family: var(--title-font) !important;
+  font-weight: 400 !important;
+  color: var(--h2-color) !important;
+  font-size: var(--h2-font-size);
+}
+
 
 /*-- else --*/
 
