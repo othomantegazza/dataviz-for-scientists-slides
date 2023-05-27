@@ -4,6 +4,8 @@ subtitle: "A subtitle of about 100 characters or less, but not more, enough to f
 author: "Otho Mantegazza"
 ---
  
+## {background-image="img/playfair-timeseries.png" background-size="contain" background-repeat="no-repeat"}
+ 
 ## Slide Type 1
 
 :::: {.columns}

@@ -31,6 +31,17 @@ $presentation-h3-font-size: 1em;
 
 /*-- title slides --*/
 
+
+/*-- SLIDE CONTOUR LINE
+section.present {
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+}
+--*/
+
+/*-- title slides --*/
+
 .reveal .head-slide {
    font-family: var(--body-font);
  }
@@ -75,6 +86,7 @@ p {
   font-weight: 400 !important;
   color: var(--h2-color) !important;
   font-size: var(--h2-font-size);
+  margin-bottom: 30px !important;
 }
 
 
