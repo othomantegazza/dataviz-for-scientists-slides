@@ -9,6 +9,7 @@ format:
     theme: [default, style/custom.scss]
     template-partials:
       - style/title-slide.html
+    echo: true
 
 
 

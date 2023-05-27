@@ -2,6 +2,8 @@
 title: "A Title of About 30 Characters"
 subtitle: "A subtitle of about 100 characters or less, but not more, enough to fill around 2 rows of text."
 author: "Otho Mantegazza"
+editor_options: 
+  chunk_output_type: console
 ---
  
 ## {background-image="img/playfair-timeseries.png" background-size="contain" background-repeat="no-repeat"}
@@ -103,3 +105,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 :::
 
 ::::
+
+## Slide with code and plot
+
+```{r}
+#| fig-width: 6.2
+
+# code max width: ~35 char.
+library(ggplot2)
+ggplot(mtcars) +
+  aes(x = mpg, y = disp) + #maxwidth
+  geom_point()
+```
+
