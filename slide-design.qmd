@@ -6,7 +6,7 @@ author: "Otho Mantegazza"
  
 ## {background-image="img/playfair-timeseries.png" background-size="contain" background-repeat="no-repeat"}
  
-## Slide Type 1
+## Slide Type 1 (~250 char.)
 
 :::: {.columns}
 
@@ -24,6 +24,80 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ::: {.column width="33%"}
 ### Otherwise
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+:::
+
+::::
+
+## Slide Type 2 (~350 char.)
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Something
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+:::
+
+::: {.column width="45%"}
+### Something Else
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+:::
+
+::::
+
+## Slide Type 3 (~150 char.)
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Something
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+:::
+
+::: {.column width="45%"}
+### Something Else
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Something More
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+:::
+
+::::
+
+## {.no-title-slide}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Something
+
+(~250 char.) dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+:::
+
+::: {.column width="45%"}
+### Something Else
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Something More
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 :::
