@@ -2,4 +2,4 @@
 format: html
 ---
 
-[A Grammar for Graphics](why-graphics.html)
+[A Grammar for Graphics](slide-design.html)
