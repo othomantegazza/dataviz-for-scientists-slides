@@ -44,6 +44,7 @@ section.present {
 
 .reveal .head-slide {
    font-family: var(--body-font);
+   background-color:  #fcfc35;
  }
 
 .reveal h1.title {
@@ -52,11 +53,11 @@ section.present {
   font-size: 100px;
   text-align: left;
   margin-bottom: 50px;
-  line-height: 1.5;
+  line-height: 1.3;
  }
  
  #title {
-  background-color: var(--accent-color-opaque); 
+  color: var(--h2-color); 
  }
  
  p#subtitle, p.author {
