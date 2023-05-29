@@ -10,6 +10,8 @@ format:
     template-partials:
       - style/title-slide.html
     echo: true
+    dev: svglite
+    fig-format: svg
 
 
 
