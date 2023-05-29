@@ -83,6 +83,10 @@ p {
   margin: 12px 15px 12px 0px !important;
 }
 
+ul {
+  font-weight: var(--body-font-weight);
+}
+
 .reveal h2 {
   font-family: var(--title-font) !important;
   font-weight: 400 !important;
@@ -105,6 +109,10 @@ img.r-stretch {
 
 code.sourceCode {
   padding: 5px 0px 5px 0px !important;
+}
+
+.list {
+  max-width: 750px;
 }
 
 

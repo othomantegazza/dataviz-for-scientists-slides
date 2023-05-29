@@ -7,6 +7,12 @@ editor_options:
 ---
  
 ## {background-image="img/playfair-timeseries.png" background-size="contain" background-repeat="no-repeat"}
+
+```{r}
+#| include: false
+library(ggplot2)
+```
+
  
 ## Slide Type 1 (~250 char.)
 
@@ -106,15 +112,50 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ::::
 
+## Slide with bullet points
+
+::: {.list}
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+
+:::
+
+## Slide with Text and Plot
+
+:::: {.columns}
+
+::: {.column width="35%"}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+
+:::
+
+::: {.column width="62%"}
+```{r}
+#| echo: false
+#| fig-width: 6.2
+ggplot(mtcars) +
+  aes(x = mpg, y = disp) + #maxwidth
+  geom_point() +
+  theme_bw()
+```
+
+:::
+
+::::
+
 ## Slide with code and plot
 
 ```{r}
 #| fig-width: 6.2
 
 # code max width: ~35 char.
-library(ggplot2)
 ggplot(mtcars) +
   aes(x = mpg, y = disp) + #maxwidth
-  geom_point()
+  geom_point() +
+  theme_bw()
 ```
 
