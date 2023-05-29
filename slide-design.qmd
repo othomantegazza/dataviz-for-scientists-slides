@@ -12,6 +12,7 @@ editor_options:
 #| include: false
 library(ggplot2)
 library(dplyr)
+library(palmerpenguins)
 ```
 
  
@@ -164,6 +165,15 @@ ggplot(mtcars) +
 
 ```{r}
 # max 70 chars per row -----------------------------------------------
+dream_summary <- 
+  penguins %>%
+  select(species, island, bill_length_mm) %>% 
+  filter(island == 'Dream') %>% 
+  mutate(bill_length_meters = bill_length_mm/1000) %>% 
+  group_by(species) %>% 
+  summarise(mean_bill_length_mm = mean(bill_length_mm),
+            sd_bill_length_mm = sd(bill_length_mm))
 
+dream_summary
 ```
 
