@@ -177,3 +177,17 @@ dream_summary <-
 dream_summary
 ```
 
+## A slide with text and an Image
+
+:::: {.columns}
+
+::: {.column width="60%"}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+:::
+
+::: {.column width="40%"}
+![](img/nightingale-half-chart.png)
+:::
+
+::::
