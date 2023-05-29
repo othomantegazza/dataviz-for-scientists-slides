@@ -11,6 +11,7 @@ editor_options:
 ```{r}
 #| include: false
 library(ggplot2)
+library(dplyr)
 ```
 
  
@@ -152,10 +153,17 @@ ggplot(mtcars) +
 ```{r}
 #| fig-width: 6.2
 
-# code max width: ~35 char.
+# code max width: ~30 char.
 ggplot(mtcars) +
-  aes(x = mpg, y = disp) + #maxwidth
+  aes(x = mpg, y = disp) + #max
   geom_point() +
   theme_bw()
+```
+
+## Slide with only code
+
+```{r}
+# max 70 chars per row -----------------------------------------------
+
 ```
 
