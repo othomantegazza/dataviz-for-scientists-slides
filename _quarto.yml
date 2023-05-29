@@ -10,9 +10,8 @@ format:
     template-partials:
       - style/title-slide.html
     echo: true
+
+knitr:
+  opts_chunk: 
     dev: svglite
-    fig-format: svg
-
-
-
 
