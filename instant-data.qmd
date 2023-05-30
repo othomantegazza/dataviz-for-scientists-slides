@@ -1,0 +1,8 @@
+---
+title: "Instant Data"
+subtitle: "Data visualization makes the content of data immediately  understandable, that why we us it."
+author: "Otho Mantegazza"
+editor_options: 
+  chunk_output_type: console
+---
+

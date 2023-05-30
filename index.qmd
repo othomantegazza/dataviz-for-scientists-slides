@@ -2,4 +2,8 @@
 format: html
 ---
 
-[A Grammar for Graphics](slide-design.html)
+[Master Slides](slide-design.html)
+
+# Day 1
+
+[Instant Data](instant-data.html)
