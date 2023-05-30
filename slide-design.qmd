@@ -177,7 +177,7 @@ dream_summary <-
 dream_summary
 ```
 
-## A Slide With Text and an Image
+## Slide With Text and Image
 
 :::: {.columns}
 
