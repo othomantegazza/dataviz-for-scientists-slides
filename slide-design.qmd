@@ -114,7 +114,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ::::
 
-## Slide with bullet points
+## Slide With Bullet Points
 
 ::: {.list}
 
@@ -125,7 +125,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 :::
 
-## Slide with Text and Plot
+## Slide With Text and Plot
 
 :::: {.columns}
 
@@ -149,7 +149,7 @@ ggplot(mtcars) +
 
 ::::
 
-## Slide with code and plot
+## Slide With Code and Plot
 
 ```{r}
 #| fig-width: 6.2
@@ -161,7 +161,7 @@ ggplot(mtcars) +
   theme_bw()
 ```
 
-## Slide with only code
+## Slide With only code
 
 ```{r}
 # max 70 chars per row -----------------------------------------------
@@ -177,7 +177,7 @@ dream_summary <-
 dream_summary
 ```
 
-## A slide with text and an Image
+## A Slide With Text and an Image
 
 :::: {.columns}
 
@@ -187,7 +187,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepte
 :::
 
 ::: {.column width="40%"}
-![](img/nightingale-half-chart.png)
+![](img/nightingale-full-half.png)
 :::
 
 ::::
