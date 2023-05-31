@@ -10,6 +10,7 @@ format:
     template-partials:
       - style/title-slide.html
     echo: true
+    footer: "[< HOME](../index.html)"
 
 knitr:
   opts_chunk: 

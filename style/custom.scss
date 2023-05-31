@@ -128,6 +128,14 @@ code {
   line-height: 1.25em;
 }
 
+/*-- footer --*/
+
+.footer p a {
+  color: black !important;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
 /*-- else --*/
 
 .fa-bar {
