@@ -1,0 +1,37 @@
+---
+title: "A Bit of History"
+subtitle: "Where did dataviz came from? How long has it been around?"
+author: "Otho Mantegazza"
+editor_options: 
+  chunk_output_type: console
+---
+
+## Wiliam Playfair First? (1800)
+
+Or maybe 1644, Michael Florent Van Langren,
+
+Statistical Diagrams
+
+## Before
+
+Maps
+
+Pentagram (music)
+
+## Jon Snow
+
+Detect source of colera   
+
+## Dalton 
+
+Experiments with dataviz
+
+Discover colour blindness (daltonism)
+
+Data visualization as a tool for scientific discovery
+
+Data visualization as a tool for developing 
+
+## Florence Nightingale
+
+Use also for policy making

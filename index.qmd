@@ -6,4 +6,7 @@ format: html
 
 # Day 1
 
-[Instant Data](instant-data.html)
+Why dataviz?
+
+1. [Instant Knowledge](instant-data.html)
+2. [Quick history of Dataviz](history.html)
