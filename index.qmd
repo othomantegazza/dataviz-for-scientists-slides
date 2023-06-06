@@ -2,11 +2,11 @@
 format: html
 ---
 
-[Master Slides](slide-design.html)
+[Master Slides](000-slide-design.html)
 
 # Day 1
 
 Why dataviz?
 
-1. [Instant Knowledge](instant-data.html)
-2. [Quick history of Dataviz](history.html)
+1. [Instant Knowledge](200-instant-data.html)
+2. [Quick history of Dataviz](210-history.html)
