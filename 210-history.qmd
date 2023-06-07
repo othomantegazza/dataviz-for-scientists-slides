@@ -1,10 +1,12 @@
 ---
 title: "A Bit of History"
-subtitle: "Where did dataviz came from? How long has it been around?"
+subtitle: "Where did visual information came from? How long has it been around?"
 author: "Otho Mantegazza"
 editor_options: 
   chunk_output_type: console
 ---
+
+## {background-image="img/quipu.jpg" background-size="contain" background-repeat="no-repeat"}
 
 ## Wiliam Playfair First? (1800)
 
