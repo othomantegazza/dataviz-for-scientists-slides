@@ -1,6 +1,6 @@
 ---
 title: "A Bit of History"
-subtitle: "Where did visual information came from? How long has it been around?"
+subtitle: "Where did visual representation of information came from? How long has it been around?"
 author: "Otho Mantegazza"
 editor_options: 
   chunk_output_type: console
@@ -15,8 +15,8 @@ editor_options:
 ::: {.column width="40%"}
 In [his words](https://en.wikipedia.org/wiki/William_Playfair), commenting on how data were becoming ever more aboundant in life, and how data visualization (statistical diagrams) could help:
 
-"And it is hoped,that with the assistance of these Charts, such information will be got,
-without the fatigue and trouble of studying the particulars of which it is composed."
+*"And it is hoped,that with the assistance of these Charts, such information will be got,
+without the fatigue and trouble of studying the particulars of which it is composed."*
 
 :::
 
@@ -26,7 +26,33 @@ without the fatigue and trouble of studying the particulars of which it is compo
 
 ::::
 
-## Before
+## But...
+
+:::: {.columns}
+::: {.column width="40%"}
+
+Maybe we've always known how to represent information visually, and that is the first and most intuitive way to do it.
+
+:::
+::::
+
+##
+
+:::: {.columns}
+::: {.column width="80%"}
+
+![](img/mappa-bedolina.jpg)
+:::
+::: {.column width="20%" .caption}
+The [Bedolina Map (~1000 BC)](https://en.wikipedia.org/wiki/Bedolina_Map) is one of the most ancient topographical map.
+
+It contains around 109 figures of paths, warriors, animals, and wooden huts.
+
+Image credits: [Luca Giarelli / CC-BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Composizione_geometrica_chiamata_mappa_di_Bedolina_-_Bedolina_R_1_-_Capo_di_Ponte_(Foto_Luca_Giarelli).jpg)
+:::
+::::
+
+## 
 
 Maps
 
