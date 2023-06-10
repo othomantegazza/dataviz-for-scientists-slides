@@ -84,6 +84,7 @@ p.author {
 p {
   margin: 12px 15px 12px 0px !important;
   font-weight: var(--body-font-weight);
+  text-indent: 50px;
 }
 
 ul {
@@ -128,8 +129,12 @@ code {
   line-height: 1.25em;
 }
 
-.caption {
+/*-- caption --*/
+
+.caption p {
   font-size: .7em;
+  text-indent: 0px !important;
+  margin: 0px 0px 0px 10px !important;  
 }
 
 /*-- footer --*/

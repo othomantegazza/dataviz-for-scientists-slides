@@ -191,3 +191,21 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepte
 :::
 
 ::::
+
+## 
+
+<!-- Slide with image and capiton -->
+
+![](img/hierogyph-cursive.jpg){.absolute top=0 right=350 height="700"}
+
+
+::: {.caption .absolute left=700 bottom=0}
+
+CAPTION HEAD
+
+Year: 3000 BC
+Credits: John Doe
+
+*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*
+
+:::
