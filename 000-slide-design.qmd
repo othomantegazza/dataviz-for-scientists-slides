@@ -205,6 +205,7 @@ CAPTION HEAD
 
 Year: 3000 BC
 Credits: John Doe
+Size: 700 X width
 
 *Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*
 

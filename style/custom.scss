@@ -145,10 +145,14 @@ code {
 
 /*-- caption --*/
 
+div.caption {
+  margin: 0px 0px 30px 10px !important;
+}
+
 .caption p {
   font-size: .7em;
   text-indent: 0px !important;
-  margin: 0px 0px 0px 10px !important;  
+  margin: 0px 0px 0px 0px !important;
 }
 
 /*-- footer --*/
