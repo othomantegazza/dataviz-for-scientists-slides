@@ -31,26 +31,26 @@ without the fatigue and trouble of studying the particulars of which it is compo
 :::: {.columns}
 ::: {.column width="40%"}
 
-Maybe we've always known how to represent information visually, and that is the first and most intuitive way to do it.
+Maybe we've always known how to represent information visually, because that's the first and most intuitive way to do it.
 
 :::
 ::::
 
 ##
 
-:::: {.columns}
-::: {.column width="80%"}
+![](img/mappa-bedolina.jpg){.absolute top=0 right=350 height="700"}
 
-![](img/mappa-bedolina.jpg)
+::: {.caption .absolute left=700 bottom=0}
+
+BEDOLINA MAP
+
+Year: ~1000 BC
+
+Photo: [Luca Giarelli / CC-BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Composizione_geometrica_chiamata_mappa_di_Bedolina_-_Bedolina_R_1_-_Capo_di_Ponte_(Foto_Luca_Giarelli).jpg)
+
+*The [Bedolina Map](https://en.wikipedia.org/wiki/Bedolina_Map) is one of the most ancient topographical map. It contains around 109 figures of paths, warriors, animals, and wooden huts.*
+
 :::
-::: {.column width="20%" .caption}
-The [Bedolina Map (~1000 BC)](https://en.wikipedia.org/wiki/Bedolina_Map) is one of the most ancient topographical map.
-
-It contains around 109 figures of paths, warriors, animals, and wooden huts.
-
-Image credits: [Luca Giarelli / CC-BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Composizione_geometrica_chiamata_mappa_di_Bedolina_-_Bedolina_R_1_-_Capo_di_Ponte_(Foto_Luca_Giarelli).jpg)
-:::
-::::
 
 ## 
 
