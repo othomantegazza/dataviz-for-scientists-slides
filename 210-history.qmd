@@ -84,6 +84,21 @@ Photo: [MET Museum](https://images.metmuseum.org/CRDImages/gr/original/DP297374.
 
 :::
 
+## Abstraction
+
+:::: {.columns}
+::: {.column width="45%"}
+### Visual display of information
+
+The graphical display of information, of words, of stories, of topology, has been part of human history as soon as the first pictures on rocks where drawn; and we know that they date back at least 50.000 years, probably more.
+:::
+::: {.column width="45%"}
+### Visual Abstraction
+
+But data visualization requires some level of visual abstraction. We are not only drawing what we can see about the world. We are representing data visually, using abstract rules to draw something that did not exist before, and to leverage our visual perception to understand something that wasn't visual before.
+:::
+::::
+
 ## 
 
 Maps
