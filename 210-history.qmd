@@ -29,7 +29,7 @@ without the fatigue and trouble of studying the particulars of which it is compo
 ## But...
 
 :::: {.columns}
-::: {.column width="40%"}
+::: {.column width="45%"}
 
 Maybe we've always known how to represent information visually, because that's the first and most intuitive way to do it.
 
@@ -48,7 +48,7 @@ Year: ~1250 BC
 
 Photo: British Museum
 
-*Hieroglyphs originated as logographyc symbols, and later evolved in syllabic and alphabetic elements, like these ones on the [Papirus of Ani].*
+*Hieroglyphs originated as logographyc symbols, and later evolved in syllabic and alphabetic elements, like these ones on the [Papirus of Ani](https://en.wikipedia.org/wiki/Papyrus_of_Ani).*
 
 :::
 
@@ -98,6 +98,50 @@ The graphical display of information, of words, of stories, of topology, has bee
 But data visualization requires some level of visual abstraction. We are not only drawing what we can see about the world. We are representing data visually, using abstract rules to draw something that did not exist before, and to leverage our visual perception to understand something that wasn't visual before.
 :::
 ::::
+
+## But...
+
+:::: {.columns}
+::: {.column width="45%"}
+
+Visual and graphical representation of phenomena and data that are not inherently visual, existed well before the statistical diagrams of William Playfair. Can you think of some?
+
+:::
+::::
+
+##
+
+![](img/clay-nippur.jpg){.absolute top=0 left=350 height="700"}
+
+::: {.caption .rev .absolute right=700 bottom=0}
+
+CLAY MAP OF NIPPUR
+
+Year: ~1400 BC
+
+Photo: [Hilprecht, H. V.](https://archive.org/details/cu31924019176217)
+
+*In [ancient Babylonia](https://en.wikipedia.org/wiki/Babylonia), maps were accurately drawn on clay tablets.*
+
+Is a map an abstraction? One have to argue that what's represented in a map is definitely observable in real life, at least in theory. Though, very few of the people drawing maps had the chance to. They relied on measurements and data, representing them on the cartesian plane.
+
+:::
+
+##
+
+![](img/song-dinasty-map.JPG){.absolute top=0 right=350 height="700"}
+
+::: {.caption .absolute left=700 top=0}
+
+SONG DINASTY MAP
+
+Year: 1137 AD
+
+Media: Impression of Carved Stone 
+
+*The [Yu Ji Tu](https://en.wikipedia.org/wiki/File:Song_Dynasty_Map.JPG) (Map of the Tracks of Yu the Great) represents the coastal line and rivers in a gridded cartesian plane, with elevated precision.*
+
+:::
 
 ## 
 
