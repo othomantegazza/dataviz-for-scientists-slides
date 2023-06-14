@@ -86,6 +86,10 @@ p {
   font-weight: var(--body-font-weight);
 }
 
+div.column {
+  margin-right: 15px;
+}
+
 ul {
   font-weight: var(--body-font-weight);
 }
@@ -152,6 +156,10 @@ div.caption {
   font-size: .7em;
   text-indent: 0px !important;
   margin: 0px 0px 0px 0px !important;
+}
+
+.caption.rev p {
+  text-align: right;
 }
 
 /*-- footer --*/
