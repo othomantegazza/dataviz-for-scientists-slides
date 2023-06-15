@@ -177,7 +177,7 @@ Year: Current
 
 ::: {.column width="30%"}
 
-*The staff musical notation, was developed in the last 1000 years. It represents graphically pitch timing and modulation of music, across 5 parallel lines.*
+*The [staff musical notation](https://en.wikipedia.org/wiki/Staff_(music)), was developed in the last 1000 years. It represents graphically pitch timing and modulation of music, across 5 parallel lines.*
 
 :::
 ::: {.column width="30%"}
