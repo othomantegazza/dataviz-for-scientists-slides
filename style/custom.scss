@@ -155,6 +155,10 @@ div.caption {
 .caption p {
   font-size: .7em;
   text-indent: 0px !important;
+  margin: 0px 0px 20px 0px !important;
+}
+
+.caption p:last-child {
   margin: 0px 0px 0px 0px !important;
 }
 
