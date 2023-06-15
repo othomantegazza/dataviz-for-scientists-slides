@@ -139,11 +139,58 @@ Year: 1137 AD
 
 Media: Impression of Carved Stone 
 
-*The [Yu Ji Tu](https://en.wikipedia.org/wiki/File:Song_Dynasty_Map.JPG) (Map of the Tracks of Yu the Great) represents the coastal line and rivers in a gridded cartesian plane, with elevated precision.*
+*The [Yu Ji Tu](https://en.wikipedia.org/wiki/File:Song_Dynasty_Map.JPG) (Map of the Tracks of Yu the Great) represents the coastal line and rivers of China in a gridded cartesian plane, with elevated precision.*
 
 :::
 
 ## 
+
+![](img/neumes.jpg){.absolute top=0 right=350 width="700"}
+
+::: {.caption .absolute left=700 bottom=0}
+
+MUSICAL NEUMES
+
+Year: ~900 AD
+
+Topic: Gregorian Chant
+
+*[Musical Neumes](https://en.wikipedia.org/wiki/Neume#Western_plainchant) are one of the earliest graphical representation of music, drawing over vowels would represent the pitch and modulation in which the text shouldx be sung.*
+
+:::
+
+##
+
+![](img/chopin-prelude.png){.absolute top=0 left=0 width="1000"}
+
+::: {.caption .absolute left=0 bottom=0}
+
+::: {.columns}
+
+::: {.column width="30%"}
+
+STAFF MUSICAL NOTATION
+
+Year: Current
+
+:::
+
+::: {.column width="30%"}
+
+*The staff musical notation, was developed in the last 1000 years. It represents graphically pitch timing and modulation of music, across 5 parallel lines.*
+
+:::
+::: {.column width="30%"}
+
+Colud it be one of the first way to abstract data and then represent them graphically in a new way?
+
+:::
+
+:::
+
+:::
+
+##
 
 Maps
 
