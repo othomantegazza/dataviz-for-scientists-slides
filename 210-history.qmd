@@ -192,6 +192,11 @@ Colud it be one of the first way to abstract data and then represent them graphi
 
 ##
 
+![](img/chopin-prelude-annos.jpg){.absolute bottom=0 left=0 width=1300 style="max-width:max-content;max-height:max-content;"}
+
+##
+
+
 Maps
 
 Pentagram (music)
