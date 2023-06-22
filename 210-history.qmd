@@ -194,8 +194,36 @@ Colud it be one of the first way to abstract data and then represent them graphi
 
 ![](img/chopin-prelude-annos.jpg){.absolute bottom=0 left=0 width=1300 style="max-width:max-content;max-height:max-content;"}
 
-##
+## {background-image="img/schubert-score.png" background-size="contain" background-repeat="no-repeat"}
 
+## The Century of Science
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Geometry and Coordinates
+
+In a plane [cartesian system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) is a coordinate system that specifies each point univocally as a pair of real numbers, the distances from two perpendicular axes.
+
+It was invented in parallel by Descartes and Fermat in 17th centurty.
+:::
+
+::: {.column width="45%"}
+### Probablility and Errors
+
+In the 17th Century, interest for natural sciences, disipline such as astronomy, geography, physics, demographic, grew exponentially.
+
+With it, grew also the interest for measurements, giving birth to [statistical approaches](https://en.wikipedia.org/wiki/History_of_statistics) to reduce measurement errors in empirical measurements from Galileo Galilei and later Tycho Brahe, and of the [probability theory](https://en.wikipedia.org/wiki/Probability#History), from Pascal and Fermat.
+
+:::
+
+
+
+::::
+
+
+
+##
 
 Maps
 
