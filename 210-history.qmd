@@ -6,7 +6,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## {background-image="img/quipu.jpg" background-size="contain" background-repeat="no-repeat"}
+## {background-image="img/quipu.jpg" background-size="cover" background-repeat="no-repeat"}
 
 ## Wiliam Playfair (1759 – 1823)
 
@@ -213,6 +213,7 @@ In that period, data visualization as we know i, was born under the name of "Sta
 :::: {.columns}
 
 ::: {.column width="45%"}
+
 ### Geometry and Coordinates
 
 Analytical Geometry started with the work on the [Cartesian System](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
@@ -223,6 +224,7 @@ It was invented in parallel by Descartes and Fermat in 17th centurty.
 :::
 
 ::: {.column width="45%"}
+
 ### Probablility and Statistics
 
 When people started to look with growing interest to the natural sciences a question rose: how can we improve our measurements? What can we expect from them.
@@ -233,7 +235,44 @@ Like this, [statistical approaches](https://en.wikipedia.org/wiki/History_of_sta
 
 ::::
 
+##
 
+![](img/lagren-1644.jpg){.absolute top=0 left=0 width="800"}
+
+::: {.caption .absolute left=0 bottom=0}
+
+::: {.columns}
+
+::: {.column width="30%"}
+
+LONGITUDINAL DISTANCE TOLEDO-ROME
+
+Author: [Michael van Langren](https://en.wikipedia.org/wiki/Michael_van_Langren)
+
+Year: 1640
+
+:::
+
+::: {.column width="30%"}
+
+*This [Longitudinal Distance Chart](https://commons.wikimedia.org/wiki/File:Grados_de_la_Longitud.jpg) represents separate measurements of the distance between Toledo and Rome. Each measurement is a labelled point on a x-axis of a one-dimensinal chart.*
+
+:::
+::: {.column width="30%"}
+
+This chart contains so many ideas and concepts at once. The idea that measurements contain an error, that they can be repeated and pooled to infer this error, that they can be represented graphically to inspect this error using visual perception. 
+
+The x-axis is well defined and labelled, the points show each single measurement, and are labelled also, the title is inserted in the empty space.
+
+All measurements overestimate the real distance, which is at ~16˚.
+
+
+
+:::
+
+:::
+
+:::
 
 ##
 
