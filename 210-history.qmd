@@ -270,21 +270,22 @@ The x-axis is well defined and labelled, the points show each single measurement
 
 :::
 
+
 ##
 
-![](img/robert-plots-history-of-the-weather.png){.absolute top=0 right=350 height="750"}
+![](img/huygen-survival.png){.absolute top=0 left=350 height="700"}
 
-::: {.caption .absolute left=700 bottom=0}
+::: {.caption .rev .absolute right=700 bottom=0}
 
 SURVIVAL PLOT
 
-Year: 1685
+Year:  1669
 
-Author: [Robert Plot](https://es.wikipedia.org/wiki/Robert_Plot)
+Author: [Christiaan Huygens](https://en.wikipedia.org/wiki/Christiaan_Huygens)
 
-*A  vertical line plot of the barometrical pressure in Oxford for the year 1684.*
+*This density plot shows the age on the x-axis and the survival probability on the y-axis. Hygens estimated Survival probabilities from John Gaunt's life expectancy data in London.*
 
-This 2-dimensional line plot shows the data for each day of one solar year in two lines of facets.
+The graphs doesn't show data points but an empirical probability density.
 
 :::
 
