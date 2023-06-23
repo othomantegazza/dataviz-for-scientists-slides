@@ -237,7 +237,7 @@ Like this, [statistical approaches](https://en.wikipedia.org/wiki/History_of_sta
 
 ##
 
-![](img/lagren-1644.jpg){.absolute top=0 left=0 width="800"}
+![](img/lagren-1644.jpg){.absolute top=30 left=0 width="800"}
 
 ::: {.caption .absolute left=0 bottom=0}
 
@@ -255,7 +255,7 @@ Year: 1640
 
 ::: {.column width="30%"}
 
-*This [Longitudinal Distance Chart](https://commons.wikimedia.org/wiki/File:Grados_de_la_Longitud.jpg) represents separate measurements of the distance between Toledo and Rome. Each measurement is a labelled point on a x-axis of a one-dimensinal chart.*
+*This [Longitudinal Distance Chart](https://commons.wikimedia.org/wiki/File:Grados_de_la_Longitud.jpg) represents separate measurements of the distance between Toledo and Rome. Each measurement is a labelled point on a x-axis of a one-dimensinal chart. All measurements overestimate the real distance, which is at ~16˚.*
 
 :::
 ::: {.column width="30%"}
@@ -263,10 +263,6 @@ Year: 1640
 This chart contains so many ideas and concepts at once. The idea that measurements contain an error, that they can be repeated and pooled to infer this error, that they can be represented graphically to inspect this error using visual perception. 
 
 The x-axis is well defined and labelled, the points show each single measurement, and are labelled also, the title is inserted in the empty space.
-
-All measurements overestimate the real distance, which is at ~16˚.
-
-
 
 :::
 
@@ -276,28 +272,58 @@ All measurements overestimate the real distance, which is at ~16˚.
 
 ##
 
-Maps
+![](img/robert-plots-history-of-the-weather.png){.absolute top=0 right=350 height="750"}
 
-Pentagram (music)
+::: {.caption .absolute left=700 bottom=0}
 
-Or maybe 1644, Michael Florent Van Langren,
+SURVIVAL PLOT
 
-Statistical Diagrams
+Year: 1685
 
-## Jon Snow
+Author: [Robert Plot](https://es.wikipedia.org/wiki/Robert_Plot)
 
-Detect source of colera   
+*A  vertical line plot of the barometrical pressure in Oxford for the year 1684.*
 
-## Dalton 
+This 2-dimensional line plot shows the data for each day of one solar year in two lines of facets.
 
-Experiments with dataviz
+:::
 
-Discover colour blindness (daltonism)
+##
 
-Data visualization as a tool for scientific discovery
+![](img/robert-plots-history-of-the-weather.png){.absolute top=0 right=350 height="750"}
 
-Data visualization as a tool for developing 
+::: {.caption .absolute left=700 bottom=0}
 
-## Florence Nightingale
+WEATHER HISTORY
+
+Year: 1685
+
+Author: [Robert Plot](https://es.wikipedia.org/wiki/Robert_Plot)
+
+*A  vertical line plot of the barometrical pressure in Oxford for the year 1684.*
+
+This 2-dimensional line plot shows the data for each day of one solar year in two lines of facets.
+
+:::
+
+
+
+##
+
+- 1684 Robert Plot’s “History of the Weather” ==> Show the data.
+- 1779 Johann Heinrich Lambert 1st semi-graphic display.
+- 1782 Charles de Fourcroy Geometric proportional figures.
+- 1816 Heinrich Wilhelm Brandes Weather map, Density Isolines
+- 1819 Baron Pierre Charles Dupin Choropleth map
+- 1854 Charles Joseph Minard Bridge collapse - Visual Engineering
+- 1857 Florence Nightingale Coxcombs Communicative power of graphs
+- 1900 William Edward Burghardt Du Bois American Negro Exhibit in Paris - 100 charts
+
+
+
+
+
+
+
 
 Use also for policy making
