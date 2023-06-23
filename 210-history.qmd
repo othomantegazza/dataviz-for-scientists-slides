@@ -199,25 +199,37 @@ Colud it be one of the first way to abstract data and then represent them graphi
 ## The Century of Science
 
 :::: {.columns}
+::: {.column width="45%"}
+
+In the 17th Century, interest for the natural sciences and disciplines such as astronomy, geography, physics, demographic, grew exponentially.
+
+In that period, data visualization as we know i, was born under the name of "Statistical Diagrams".
+
+:::
+::::
+
+## Two Builing Blocks
+
+:::: {.columns}
 
 ::: {.column width="45%"}
 ### Geometry and Coordinates
 
-In a plane [cartesian system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) is a coordinate system that specifies each point univocally as a pair of real numbers, the distances from two perpendicular axes.
+Analytical Geometry started with the work on the [Cartesian System](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
+
+In a plane, the cartesian system is a coordinate system that specifies each point univocally as a pair of real numbers, the distances from two perpendicular axes.
 
 It was invented in parallel by Descartes and Fermat in 17th centurty.
 :::
 
 ::: {.column width="45%"}
-### Probablility and Errors
+### Probablility and Statistics
 
-In the 17th Century, interest for natural sciences, disipline such as astronomy, geography, physics, demographic, grew exponentially.
+When people started to look with growing interest to the natural sciences a question rose: how can we improve our measurements? What can we expect from them.
 
-With it, grew also the interest for measurements, giving birth to [statistical approaches](https://en.wikipedia.org/wiki/History_of_statistics) to reduce measurement errors in empirical measurements from Galileo Galilei and later Tycho Brahe, and of the [probability theory](https://en.wikipedia.org/wiki/Probability#History), from Pascal and Fermat.
+Like this, [statistical approaches](https://en.wikipedia.org/wiki/History_of_statistics) were deployed first to reduce measurement errors in empirical measurements from Tycho Brahe. At the same time, Pascal and Fermat developed the first [probability theory](https://en.wikipedia.org/wiki/Probability#History).
 
 :::
-
-
 
 ::::
 
