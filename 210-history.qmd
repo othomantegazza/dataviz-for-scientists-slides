@@ -307,6 +307,41 @@ This 2-dimensional line plot shows the data for each day of one solar year in tw
 
 :::
 
+##
+
+![](img/1779-lambert-table.jpg){.absolute top=0 right=0 height="550"}
+
+::: {.caption .rev .absolute right=700 bottom=0}
+
+GRAPHIC TABLE
+
+Year:  1737
+
+Author: [Johann Heinrich Lambert](https://en.wikipedia.org/wiki/Johann_Heinrich_Lambert)
+
+*The temperature is represented on the x axis, while the y axis represents the month of the year. Lambert binned the data by this two variables, and counted how many days fell into each bin.*
+
+Lambert positioned number in space based on the mappings of the x and y axis. Today we are used to map a color intensity to the count numeric value, in what would become a heatmap.
+
+:::
+
+##
+
+![](img/1782-fourcroy-geometric-proportional.jpg){.absolute top=0 left=370 height="700"}
+
+::: {.caption .rev .absolute right=700 bottom=0}
+
+TABLEAU POLÉMETRIQUE
+
+Year: 1782
+
+Author: [Charles-René de Fourcroy de Ramecourt](https://en.wikipedia.org/wiki/Charles-Ren%C3%A9_de_Fourcroy).
+
+*In [this polymetric table](https://commons.wikimedia.org/wiki/File:Tableau_Pol%C3%A9ometrique,_1782.jpg) the area of each polygon is proportional to the population of the main European cities.*
+
+This is one of the first treemaps, in which the area of polygons is mapped to data, and then the polygons are fit in space of the page.
+
+:::
 
 
 ##
