@@ -201,7 +201,7 @@ Colud it be one of the first way to abstract data and then represent them graphi
 :::: {.columns}
 ::: {.column width="45%"}
 
-In the 17th Century, interest for the natural sciences and disciplines such as astronomy, geography, physics, demographic, grew exponentially.
+In the 17^th^ Century, interest for the natural sciences and disciplines such as astronomy, geography, physics, demographic, grew exponentially.
 
 In that period, data visualization as we know i, was born under the name of "Statistical Diagrams".
 
@@ -220,7 +220,7 @@ Analytical Geometry started with the work on the [Cartesian System](https://en.w
 
 In a plane, the cartesian system is a coordinate system that specifies each point univocally as a pair of real numbers, the distances from two perpendicular axes.
 
-It was invented in parallel by Descartes and Fermat in 17th centurty.
+It was invented in parallel by Descartes and Fermat in 17^th^ centurty.
 :::
 
 ::: {.column width="45%"}
@@ -373,11 +373,23 @@ Year: 1826
 
 Author: [Charles Dupin](https://en.wikipedia.org/wiki/Charles_Dupin).
 
-*Dupin used shades of dark ink to overlay the information on the level of education, stratified by region, over the geographical map of the region. This approach is now known as choropleth map.*
+*Dupin used shades of dark to overlay the level of education, stratified by region, on the administrative map of France. This approach is now known as choropleth map.*
 
 In [this choropleth map](https://commons.wikimedia.org/wiki/File:Carte_figurative_de_l'instruction_populaire_de_la_France.jpg), the darker the region the higher is the average education level.
 :::
 
+## The Golden Age
+
+
+:::: {.columns}
+::: {.column width="45%"}
+
+In the 19^th^ century, statistics took a key role in science, economics and policy making.
+
+This is a golden age for data visualization, in which imaginative, beautiful, informative charts were produced to foster progress and decision making. 
+
+:::
+::::
 
 ##
 
