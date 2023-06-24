@@ -343,6 +343,25 @@ This is one of the first treemaps, in which the area of polygons is mapped to da
 
 :::
 
+##
+
+![](img/1816-trabert-weather.jpg){.absolute top=0 left=0 height="700"}
+
+::: {.caption .absolute left=650 top=0}
+
+GRAPHIC TABLE
+
+Year:  1816
+
+Author: [Heinrich Wilhelm Brandes](https://en.wikipedia.org/wiki/Heinrich_Wilhelm_Brandes)
+
+*The first weather map, showing data collected from 1783. Brandes overlayed isobar lines over the map of Europe.*
+
+This map introduces isolines, which are lines that connect points with the same value over a continuous gradient.
+
+:::
+
+
 
 ##
 
