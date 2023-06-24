@@ -391,6 +391,26 @@ This is a golden age for data visualization, in which imaginative, beautiful, in
 :::
 ::::
 
+## {background-image="img/1858-nightingale-mortality.jpg" background-size="cover" background-repeat="no-repeat"}
+
+##
+
+![](img/1858-nightingale-mortality-first-half.jpg){.absolute top=0 left=370 height="700"}
+
+::: {.caption .rev .absolute right=700 top=0}
+
+RADIAL HISTOGRAM
+
+Year: 1858
+
+Author: [Florence Nightingale](https://en.wikipedia.org/wiki/Florence_Nightingale).
+
+*Nightingale used [this radial stacked histogram](https://commons.wikimedia.org/wiki/File:Nightingale-mortality.jpg) to show hospital death causes in the Crimean war of 1854-1855*
+
+Aimed a the Queen Victoria and policy makers, this chart showed a peak of deaths from infectious diseases (light blue) during winter months in military hospitals. Florence Nightingale regarded these deaths as preventable, and used this chart to argue for the need of basic sanitation practices, such as air circulation.
+
+:::
+
 ##
 
 - 1684 Robert Plot’s “History of the Weather” ==> Show the data.
