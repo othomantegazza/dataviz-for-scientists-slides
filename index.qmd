@@ -10,3 +10,5 @@ Why dataviz?
 
 1. [Instant Knowledge](200-instant-data.html)
 2. [Quick history of Dataviz](210-history.html)
+3. [The Grammar of Graphics](220-gg.qmd)
+4. [Exploratory Data Analysis](230-eda.qmd)
