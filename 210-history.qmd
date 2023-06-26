@@ -448,22 +448,50 @@ Author: [W. E. B. Dubois](https://en.wikipedia.org/wiki/W._E._B._Du_Bois)
 
 ## {background-image="img/1990-dubois-georgia.jpg" background-size="contain" background-repeat="no-repeat"}
 
-##
+## From 1900 On
 
-- 1684 Robert Plot’s “History of the Weather” ==> Show the data.
-- 1779 Johann Heinrich Lambert 1st semi-graphic display.
-- 1782 Charles de Fourcroy Geometric proportional figures.
-- 1816 Heinrich Wilhelm Brandes Weather map, Density Isolines
-- 1819 Baron Pierre Charles Dupin Choropleth map
-- 1854 Charles Joseph Minard Bridge collapse - Visual Engineering
-- 1857 Florence Nightingale Coxcombs Communicative power of graphs
-- 1900 William Edward Burghardt Du Bois American Negro Exhibit in Paris - 100 charts
+:::: {.columns}
 
+::: {.column width="45%"}
 
+In the first half of the 20th century, data visualization was relegated to a secondary role to numerical statistical summaries.
 
+In the second half of the century, instead, John Tukey revived it. Until today, graphics remained one of the main tool in the hand of data analysts.
 
+:::
 
+:::
 
+## From 1900 On
 
+:::: {.columns}
 
-Use also for policy making
+::: {.column width="45%"}
+
+Today, with the web based resurgence of graphics and typography, data visualization is a scientific tool, a form of communication and a form of art.
+
+:::
+
+::::
+
+## Visual Communication
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+Visual communication is the oldest form of graphical communication. It predates phonems and other abstract forms of writing.
+
+Visual communication is a powerful tool for storytelling, it's intuitive, and it relies on our skills to process broad visual inputs quickly and in parallel.
+
+:::
+::: {.column width="45%"}
+
+Since visual communication is intuitive, it delivers (almost) immediate messages. This immediacy makes it potentially misleading. The responsability for making it clear and not ambiguous is yours (the author).
+
+Data visualization is a part of the broader discipline of visual and graphical communication. Let this whole field inspire you.
+
+:::
+
+::::
+
