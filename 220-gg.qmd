@@ -1,0 +1,27 @@
+---
+title: "A Grammar for Graphics"
+subtitle: "A collection of terms and concepts to declare data visualization systematically"
+author: "Otho Mantegazza"
+editor_options:  
+  chunk_output_type: console
+---
+
+## {background-image="img/minard-russian-campaign.png" background-size="contain" background-repeat="no-repeat"}
+
+## Can you Describe a Graph?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+If we find a way to describe graphs systematically, then we can design and develop them more easily.
+
+Most technical graphs can be declared with a system of rules called grammar of grapihcs.
+
+This set of rules is the basis for many data visualization packages, such as [ggplot2](https://ggplot2.tidyverse.org/), [Seaborn](https://seaborn.pydata.org/) and [Altair](https://altair-viz.github.io/)
+
+
+
+:::
+
+::::
