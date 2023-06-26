@@ -3,6 +3,8 @@ project:
   preview:
     port: 4200
   output-dir: docs
+  render: 
+    - "*.qmd"
   
 format:
   revealjs:
