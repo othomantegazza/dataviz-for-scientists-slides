@@ -25,3 +25,9 @@ This system of rules is the basis for many data visualization packages, such as 
 ::::
 
 ## {background-image="img/layered-grammar.svg" background-size="contain" background-repeat="no-repeat"}
+
+::: {.caption .rev .absolute right=850 bottom=70}
+
+[A LAYERED GRAMMAR OF GRAPHICS](https://vita.had.co.nz/papers/layered-grammar.html)
+
+:::
