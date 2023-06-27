@@ -63,3 +63,31 @@ The layered grammar of grapics states that:
 :::
  
 ::::
+
+## Aesthetics
+
+The word aesthetic is derived from the Ancient Greek αἰσθητικός (aisthētikós, "perceptive, sensitive, pertaining to sensory perception"), which in turn comes from αἰσθάνομαι (aisthánomai, "I perceive, sense, learn") and is related to αἴσθησις (aísthēsis, "perception, sensation").
+
+https://en.wikipedia.org/wiki/Aesthetics#Etymology
+
+## Let's Describe Graphs
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Let's describe three historical graphs in terms of the Grammar of Graphics.
+
+1. How are data mapped to aesthetics?
+2. What statistical transformation is applied?
+3. Which geometric object is used?
+4. What is the coordinate system?
+5. Are the data splut in facets?
+
+- Lineplot
+- Semichart
+- Nightingale Radial
+
+:::
+ 
+::::
