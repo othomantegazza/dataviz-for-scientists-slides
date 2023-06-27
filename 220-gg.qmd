@@ -31,3 +31,35 @@ This system of rules is the basis for many data visualization packages, such as 
 [A LAYERED GRAMMAR OF GRAPHICS](https://vita.had.co.nz/papers/layered-grammar.html)
 
 :::
+
+## A Grammar for Graphics
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+The "Grammar of Graphics" was developed by [Leeland Wilkinson](https://en.wikipedia.org/wiki/Leland_Wilkinson).
+
+It was later [extended](https://vita.had.co.nz/papers/layered-grammar.html) by Hadley Wickham, who started encoding it in the R package [ggplot2](https://ggplot2.tidyverse.org/).
+
+::: 
+
+:::: 
+
+## A Grammar for Graphics
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+The layered grammar of grapics states that:
+
+- A default dataset and set of mappings from variables to aesthetics.
+- One or more layers, with each layer having one geometric object, one statistical transformation, one position adjustment, and optionally, one dataset and set of aesthetic mappings.
+- One scale for each aesthetic mapping used.
+- A coordinate system.
+- The facet specification.
+
+:::
+ 
+::::
