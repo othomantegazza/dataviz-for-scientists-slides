@@ -148,7 +148,7 @@ Describe this semigraph by Lambert.
 
 ##
 
-::: {.caption .absolute left=0 top=0}
+::: {.absolute left=0 top=0}
 
 Describe the radial histogram by Nightingale 
 
@@ -167,3 +167,78 @@ Describe the radial histogram by Nightingale
   - ...
 
 :::
+
+## Let's Describe Graphs
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Just one more.
+
+Let's challenge ourselves a bit more.
+
+Now describe the web based data visualization on the next page. Is a weather map taken from the beautiful app [Windy](https://www.windy.com/).
+
+Can you do it with the Grammar of Graphics as before? How many layers of information can you notice?
+
+:::
+
+::::
+
+## {background-image="img/windy.png" background-size="cover" background-repeat="no-repeat"}
+
+##
+
+::: {.caption .absolute left=0 top=0}
+
+Describe the weather map by the app [Windy](https://www.windy.com/).
+
+[previous page]
+
+- Aesthetics Mapping: 
+  - x: ...
+  - y: ...
+- Statistical Trasformation:
+  - ...
+- Geometric Object:
+  - ...
+- Coordinate System:
+  - ...
+- Facets:
+  - ...
+  
+For the main data visualization, how many layers of information do you notice?
+
+:::
+
+## GGPLOT2
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[GGPLOT2](https://ggplot2.tidyverse.org/) is one of the main tools for declaring graphics in R.
+
+It is based on the grammar of graphics.
+
+It can be used both for explorative analysis and for publication ready graphs.
+
+:::
+
+::: {.column width="40%"}
+![](https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/ggplot2.svg)
+:::
+
+
+::::
+
+## 
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## A Scatterplot
+
