@@ -68,10 +68,16 @@ The layered grammar of grapics states that:
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="45%"}
 
 The [word aesthetic](https://en.wikipedia.org/wiki/Aesthetics#Etymology) is derived from the Ancient Greek αἰσθητικός (aisthētikós, "perceptive, sensitive, pertaining to sensory perception"), which in turn comes from αἰσθάνομαι (aisthánomai, "I perceive, sense, learn") and is related to αἴσθησις (aísthēsis, "perception, sensation"). [Wikipedia]
 
+:::
+
+::: {.column width="45%"}
+
+![](img/miles-davis.jpg)
+*[Miles Davis](https://commons.wikimedia.org/wiki/File:Miles_Davis,_Howard_McGhee,_September_1947_(Gottlieb_05711).jpg)*
 :::
 
 ::::
