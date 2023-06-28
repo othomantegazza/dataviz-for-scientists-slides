@@ -66,9 +66,15 @@ The layered grammar of grapics states that:
 
 ## Aesthetics
 
-The word aesthetic is derived from the Ancient Greek αἰσθητικός (aisthētikós, "perceptive, sensitive, pertaining to sensory perception"), which in turn comes from αἰσθάνομαι (aisthánomai, "I perceive, sense, learn") and is related to αἴσθησις (aísthēsis, "perception, sensation").
+:::: {.columns}
 
-https://en.wikipedia.org/wiki/Aesthetics#Etymology
+::: {.column width="50%"}
+
+The [word aesthetic](https://en.wikipedia.org/wiki/Aesthetics#Etymology) is derived from the Ancient Greek αἰσθητικός (aisthētikós, "perceptive, sensitive, pertaining to sensory perception"), which in turn comes from αἰσθάνομαι (aisthánomai, "I perceive, sense, learn") and is related to αἴσθησις (aísthēsis, "perception, sensation"). [Wikipedia]
+
+:::
+
+::::
 
 ## Let's Describe Graphs
 
@@ -82,7 +88,7 @@ Let's describe three historical graphs in terms of the Grammar of Graphics.
 2. What statistical transformation is applied?
 3. Which geometric object is used?
 4. What is the coordinate system?
-5. Are the data splut in facets?
+5. Are the data split in facets?
 
 - Lineplot
 - Semichart
@@ -91,3 +97,23 @@ Let's describe three historical graphs in terms of the Grammar of Graphics.
 :::
  
 ::::
+
+## 
+
+![](img/robert-plots-history-of-the-weather.png){.absolute top=0 right=350 height="750"}
+
+::: {.caption .absolute left=720 top=0}
+
+- Aesthetics Mapping: 
+  - x: atmospheric pressure
+  - y: day of the month
+- Statistical Trasformation:
+  - none / identity
+- Geometric Object:
+  - stepped line
+- Coordinate System:
+  - cartesian
+- Facets:
+  - by month
+
+:::
