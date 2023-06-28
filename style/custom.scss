@@ -16,12 +16,9 @@ $presentation-font-size-root: 30px;
 $presentation-h2-font-size: 2.34em;
 $presentation-h3-font-size: 1em;
 
-
-
- /*-- scss:rules --*/
+/*-- scss:rules --*/
  
- 
-:root {
+ :root {
     --title-font: Noto Serif;
     /*--  --accent-color-opaque: #9e019e33; --*/
     --body-font: Helvetica Neue;
@@ -33,7 +30,6 @@ $presentation-h3-font-size: 1em;
 }
 
 /*-- title slides --*/
-
 
 /*-- SLIDE CONTOUR LINE
 section.present {
@@ -152,7 +148,7 @@ div.caption {
   margin: 0px 0px 30px 10px !important;
 }
 
-.caption p {
+.caption p, .caption ul, .caption ol {
   font-size: .7em;
   text-indent: 0px !important;
   margin: 0px 0px 20px 0px !important;
