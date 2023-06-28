@@ -329,7 +329,7 @@ Lambert positioned number in space based on the mappings of the x and y axis. To
 
 ![](img/1782-fourcroy-geometric-proportional.jpg){.absolute top=0 left=370 height="700"}
 
-::: {.caption .rev .absolute right=700 bottom=0}
+::: {.caption .rev .absolute right=700 bottom=0} 
 
 TABLEAU POLÉMETRIQUE
 

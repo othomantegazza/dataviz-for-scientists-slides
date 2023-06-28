@@ -158,8 +158,9 @@ div.caption {
   margin: 0px 0px 0px 0px !important;
 }
 
-.caption.rev p {
+.caption.rev p, .caption.rev ul, .caption.rev ol {
   text-align: right;
+  list-style-position: inside;
 }
 
 /*-- footer --*/

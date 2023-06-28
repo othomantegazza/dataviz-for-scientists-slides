@@ -90,10 +90,6 @@ Let's describe three historical graphs in terms of the Grammar of Graphics.
 4. What is the coordinate system?
 5. Are the data split in facets?
 
-- Lineplot
-- Semichart
-- Nightingale Radial
-
 :::
  
 ::::
@@ -103,6 +99,8 @@ Let's describe three historical graphs in terms of the Grammar of Graphics.
 ![](img/robert-plots-history-of-the-weather.png){.absolute top=0 right=350 height="750"}
 
 ::: {.caption .absolute left=720 top=0}
+
+Describe the weather history by Robert Plot.
 
 - Aesthetics Mapping: 
   - x: atmospheric pressure
@@ -115,5 +113,51 @@ Let's describe three historical graphs in terms of the Grammar of Graphics.
   - cartesian
 - Facets:
   - by month
+
+:::
+
+##
+
+![](img/1779-lambert-table.jpg){.absolute top=0 right=0 height="550"}
+
+::: {.caption .rev .absolute right=720 top=0}
+
+Describe this semigraph by Lambert.
+
+- Aesthetics Mapping: 
+  - x: ...
+  - y: ...
+- Statistical Trasformation:
+  - ...
+- Geometric Object:
+  - ...
+- Coordinate System:
+  - ...
+- Facets:
+  - ...
+
+:::
+
+## {background-image="img/1858-nightingale-mortality.jpg" background-size="cover" background-repeat="no-repeat"}
+
+##
+
+::: {.caption .absolute left=0 top=0}
+
+Describe the radial histogram by Nightingale 
+
+[previous page]
+
+- Aesthetics Mapping: 
+  - x: ...
+  - y: ...
+- Statistical Trasformation:
+  - ...
+- Geometric Object:
+  - ...
+- Coordinate System:
+  - ...
+- Facets:
+  - ...
 
 :::
