@@ -154,6 +154,10 @@ div.caption {
   margin: 0px 0px 20px 0px !important;
 }
 
+.caption ul, .caption ol {
+  padding: 0px 0px 0px 20px;
+}
+
 .caption p:last-child {
   margin: 0px 0px 0px 0px !important;
 }
