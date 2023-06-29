@@ -273,7 +273,7 @@ Learn more about [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins
 
 ## 
 
-A default **dataset**...
+A default dataset...
 
 ```{r}
 #| output-location: column
@@ -285,7 +285,7 @@ penguins %>%
 
 ##
 
-A set of mappings from **variables** to **aesthetics**...
+A set of mappings from variables to aesthetics...
 
 ```{r}
 #| output-location: column
@@ -301,7 +301,7 @@ penguins %>%
 
 ##
 
-One or more layers, with **geometric** object, related to the aesthetic mappings.
+One or more layers, with geometric object, related to the aesthetic mappings.
 
 ```{r}
 #| output-location: column
@@ -337,7 +337,7 @@ penguins %>% drop_na() %>%
 
 ##
 
-A layer with a different geometric object and a **statistical transformation**.
+A layer with a different geometric object and a statistical transformation.
 
 
 ```{r}
@@ -358,7 +358,7 @@ penguins %>% drop_na() %>%
 
 ##
 
-A layer with a different geometric object and a **statistical transformation**.
+A layer with a different geometric object and a statistical transformation.
 
 ```{r}
 #| output-location: column
@@ -378,7 +378,7 @@ penguins %>% drop_na() %>%
 
 ##
 
-The **facet** specification.
+The facet specification.
 
 ```{r}
 #| output-location: column
@@ -402,7 +402,7 @@ penguins %>% drop_na() %>%
 
 ## 
 
-A default **dataset**...
+A default dataset...
 
 ```{r}
 #| output-location: column
@@ -410,6 +410,85 @@ A default **dataset**...
 #| fig-height: 6
 penguins %>% 
   ggplot()
+```
+
+##
+
+A set of mappings from variables to aesthetics...
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm)
+```
+
+##
+
+A layer including geometric objects and a statistical transformation.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm) +
+  geom_histogram()
+```
+
+##
+
+More aesthetic mappings.    
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      fill = species) +
+  geom_histogram() 
+```
+
+
+##
+
+The facet specification.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      fill = species) +
+  geom_histogram() +
+  facet_wrap(facets = 'species',
+             ncol = 1)
+```
+
+
+##
+
+Remove a legend guide that's no longer needed...
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      fill = species) +
+  geom_histogram() +
+  facet_wrap(facets = 'species',
+             ncol = 1) +
+  guides(fill = 'none')
 ```
 
 ## A Horizontal Stacked Bar Chart
