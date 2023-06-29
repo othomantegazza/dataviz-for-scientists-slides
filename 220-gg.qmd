@@ -582,3 +582,21 @@ penguins %>% drop_na() %>%
              scales = 'free_y',
              space = 'free')
 ```
+
+##
+
+Change the position adjustement.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% drop_na() %>% 
+  ggplot() +
+  aes(y = species,
+      fill = sex) +
+  geom_bar(position = 'dodge') +
+  facet_grid(rows = 'island',
+             scales = 'free_y',
+             space = 'free')
+```
