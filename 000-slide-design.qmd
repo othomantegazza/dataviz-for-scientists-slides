@@ -153,6 +153,7 @@ ggplot(mtcars) +
 
 ```{r}
 #| fig-width: 6.2
+#| output-location: column
 
 # code max width: ~30 char.
 ggplot(mtcars) +
