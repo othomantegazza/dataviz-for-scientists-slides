@@ -280,9 +280,6 @@ A default **dataset**...
 #| fig-width: 5
 #| fig-height: 6
 penguins %>% 
-  drop_na(
-    species,
-    sex) %>% 
   ggplot()
 ```
 
@@ -294,16 +291,11 @@ A set of mappings from **variables** to **aesthetics**...
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-penguins %>% 
-  drop_na(
-    species,
-    sex) %>% 
+penguins %>%  
   ggplot(
     aes(
       x = bill_length_mm,
-      y = bill_depth_mm,
-      colour = species,
-      shape = sex)
+      y = bill_depth_mm)
   )
 ```
 
@@ -316,15 +308,29 @@ One or more layers, with **geometric** object, related to the aesthetic mappings
 #| fig-width: 5
 #| fig-height: 6
 penguins %>% 
-  drop_na(
-    species,
-    sex) %>% 
   ggplot(
     aes(
       x = bill_length_mm,
-      y = bill_depth_mm,
-      colour = species,
-      shape = sex)
+      y = bill_depth_mm)
+  ) + 
+  geom_point()
+```
+
+##
+
+More variables mapped to aesthetics and represented in the geometric object.
+
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% drop_na() %>%
+  ggplot(
+    aes(x = bill_length_mm,
+        y = bill_depth_mm,
+        colour = species,
+        shape = sex)
   ) + 
   geom_point()
 ```
@@ -338,8 +344,7 @@ A layer with a different geometric object and a **statistical transformation**.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-penguins %>% 
-  drop_na(species, sex) %>% 
+penguins %>% drop_na() %>%
   ggplot(
     aes(x = bill_length_mm,
         y = bill_depth_mm,
@@ -359,8 +364,7 @@ A layer with a different geometric object and a **statistical transformation**.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-penguins %>% 
-  drop_na(species, sex) %>% 
+penguins %>% drop_na() %>%
   ggplot(
     aes(x = bill_length_mm,
         y = bill_depth_mm,
@@ -380,8 +384,7 @@ The **facet** specification.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-penguins %>%
-  drop_na(species, sex) %>% 
+penguins %>% drop_na() %>%
   ggplot(
     aes(x = bill_length_mm,
         y = bill_depth_mm,
@@ -396,5 +399,17 @@ penguins %>%
 
 
 ## A Histogram
+
+## 
+
+A default **dataset**...
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot()
+```
 
 ## A Horizontal Stacked Bar Chart
