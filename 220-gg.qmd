@@ -600,3 +600,13 @@ penguins %>% drop_na() %>%
              scales = 'free_y',
              space = 'free')
 ```
+
+## Exercise
+
+Learn about the [visual models available in ggplot](https://ggplot2.tidyverse.org/reference/index.html#layers) and use them to explore the [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/).
+
+
+For each graph that you make:
+
+- Describe it in term of the  Grammar of Graphics.
+- Explain what it is showing about the data, which pattern it is highligting, what are we learning by looking at it.
