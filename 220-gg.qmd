@@ -6,6 +6,21 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+#| include: false
+library(tidyverse)
+theme_set(
+  theme_gray(base_size = 12) +
+    theme(legend.position = "bottom",
+          legend.box="vertical",
+          legend.spacing = unit(2, 'mm'),
+          legend.margin = margin(1,1,1,1),
+          plot.margin = margin(0,1,1,1)
+          )
+)
+```
+
+
 ## {background-image="img/minard-russian-campaign.png" background-size="contain" background-repeat="no-repeat"}
 
 ## Can you Describe a Graph?
@@ -233,12 +248,153 @@ It can be used both for explorative analysis and for publication ready graphs.
 
 ::::
 
-## 
+## Packages
 
 ```{r}
+# Main tidyverse packages;
+# including ggplot2
+
 library(tidyverse)
+
+# The palmer penguins dataset;
+# that we are going to use for practice
+
 library(palmerpenguins)
 ```
 
-## A Scatterplot
+::: {.absolute left=0 bottom=270}
 
+Learn more about [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/).
+
+
+:::
+
+## A Scatterplot...
+
+## 
+
+A default **dataset**...
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  drop_na(
+    species,
+    sex) %>% 
+  ggplot()
+```
+
+##
+
+A set of mappings from **variables** to **aesthetics**...
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  drop_na(
+    species,
+    sex) %>% 
+  ggplot(
+    aes(
+      x = bill_length_mm,
+      y = bill_depth_mm,
+      colour = species,
+      shape = sex)
+  )
+```
+
+##
+
+One or more layers, with **geometric** object, related to the aesthetic mappings.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  drop_na(
+    species,
+    sex) %>% 
+  ggplot(
+    aes(
+      x = bill_length_mm,
+      y = bill_depth_mm,
+      colour = species,
+      shape = sex)
+  ) + 
+  geom_point()
+```
+
+##
+
+A layer with a different geometric object and a **statistical transformation**.
+
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  drop_na(species, sex) %>% 
+  ggplot(
+    aes(x = bill_length_mm,
+        y = bill_depth_mm,
+        colour = species,
+        shape = sex)
+  ) + 
+  geom_point() +
+  geom_smooth()
+```
+
+
+##
+
+A layer with a different geometric object and a **statistical transformation**.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  drop_na(species, sex) %>% 
+  ggplot(
+    aes(x = bill_length_mm,
+        y = bill_depth_mm,
+        colour = species,
+        shape = sex)
+  ) + 
+  geom_point() +
+  geom_smooth(method = 'lm')
+```
+
+
+##
+
+The **facet** specification.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>%
+  drop_na(species, sex) %>% 
+  ggplot(
+    aes(x = bill_length_mm,
+        y = bill_depth_mm,
+        colour = species,
+        shape = sex)
+  ) + 
+  geom_point() +
+  geom_smooth(method = 'lm') +
+  facet_wrap(facets = 'sex',
+             ncol = 1)
+```
+
+
+## A Histogram
+
+## A Horizontal Stacked Bar Chart
