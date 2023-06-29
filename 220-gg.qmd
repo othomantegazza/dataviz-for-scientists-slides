@@ -492,3 +492,93 @@ penguins %>%
 ```
 
 ## A Horizontal Stacked Bar Chart
+
+## 
+
+A default dataset...
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot()
+```
+
+##
+
+A set of mappings from variables to aesthetics...
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(y = species)
+```
+
+##
+
+A layer including geometric objects and a statistical transformation.
+
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% drop_na() %>% 
+  ggplot() +
+  aes(y = species) +
+  geom_bar()
+```
+
+##
+
+More aesthetic mappings.
+
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% drop_na() %>% 
+  ggplot() +
+  aes(y = species,
+      fill = sex) +
+  geom_bar()
+```
+
+##
+
+A facet specification.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% drop_na() %>% 
+  ggplot() +
+  aes(y = species,
+      fill = sex) +
+  geom_bar() +
+  facet_grid(rows = 'island')
+```
+
+##
+
+Remove empty bars.
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% drop_na() %>% 
+  ggplot() +
+  aes(y = species,
+      fill = sex) +
+  geom_bar() +
+  facet_grid(rows = 'island',
+             scales = 'free_y',
+             space = 'free')
+```
