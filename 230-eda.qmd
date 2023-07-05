@@ -1,0 +1,25 @@
+---
+title: "Exploratory Data Analysis"
+subtitle: "It is important to understand what you can do before you learn to measure how well you seem to have done it. (John Tukey)"
+author: "Otho Mantegazza"
+editor_options:  
+  chunk_output_type: console
+---
+
+## 
+
+![](img/tukey-boxplot.png){.absolute top=0 right=0 height="750"}
+
+::: {.caption .rev .absolute right=820 bottom=0}
+
+BOXPLOT
+
+Year: 1977
+
+Author: John Tukey
+
+Book: Exploratory Data Analysis
+
+*The Boxplot is one of the main visual models used to explore data. It shows Summary Quantile Statistics and outlier for a stratified set of data.* 
+
+:::
