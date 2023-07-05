@@ -23,6 +23,7 @@ $presentation-h3-font-size: 1em;
     /*--  --accent-color-opaque: #9e019e33; --*/
     --body-font: Helvetica Neue;
     --h2-color: #f44702;
+    --h2-color-execrise: #60a595;
     --accent-color-opaque:  #f4470255;
     --h2-font-size: 70px;
     --body-font-weight: 300;
@@ -160,6 +161,12 @@ div.caption {
 .caption.rev p, .caption.rev ul, .caption.rev ol {
   text-align: right;
   list-style-position: inside;
+}
+
+/*-- exercise --*/
+
+#exercise h2 {
+  color:var(--h2-color-execrise) !important;  
 }
 
 /*-- footer --*/
