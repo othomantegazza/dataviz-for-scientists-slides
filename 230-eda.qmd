@@ -10,7 +10,7 @@ editor_options:
 
 ![](img/tukey-boxplot.png){.absolute top=0 right=0 height="750"}
 
-::: {.caption .rev .absolute right=820 bottom=0}
+::: {.caption .rev .absolute right=850 bottom=0}
 
 BOXPLOT
 
@@ -23,3 +23,27 @@ Book: Exploratory Data Analysis
 *The Boxplot is one of the main visual models used to explore data. It shows Summary Quantile Statistics and outlier for a stratified set of data.* 
 
 :::
+
+## Exploratory Data Analysis
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Investigative Work 
+
+Exploratory data analysis, as stated by Tukey, is the investigative work on data.
+
+When you explore data, you leave no stone unturned. Relying on graphical methods, robust summary statistic and dimension reduction, you quickly gain insights in all possible patterns, correlations and cause-effect relationships that are in the data. In technical terms, you generate hypothesis.
+
+
+:::
+
+::: {.column width="45%"}
+### Confirmation
+
+After you have done your investigative work, you should switch from inspector to judge and test your hypothesis with inference and tests.
+
+But there's no point in testing the statistical relevance of poorly formulated hypotheses. Exploratory Data Analysis is fundamental in modern statistics, because it allows to formulate the best hypothesis possible.
+:::
+
+::::
