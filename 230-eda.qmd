@@ -8,6 +8,21 @@ editor_options:
 
 ## 
 
+```{r}
+#| include: false
+library(tidyverse)
+theme_set(
+  theme_gray(base_size = 12) +
+    theme(legend.position = "bottom",
+          legend.box="vertical",
+          legend.spacing = unit(2, 'mm'),
+          legend.margin = margin(1,1,1,1),
+          plot.margin = margin(0,1,1,1)
+          )
+)
+```
+
+
 ![](img/tukey-boxplot.png){.absolute top=0 right=0 height="750"}
 
 ::: {.caption .rev .absolute right=850 bottom=0}
@@ -133,3 +148,86 @@ Paper: [Tidy Data](https://doi.org/10.18637/jss.v059.i10)
 
 :::
 
+## EDA
+
+::: {.columns}
+
+::: {.column width="31%"}
+
+
+Visualize
+
+Summarize
+
+Stratify 
+
+Transform
+
+:::
+
+::: {.column width="33%"}
+
+```{r}
+# Main tidyverse packages;
+# including ggplot2
+
+library(tidyverse)
+
+# The palmer penguins dataset;
+# that we are going to use for practice
+
+library(palmerpenguins)
+```
+
+:::
+
+:::
+
+## One variable summaries
+
+## Histogram
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = bill_depth_mm) +
+  geom_histogram()
+```
+
+## Histogram
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4-7"
+penguins %>% 
+  ggplot() +
+  aes(x = bill_depth_mm) +
+  # The number of bins is arbitrary
+  # different bins can highlight
+  # different patterns
+  geom_histogram(bins = 10) 
+```
+
+## Histogram
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "8-10"
+penguins %>% 
+  ggplot() +
+  aes(x = bill_depth_mm) +
+  # The number of bins is arbitrary
+  # different bins can highlight
+  # different patterns
+  geom_histogram(bins = 10) +
+  # You can add a rug under the plot
+  # to show the data
+  geom_rug(alpha = .1)
+```
