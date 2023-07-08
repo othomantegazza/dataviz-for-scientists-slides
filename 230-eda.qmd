@@ -163,6 +163,8 @@ Stratify
 
 Transform
 
+https://r4ds.hadley.nz/eda
+
 :::
 
 ::: {.column width="33%"}
@@ -245,3 +247,67 @@ Which stepo do you have to define explicitely? Which step are defined implicitel
 :::
 
 :::
+
+## Density
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4"
+penguins %>% 
+  ggplot() +
+  aes(x = bill_depth_mm) +
+  geom_density() +
+  # You can add a rug under the plot
+  # to show the data
+  geom_rug(alpha = .1)
+```
+
+## Density
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4-6"
+penguins %>% 
+  ggplot() +
+  aes(x = bill_depth_mm) +
+  # You can adjust how much
+  # the line responds to data
+  geom_density(adjust = 1/5) +
+  # You can add a rug under the plot
+  # to show the data
+  geom_rug(alpha = .1)
+```
+
+## Boxplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = species,
+      y = bill_depth_mm) +
+  geom_boxplot()
+```
+
+## Boxplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "5-7"
+penguins %>% 
+  ggplot() +
+  aes(x = species,
+      y = bill_depth_mm,
+      fill = island) +
+  # You can use colours to 
+  # further stratify the data
+  geom_boxplot()
+```
