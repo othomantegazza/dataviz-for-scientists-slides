@@ -88,7 +88,7 @@ A big part Tukey's book "Exploratory Data Analysis" relies on graphical represen
 
 If you want to represent data intuitively, first you have to learn terms that allow you to describe the structure of a dataset semantically.
 
-The [tidy data theory](https://tidyr.tidyverse.org/articles/tidy-data.html) lets us do just that.
+The [Tidy Data Theory](https://tidyr.tidyverse.org/articles/tidy-data.html) lets us do just that.
 
 ::: 
 
@@ -116,7 +116,7 @@ Paper: [Tidy Data](https://doi.org/10.18637/jss.v059.i10)
 
 ::: {.column width="31%"}
 
-*A common framework to organize data semantically. If you organize data based on their structure, it's easier for you to make sense of them, to realize what data you have and what's missing.*
+*A common framework to organize data semantically: if you organize data based on their structure, it's easier for you to make sense of them, to realize what data you have and what's missing.*
 
 *If you organize data with a common framework, it's also easier to share them with others.*
 
