@@ -80,3 +80,56 @@ A big part Tukey's book "Exploratory Data Analysis" relies on graphical represen
 
 :::
 
+## Semantics
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+If you want to represent data intuitively, first you have to learn terms that allow you to describe the structure of a dataset semantically.
+
+The [tidy data theory](https://tidyr.tidyverse.org/articles/tidy-data.html) lets us do just that.
+
+::: 
+
+::::
+
+##
+
+![](img/tidy-data-theory.png){.absolute top=50 left=0 width="1000"}
+
+::: {.caption .absolute left=0 bottom=0}
+
+::: {.columns}
+
+::: {.column width="31%"}
+
+TIDY DATA THEORY
+
+Year: 2014
+
+Author: Hadley Wickham
+
+Paper: [Tidy Data](https://doi.org/10.18637/jss.v059.i10)
+
+:::
+
+::: {.column width="31%"}
+
+*A common framework to organize data semantically. If you organize data based on their structure, it's easier for you to make sense of them, to realize what data you have and what's missing.*
+
+*If you organize data with a common framework, it's also easier to share them with others.*
+
+:::
+::: {.column width="30%"}
+
+- Each column is a variable.
+- Each row is an observation.
+- Each cell is a value.
+- Each dataset is one observational unit.
+:::
+
+:::
+
+:::
+
