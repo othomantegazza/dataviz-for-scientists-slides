@@ -47,3 +47,36 @@ But there's no point in testing the statistical relevance of poorly formulated h
 :::
 
 ::::
+
+## Visual Immediacy
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+When you explore data, you have to turn them into insightful formats. Most of the time this involves turning data into grafical and visual shapes.
+
+:::
+
+::::
+
+##
+
+![](img/tukey-stem-and-leaf.png){.absolute top=0 left=350 height="700"}
+
+::: {.caption .rev .absolute right=700 bottom=0}
+
+STEM AND LEAF
+
+Year: 1977
+
+Author: John Tukey
+
+Book: Exploratory Data Analysis
+
+*A graphical intuitive representation of car prices.*
+
+A big part Tukey's book "Exploratory Data Analysis" relies on graphical representation of data that you can draw yourself with pen and paper. Luckily today you can use powerful software designed for data exploration purpose, such as the [Tidyverse](https://www.tidyverse.org/). 
+
+:::
+
