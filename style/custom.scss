@@ -165,7 +165,7 @@ div.caption {
 
 /*-- exercise --*/
 
-#exercise h2 {
+section[id*=exercise] h2 {
   color:var(--h2-color-execrise) !important;  
 }
 
