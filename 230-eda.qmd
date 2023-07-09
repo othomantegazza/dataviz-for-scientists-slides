@@ -4,6 +4,9 @@ subtitle: "It is important to understand what you can do before you learn to mea
 author: "Otho Mantegazza"
 editor_options:  
   chunk_output_type: console
+knitr:
+  opts_chunk: 
+    dev: jpeg
 ---
 
 ## 
@@ -19,7 +22,7 @@ theme_set(
           legend.margin = margin(1,1,1,1),
           plot.margin = margin(0,1,1,1)
           )
-)
+) 
 ```
 
 
@@ -310,4 +313,172 @@ penguins %>%
   # You can use colours to 
   # further stratify the data
   geom_boxplot()
+```
+
+## Two variables
+
+
+## Scatterplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+diamonds %>%
+  ggplot() +
+  aes(x = x, 
+      y = price) +
+  geom_point()
+```
+
+## Scatterplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "2-4"
+diamonds %>%
+  # remove points with
+  # unlikely values
+  filter(x > 0) %>% 
+  ggplot() +
+  aes(x = x, 
+      y = price) +
+  geom_point()
+```
+
+## Scatterplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "8-9"
+diamonds %>%
+  # remove points with
+  # unlikely values
+  filter(x > 0) %>% 
+  ggplot() +
+  aes(x = x, 
+      y = price) +
+  # avoid overplotting
+  geom_point(alpha = .1)
+```
+
+## Scatterplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "10-11"
+diamonds %>%
+  # remove points with
+  # unlikely values
+  filter(x > 0) %>% 
+  ggplot() +
+  aes(x = x, 
+      y = price) +
+  # avoid overplotting
+  geom_point(alpha = .1) +
+  # add a smoothed summary
+  geom_smooth()
+```
+
+## Scatterplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "11-18"
+diamonds %>%
+  # remove points with
+  # unlikely values
+  filter(x > 0) %>% 
+  ggplot() +
+  aes(x = x, 
+      y = price) +
+  # avoid overplotting
+  geom_point(alpha = .1) +
+  # add a smoothed summary
+  # with a specific model
+  geom_smooth(
+    method = lm,
+    formula = "y ~ poly(x, 2)"
+    ) +
+  scale_y_continuous(
+    limits = c(NA, 19000)
+    )
+```
+
+## Scatterplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "9-10"
+diamonds %>%
+  # remove points with
+  # unlikely values
+  filter(x > 0) %>% 
+  ggplot() +
+  aes(x = x, 
+      y = price) +
+  # avoid overplotting
+  # use color to stratify
+  geom_point(aes(colour = cut),
+      alpha = .1) +
+  # add a smoothed summary
+  # with a specific model
+  geom_smooth(
+    method = lm,
+    formula = "y ~ poly(x, 2)"
+    ) +
+  scale_y_continuous(
+    limits = c(NA, 19000)
+    ) +
+  guides(
+    colour = guide_legend(
+      override.aes = list(
+        alpha = 1)))
+```
+
+## Scatterplot
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "18-21"
+diamonds %>%
+  # remove points with
+  # unlikely values
+  filter(x > 0) %>% 
+  ggplot() +
+  aes(x = x, 
+      y = price) +
+  # avoid overplotting
+  # use color to stratify
+  geom_point(aes(colour = cut),
+      alpha = .1) +
+  # add a smoothed summary
+  # with a specific model
+  geom_smooth(
+    method = lm,
+    formula = "y ~ poly(x, 2)"
+    ) +
+  # Use facets to 
+  # stratify the data
+  facet_wrap(facets = 'cut',
+             ncol = 2) +
+  scale_y_continuous(
+    limits = c(NA, 19000)
+    ) +
+  guides(
+    colour = guide_legend(
+      override.aes = list(
+        alpha = 1)))
 ```
