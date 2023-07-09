@@ -245,7 +245,7 @@ penguins %>%
 
 Describe an histogram in terms of the grammar of graphics.
 
-Which stepo do you have to define explicitely? Which step are defined implicitely by ggplot2?
+Which step do you have to define explicitely? Which step are defined implicitely by ggplot2?
 
 :::
 
