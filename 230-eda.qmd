@@ -716,28 +716,3 @@ diamonds %>%
 
 ![](230-eda_files/figure-revealjs/pairs-1.jpeg){.absolute top=5 left=50 height="800"}
 
-## Exercise - Put On Your Detective Hat
-
-:::: {.columns}
-
-::: {.column width="45%"}
-
-Someone hid three secret messages in this dataset.
-
-Explore their content graphically to find them.
-
-The aim of this exercise is to let you practice making many exploratory graphs.
-
-Be fast, you have a lot of data to explore.
-
-Be essential:
-
-- You, right now, are the only person that needs to undestand these graphs.
-
-- Do not waste your time refining the axis labels, refining your style. As long as you understand what's in those graph, they are good enough.
-
-Show the data, the patterns are often hidden in details.
-
-:::
-
-::::

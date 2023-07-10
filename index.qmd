@@ -4,11 +4,23 @@ format: html
 
 [Master Slides](000-slide-design.html)
 
-# Day 1
+# Day 1 
 
-Why dataviz?
+## Morning
+
+R
+
+## Afternoon
+
+
 
 1. [Instant Knowledge](200-instant-data.html)
 2. [Quick history of Dataviz](210-history.html)
 3. [The Grammar of Graphics](220-gg.html)
 4. [Exploratory Data Analysis](230-eda.html)
+
+# Day2
+
+## Morning
+
+5. [Better Graphs](300-better-graphs.html)
