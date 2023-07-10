@@ -691,3 +691,25 @@ d_fit %>%
 ```
 
 ## Pairs
+
+```{r}
+library(GGally)
+```
+
+## Pairs
+
+```{r pairs}
+#| output: false
+#| fig-width: 10
+#| fig-height: 10
+diamonds %>%
+  ggpairs(
+    lower = list(
+      continuous = wrap(
+        "points", alpha = 0.05
+      )
+    )
+  )
+```
+
+## {background-image="230-eda_files/figure-revealjs/pairs-1.jpeg" background-size="contain" background-repeat="no-repeat"}
