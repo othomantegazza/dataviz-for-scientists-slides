@@ -1,0 +1,16 @@
+---
+title: "Better Graphs II"
+subtitle: "Show the data, declutter, basic rules of perception"
+author: "Otho Mantegazza"
+editor_options:  
+  chunk_output_type: console
+knitr:
+  opts_chunk: 
+    dev: jpeg
+---
+
+## Show the Data
+
+## Declutter
+
+## Gestalt Prangranz
