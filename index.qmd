@@ -23,4 +23,5 @@ R
 
 ## Morning
 
-5. [Better Graphs](300-better-graphs.html)
+5. [Better Graphs - Part I](310-better-graphs.html)
+6. [Better Graphs - Part II](320-better-graphs-2.html)
