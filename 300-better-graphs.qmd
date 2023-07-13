@@ -8,3 +8,39 @@ knitr:
   opts_chunk: 
     dev: jpeg
 ---
+
+## Planar Variables
+
+- x,y two linearly perceived variables, that you can use also for categorical ones.
+
+## Retinal Variables
+
+Colour (Hue and Value), Shape, Size, Orientation, Texture
+
+## Colour
+
+- colour ==> yes, use them, they make the graph nicer to see, you can encode continuous and categorica variables with them, with some caveat:
+
+  - Daltonism or Colour blindness ==> Just test for it, use defined colour palettes.
+  - Meanings associated to colours.
+  - Perception. / lineaely percepted scales
+  
+colors are the on that can replace the x, y aesthetcs out of the box, in a highly nuanced way.
+
+## Shape
+
+Ok, also as double encoding, for printing etc.
+
+## Size / Area, ok, how is it perceived?
+
+Is it good for encoding uncertainty?
+
+## Orientation
+
+very specific
+
+## Texture
+
+cool for communication.
+
+
