@@ -716,3 +716,40 @@ diamonds %>%
 
 ![](230-eda_files/figure-revealjs/pairs-1.jpeg){.absolute top=5 left=50 height="800"}
 
+## Exercise - Detective Hat
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+In the next page, you'll find a link to a dataset.
+
+*Some secret spy agent has hidden three secret messages in the data*
+
+*Put on your detective hat and find the secret messages. You don't have much time to stop a catastrophe. Work fast!*
+
+:::
+
+::::
+
+## Exercise - Detective Hat
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+The aim of this exercise is to let you practice making many exploratory graphs, quickly.
+
+Be fast, you have a lot of data to explore.
+
+Be essential:
+
+- You, right now, are the only person that needs to undestand these graphs.
+
+- Details take time. Do not waste time refining details, such as the title of the axis, the colour map, the layout. Or do it just as much as you need to understand your graph.
+
+Show the data, the patterns are often well hidden, if you summarize the data too much, they might get lost.
+
+:::
+
+::::
