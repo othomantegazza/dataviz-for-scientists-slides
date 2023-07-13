@@ -722,11 +722,11 @@ diamonds %>%
 
 ::: {.column width="45%"}
 
-In the next page, you'll find a link to a dataset.
+*A very bad criminal organization, have hidden a message for one of his hitmen in [this file](https://github.com/othomantegazza/dataviz-for-scientists-slides/blob/main/data/secret-message.csv).*
 
-*Some secret spy agent has hidden three secret messages in the data*
+*You have intercepted the file, but you must decode the message. You don't have much time to stop a catastrophe. Work fast!*
 
-*Put on your detective hat and find the secret messages. You don't have much time to stop a catastrophe. Work fast!*
+More details in the next page →
 
 :::
 
@@ -738,17 +738,13 @@ In the next page, you'll find a link to a dataset.
 
 ::: {.column width="80%"}
 
-The aim of this exercise is to let you practice making many exploratory graphs, quickly.
+The aim of this exercise is to let you practice making many exploratory graphs, quickly. 
 
-Be fast, you have a lot of data to explore.
+Visualize the content of [this dataset](https://github.com/othomantegazza/dataviz-for-scientists-slides/blob/main/data/secret-message.csv) in different ways, until you find the secret message. Be fast, you have a lot of data to explore.
 
-Be essential:
+Be essential. You, right here, right now, are the only person that needs to undestand these graphs. Do not waste your time making the graphs nicer, change only what you need to change to understand them better.
 
-- You, right now, are the only person that needs to undestand these graphs.
-
-- Details take time. Do not waste time refining details, such as the title of the axis, the colour map, the layout. Or do it just as much as you need to understand your graph.
-
-Show the data, the patterns are often well hidden, if you summarize the data too much, they might get lost.
+Show the data. The patterns are often well hidden, if you summarize the data too much, they might get lost.
 
 :::
 
