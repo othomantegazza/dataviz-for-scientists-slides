@@ -31,23 +31,32 @@ BOOK: The Semiology of Graphics
 
 ::: {.column width="45%"}
 
-When you draw a data visualization on a two dimensional screen, you map data variables to two types of graphical variables:
+When you draw a data visualization on a two dimensional screen, you map values from data variables to graphical variables:
 
 - Planar Variables: *x, y*.
 - Retinal Variables: *colour, shape, orientation, size, area, texture*.
 
-:::
+In terms of the grammar of graphics, the graphical variables are the aesthetics that you map yor data to.
 
 :::
 
-
-
+:::
 
 ## Planar Variables
 
+::: {.columns}
 
+::: {.column width="40%"}
 
-- x,y two linearly perceived variables, that you can use also for categorical ones.
+The x and y planar variables are largely perceived as a quantitative linear space. And they are great for representing **quantitative** and **qualitative** data.
+
+The planar variables are the x and y coordinates on your planar screen, which readily translate to the x and y positions in your graph.
+
+(f you use cartesian coordinates or to a transformed version of them if you use more elaborate coordinate systems)
+
+:::
+
+:::
 
 ## Retinal Variables
 
