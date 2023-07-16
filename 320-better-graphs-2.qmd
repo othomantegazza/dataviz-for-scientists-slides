@@ -13,4 +13,7 @@ knitr:
 
 ## Declutter
 
+## Spatial organization, ordering
+
 ## Gestalt Prangranz
+

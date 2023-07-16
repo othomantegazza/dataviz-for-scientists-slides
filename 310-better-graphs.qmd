@@ -1,5 +1,5 @@
 ---
-title: "Better Graphs I"
+title: "Better Graphs - I"
 subtitle: "How to use graphical variables effectively."
 author: "Otho Mantegazza"
 editor_options:  
@@ -9,7 +9,43 @@ knitr:
     dev: jpeg
 ---
 
+##
+
+![](img/1967-bertin-retinal-variables.png){.absolute top=0 left=0 width="1000"}
+
+::: {.caption .absolute left=760 top=340}
+
+AUTHOR: Jaques Bertin
+
+YEAR: 1967
+
+BOOK: The Semiology of Graphics
+
+*Examples of planar and retinal variables.*
+
+:::
+
+## Graphical Variables
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+When you draw a data visualization on a two dimensional screen, you map data variables to two types of graphical variables:
+
+- Planar Variables: *x, y*.
+- Retinal Variables: *colour, shape, orientation, size, area, texture*.
+
+:::
+
+:::
+
+
+
+
 ## Planar Variables
+
+
 
 - x,y two linearly perceived variables, that you can use also for categorical ones.
 
