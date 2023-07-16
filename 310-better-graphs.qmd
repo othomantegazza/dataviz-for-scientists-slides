@@ -66,8 +66,6 @@ diamonds %>%
       y = price) +
   geom_point(alpha = .05) +
   geom_smooth() +
-  # geom_hline(yintercept = 0) +
-  # geom_vline(xintercept = .2) +
   scale_x_continuous(expand = expansion(0, 0),
                      limits = c(.2, .75)) +
   scale_y_continuous(expand = expansion(0, 0),
@@ -76,6 +74,7 @@ diamonds %>%
     base_size = 30,
   ) +
   theme(
+    plot.margin = margin(20,5,5,5),
     axis.text.x = element_text(hjust = 0),
     axis.text.y = element_text(vjust = 0),
     axis.ticks = element_line(),
@@ -85,7 +84,7 @@ diamonds %>%
 
 ggsave(filename = 'img/planar-variables-raw.png',
        width = 10,
-       height = 10) 
+       height = 10)
 ```
 
 ![](img/planar-variables.png){.absolute top=50 left=500}
@@ -93,6 +92,50 @@ ggsave(filename = 'img/planar-variables-raw.png',
 :::
 
 :::
+
+## Planar Variables
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+You can place **qualitative** variables both in the x and y variable. In this case the x might stop being the independent variable, and the y stops being the response.
+
+Often there is no clear hypothetical relationship of cause effect between two variables, in that case you can invert the x and the y freely.
+
+:::
+
+:::
+
+![](img/planar-variables-categorical.png){.absolute top=50 left=500 width=650}
+
+```{r}
+#| include: false
+#| eval: false
+diamonds %>%
+    mutate(cut = fct_reorder(.f = cut, .x = carat)) %>% 
+  ggplot() +
+  aes(x = carat,
+      y = cut) +
+  geom_boxplot(size = 1.5) +
+  scale_x_continuous(position = "top") +
+  theme_minimal(
+    base_size = 30,
+  ) +
+  theme(
+    plot.margin = margin(20,5,5,5),
+    axis.text.x = element_text(hjust = 0),
+    axis.text.y = element_text(vjust = 0),
+    axis.ticks = element_line(),
+    axis.title = element_blank(),
+    axis.line = element_line()
+  )
+
+ggsave(filename = 'img/planar-variables-categorical-raw.png',
+       width = 10,
+       height = 7)
+```
+
 
 ## Retinal Variables
 
