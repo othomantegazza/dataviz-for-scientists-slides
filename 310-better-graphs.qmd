@@ -46,13 +46,49 @@ In terms of the grammar of graphics, the graphical variables are the aesthetics 
 
 ::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="45%"}
 
 The x and y planar variables are largely perceived as a quantitative linear space. And they are great for representing **quantitative** and **qualitative** data.
 
 The planar variables are the x and y coordinates on your planar screen, which readily translate to the x and y positions in your graph.
 
 (f you use cartesian coordinates or to a transformed version of them if you use more elaborate coordinate systems)
+
+```{r}
+#| include: false
+#| eval: false
+
+library(tidyverse)
+
+diamonds %>%
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_point(alpha = .05) +
+  geom_smooth() +
+  # geom_hline(yintercept = 0) +
+  # geom_vline(xintercept = .2) +
+  scale_x_continuous(expand = expansion(0, 0),
+                     limits = c(.2, .75)) +
+  scale_y_continuous(expand = expansion(0, 0),
+                     limits = c(0, 2500)) +
+  theme_minimal(
+    base_size = 30,
+  ) +
+  theme(
+    axis.text.x = element_text(hjust = 0),
+    axis.text.y = element_text(vjust = 0),
+    axis.ticks = element_line(),
+    axis.title = element_blank(),
+    axis.line = element_line()
+  )
+
+ggsave(filename = 'img/planar-variables-raw.png',
+       width = 10,
+       height = 10) 
+```
+
+![](img/planar-variables.png){.absolute top=50 left=500}
 
 :::
 
