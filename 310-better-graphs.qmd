@@ -34,7 +34,7 @@ BOOK: The Semiology of Graphics
 When you draw a data visualization on a two dimensional screen, you map values from data variables to graphical variables:
 
 - Planar Variables: *x, y*.
-- Retinal Variables: *colour, shape, orientation, size, area, texture*.
+- Retinal Variables: *colour hue, color value, shape, orientation, size, area, texture*.
 
 In terms of the grammar of graphics, the graphical variables are the aesthetics that you map yor data to.
 
@@ -56,20 +56,10 @@ The planar variables are the x and y coordinates on your planar screen, which re
 
 ```{r}
 #| include: false
-#| eval: false
 
 library(tidyverse)
 
-diamonds %>%
-  ggplot() +
-  aes(x = carat,
-      y = price) +
-  geom_point(alpha = .05) +
-  geom_smooth() +
-  scale_x_continuous(expand = expansion(0, 0),
-                     limits = c(.2, .75)) +
-  scale_y_continuous(expand = expansion(0, 0),
-                     limits = c(0, 2500)) +
+theme_set(
   theme_minimal(
     base_size = 30,
   ) +
@@ -79,8 +69,26 @@ diamonds %>%
     axis.text.y = element_text(vjust = 0),
     axis.ticks = element_line(),
     axis.title = element_blank(),
-    axis.line = element_line()
+    axis.line = element_line(),
+    legend.position = "bottom"
   )
+)
+```
+
+
+```{r}
+#| eval: false
+#| include: false
+diamonds %>%
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_point(alpha = .05) +
+  geom_smooth() +
+  scale_x_continuous(expand = expansion(0, 0),
+                     limits = c(.2, .75)) +
+  scale_y_continuous(expand = expansion(0, 0),
+                     limits = c(0, 2500)) 
 
 ggsave(filename = 'img/planar-variables-raw.png',
        width = 10,
@@ -118,18 +126,7 @@ diamonds %>%
   aes(x = carat,
       y = cut) +
   geom_boxplot(size = 1.5) +
-  scale_x_continuous(position = "top") +
-  theme_minimal(
-    base_size = 30,
-  ) +
-  theme(
-    plot.margin = margin(20,5,5,5),
-    axis.text.x = element_text(hjust = 0),
-    axis.text.y = element_text(vjust = 0),
-    axis.ticks = element_line(),
-    axis.title = element_blank(),
-    axis.line = element_line()
-  )
+  scale_x_continuous(position = "top") 
 
 ggsave(filename = 'img/planar-variables-categorical-raw.png',
        width = 10,
@@ -139,7 +136,66 @@ ggsave(filename = 'img/planar-variables-categorical-raw.png',
 
 ## Retinal Variables
 
-Colour (Hue and Value), Shape, Size, Orientation, Texture
+::: {.columns}
+
+::: {.column width="45%"}
+
+
+The retinal variables are all those other graphical variables, that cannot be interpreted directly as a position on the screen's x and y.
+
+The most important retinal variables are *colour hue, color value, shape, orientation, size, area, texture*. 
+
+Each one has its own peculiarities and its own rules about how it can be used best.
+
+:::
+
+:::
+
+## Colour
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+Colours can be mapped both to categorical and continuous variables.
+
+With some caveats, colours are a multidimensional space:
+
+- Not perceived in a fully linear way.
+- Perceived in different ways by different people.
+
+:::
+
+:::
+
+```{r}
+#| include: false
+#| eval: false
+diamonds %>%
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_bin_2d(binwidth = c(0.01, 50)) +
+  scale_x_continuous(expand = expansion(0, 0),
+                     limits = c(.2, .75)
+                     ) +
+  scale_y_continuous(expand = expansion(0, 0),
+                     limits = c(0, 2500)
+  ) +
+  scale_fill_viridis_c(
+    direction = -1,
+    option = 'G'
+  ) +
+  guides(
+    fill = guide_colourbar(barwidth = 20, barheight = 1)
+  )
+
+ggsave(filename = 'img/retinal-variables-colours-1-raw.png',
+       width = 10,
+       height = 12)
+```
+
+![](img/retinal-variables-colours-1.png){.absolute top=50 left=500}
 
 ## Colour
 
