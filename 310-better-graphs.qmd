@@ -211,7 +211,29 @@ On a screen, colours are **defined** as [three hexadecimal strings](https://duck
 
 :::
 
-![](img/color-hex.png){.absolute top=110 left=500}
+![](img/color-hex.png){.absolute top=110 left=550}
+
+## Color Spaces
+
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+Colors are perceived non linearly, and the model of how colors are perceived by people gets constantly updated. The most used model is [CIECAM02](https://en.wikipedia.org/wiki/CIECAM02).
+
+What shoud interest you is:
+
+- HUE: what we call colour.
+- LIGHTNESS: how close to black?
+- SATURATION: how close to gray?
+
+
+:::
+
+:::
+
+![](img/hue-lightness-saturation.png){.absolute top=110 left=550}
 
 ## Colour
 
