@@ -215,7 +215,6 @@ On a screen, colours are **defined** as [three hexadecimal strings](https://duck
 
 ## Color Spaces
 
-
 ::: {.columns}
 
 ::: {.column width="45%"}
@@ -233,7 +232,46 @@ What shoud interest you is:
 
 :::
 
-![](img/hue-lightness-saturation.png){.absolute top=110 left=550}
+![](img/hue-lightness-saturation.png){.absolute top=135 left=550}
+
+## Categorical Variables
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+You can use colours to encode for categorical variables.
+
+If the categorical variable is not ordered you should modulate the colors hue, with also small changes to saturation and lightness.
+
+:::
+
+:::
+
+```{r}
+#| include: false
+#| eval: false
+library(palmerpenguins)
+library(paletteer)
+
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      y = bill_depth_mm,
+      colour = species) +
+  geom_point(size  =4) +
+  scale_color_paletteer_d("awtools::mpalette")
+
+ggsave(filename = 'img/retinal-v-color-categorical-raw.png',
+       width = 10,
+       height = 11)
+```
+
+![](img/retinal-v-color-categorical.png){.absolute top=50 left=500 style="z-index: -1;"}
+
+## Categorical Variables
+
+
 
 ## Colour
 
