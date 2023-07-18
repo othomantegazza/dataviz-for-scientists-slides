@@ -197,6 +197,22 @@ ggsave(filename = 'img/retinal-variables-colours-1-raw.png',
 
 ![](img/retinal-variables-colours-1.png){.absolute top=50 left=500}
 
+## Color Spaces
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+If you find it hard to plan colours, don't worry, colours are complex for everyone.
+
+On a screen, colours are **defined** as [three hexadecimal strings](https://duckduckgo.com/?q=color+picker), that combine 256 levels of red, green and blue.
+
+:::
+
+:::
+
+![](img/color-hex.png){.absolute top=110 left=500}
+
 ## Colour
 
 - colour ==> yes, use them, they make the graph nicer to see, you can encode continuous and categorica variables with them, with some caveat:
@@ -205,7 +221,17 @@ ggsave(filename = 'img/retinal-variables-colours-1-raw.png',
   - Meanings associated to colours.
   - Perception. / lineaely percepted scales
   
-colors are the on that can replace the x, y aesthetcs out of the box, in a highly nuanced way.
+colors are the on that can replace the x, y aesthetics out of the box, in a highly nuanced way.
+
+## Colours, TO DO
+
+- What is HUE, what is value?
+- How to use HUE and value for qualitative and quantitative data.
+- linear, divergent, cyclical colour scales.
+- Daltonims, how to check for it.
+- Digital colours and hexcodes.
+- Colours in ggplot.
+- Available colour palettes.
 
 ## Shape
 
