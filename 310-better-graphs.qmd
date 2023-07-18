@@ -244,6 +244,8 @@ You can use colours to encode for categorical variables.
 
 If the categorical variable is not ordered you should modulate the colors hue, with also small changes to saturation and lightness.
 
+Always check if your colour palette is accessible by colour blind people.
+
 :::
 
 :::
@@ -269,9 +271,23 @@ ggsave(filename = 'img/retinal-v-color-categorical-raw.png',
 
 ![](img/retinal-v-color-categorical.png){.absolute top=50 left=500 style="z-index: -1;"}
 
-## Categorical Variables
+## Continous Variables
 
+::: {.columns}
 
+::: {.column width="45%"}
+
+Using colours to encode continuous variables is somehow easier.
+
+- Check that your colour palette is colour-blind friendly.
+- Check that lightness and saturation change consistently with the data.
+- You can modulate the hue resembling colours of natural phenomena; such as clouds, sunsets, rivers...
+
+:::
+
+:::
+
+![](img/retinal-variables-colours-1.png){.absolute top=50 left=500 style="z-index: -1;"}
 
 ## Colour
 
