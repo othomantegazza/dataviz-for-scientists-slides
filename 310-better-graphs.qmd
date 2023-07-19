@@ -253,6 +253,7 @@ Always check if your colour palette is accessible by colour blind people.
 ```{r}
 #| include: false
 #| eval: false
+
 library(palmerpenguins)
 library(paletteer)
 
@@ -288,6 +289,32 @@ Using colours to encode continuous variables is somehow easier.
 :::
 
 ![](img/retinal-variables-colours-1.png){.absolute top=50 left=500 style="z-index: -1;"}
+
+## Colour Perception
+
+![](img/colour-blind-perception.png){.absolute top=100 left=0}
+
+::: {.absolute left=0 bottom=70}
+
+::: {.columns}
+
+::: {.column width="49%"}
+
+If you check that your palette are friendly to colour blind people, you can also detect unwanted patterns perception patterns.
+
+:::
+
+::: {.column width="45%"}
+
+You can use [Firefox accessibility tools](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/simulation/index.html) to simulate colour blind perception.
+
+:::
+
+:::
+
+:::
+
+
 
 ## Colour
 
