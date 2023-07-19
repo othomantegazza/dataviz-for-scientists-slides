@@ -314,6 +314,42 @@ You can use [Firefox accessibility tools](https://firefox-source-docs.mozilla.or
 
 :::
 
+## Good Colour Palettes
+
+![](img/colour-palette-categorical.png){.absolute top=170 left=0}
+![](img/colour-palette-continuous.png){.absolute top=170 left=485}
+
+::: {.columns}
+
+::: {.column width="45%"}
+### Categorical
+
+<br>
+
+<br>
+
+In categorical palettes, you should be able to distinguish colours, even in small plotting characters.
+
+Check if colours are different, even when plotted in black and white. Otherwise consider using and additional graphical variable to encode the information.
+
+:::
+
+::: {.column width="45%"}
+### Quantitative
+
+<br>
+
+<br>
+
+Continuous colour palette should be perceived linearly and univocally throughout the spectra. Check that this is true also for color blindness and black and white.
+
+Treat **ordered categorical variables** as if they were quantitative, not categorical.
+
+
+:::
+
+:::
+
 
 
 ## Colour
