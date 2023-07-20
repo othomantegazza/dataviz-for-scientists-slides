@@ -9,6 +9,29 @@ knitr:
     dev: jpeg
 ---
 
+```{r}
+#| include: false
+library(tidyverse)
+library(palmerpenguins)
+library(paletteer)
+
+theme_set(
+  theme_minimal(
+    base_size = 15,
+  ) +
+  theme(
+    plot.margin = margin(20,5,5,5),
+    axis.text.x = element_text(hjust = 0),
+    axis.text.y = element_text(vjust = 0),
+    axis.ticks = element_line(),
+    axis.title = element_blank(),
+    axis.line = element_line(),
+    legend.position = "bottom"
+  )
+)
+```
+
+
 ##
 
 ![](img/1967-bertin-retinal-variables.png){.absolute top=0 left=0 width="1000"}
@@ -53,27 +76,6 @@ The x and y planar variables are largely perceived as a quantitative linear spac
 The planar variables are the x and y coordinates on your planar screen, which readily translate to the x and y positions in your graph.
 
 (f you use cartesian coordinates or to a transformed version of them if you use more elaborate coordinate systems)
-
-```{r}
-#| include: false
-
-library(tidyverse)
-
-theme_set(
-  theme_minimal(
-    base_size = 30,
-  ) +
-  theme(
-    plot.margin = margin(20,5,5,5),
-    axis.text.x = element_text(hjust = 0),
-    axis.text.y = element_text(vjust = 0),
-    axis.ticks = element_line(),
-    axis.title = element_blank(),
-    axis.line = element_line(),
-    legend.position = "bottom"
-  )
-)
-```
 
 
 ```{r}
@@ -364,7 +366,7 @@ Colours have meaning. Don't represent ice coverage in red, don't represent the w
 
 :::
 
-## Colours in R 
+## Colours in R
 
 ![](img/colour-paletteer-tokyo.png){.absolute top=0 left=500 style="z-index: -1;"}
 
@@ -381,6 +383,116 @@ The [palette gallery](https://pmassicotte.github.io/paletteer_gallery/#discrete-
 :::
 
 :::
+
+## Colours in R
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+Like any other graphical variables, colours in ggplot2 can be encoded with the family of functions:
+
+- scale_colour_*()
+- scale_fill_*()
+
+Check the documentation on [the ggplot2 book](https://ggplot2-book.org/scales.html).
+
+:::
+
+:::
+
+## Colours in R
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+diamonds %>%
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_bin_2d(
+    binwidth = c(0.01, 50)
+  ) +
+  scale_x_continuous(
+    expand = expansion(0, 0),
+    limits = c(.2, .75)
+  ) +
+  scale_y_continuous(
+    expand = expansion(0, 0),
+    limits = c(0, 2500)
+  ) +
+  guides(
+    fill = guide_colourbar(
+      barwidth = 13,
+      barheight = 1)
+  )
+```
+
+## Colours in R
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "12-15"
+diamonds %>%
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_bin_2d(
+    binwidth = c(0.01, 50)
+  ) +
+  scale_x_continuous(
+    expand = expansion(0, 0),
+    limits = c(.2, .75)
+  ) +
+  scale_y_continuous(
+    expand = expansion(0, 0),
+    limits = c(0, 2500)
+  ) +
+  scale_fill_viridis_c(
+    direction = -1,
+    option = 'G'
+  ) +
+  guides(
+    fill = guide_colourbar(
+      barwidth = 13,
+      barheight = 1)
+  )
+```
+
+## Colours in R
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      y = bill_depth_mm,
+      colour = species) +
+  geom_point(size  = 4) 
+```
+
+## Colours in R
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "7-9"
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      y = bill_depth_mm,
+      colour = species) +
+  geom_point(size  = 4) +
+  scale_color_paletteer_d(
+    "awtools::mpalette"
+  )
+```
 
 ## Colour
 
