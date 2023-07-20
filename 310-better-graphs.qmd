@@ -270,7 +270,7 @@ ggsave(filename = 'img/retinal-v-color-categorical-raw.png',
        height = 11)
 ```
 
-![](img/retinal-v-color-categorical.png){.absolute top=50 left=500 style="z-index: -1;"}
+![](img/retinal-v-color-categorical.png){.absolute top=70 left=500 style="z-index: -1;"}
 
 ## Continous Variables
 
@@ -288,7 +288,7 @@ Using colours to encode continuous variables is somehow easier.
 
 :::
 
-![](img/retinal-variables-colours-1.png){.absolute top=50 left=500 style="z-index: -1;"}
+![](img/retinal-variables-colours-1.png){.absolute top=70 left=500 style="z-index: -1;"}
 
 ## Colour Perception
 
@@ -350,7 +350,37 @@ Treat **ordered categorical variables** as if they were quantitative, not catego
 
 :::
 
+## Good Colour Palettes
 
+::: {.columns}
+
+::: {.column width="45%"}
+
+Remember, data viusalization is processed intuitively by the readers.
+
+Colours have meaning. Don't represent ice coverage in red, don't represent the warming of the ocean in blue, ask yourself if your colour palette is appropriate for the topic your data are about.
+
+:::
+
+:::
+
+## Colours in R 
+
+![](img/colour-paletteer-tokyo.png){.absolute top=0 left=500 style="z-index: -1;"}
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+There are plenty of colour palette available in R, so it's unlikely that you'll have to design your own.
+
+It's more likely that you'll have to be able to choose a good one.
+
+The [palette gallery](https://pmassicotte.github.io/paletteer_gallery/#discrete-palettes) from the [paletteer](https://emilhvitfeldt.github.io/paletteer/) package is a great place to start.
+
+:::
+
+:::
 
 ## Colour
 
