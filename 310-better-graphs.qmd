@@ -494,6 +494,74 @@ penguins %>%
   )
 ```
 
+## Shape 
+
+![](img/shapes-examples.png){.absolute top=0 left=500 style="z-index: -1;"}
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+You can use [point shapes](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html#point) to encode **categorical** information.
+
+Shapes are simple and easy to understand.
+
+They can't be used for quantitative data. They could be used for ordered categorical data, but I'd advise against it.
+
+:::
+
+:::
+
+## Shape
+
+```{r}
+#| eval: false
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      y = bill_depth_mm,
+      shape = species) +
+  geom_point(size  = 4,
+             stroke = 2) +
+  scale_shape(solid = FALSE)
+```
+
+```{r}
+#| include: false
+#| eval: false
+ggsave(
+  filename = 'img/retinal-shapes-raw.png',
+       width = 10,
+       height = 11)
+```
+
+![](img/retinal-shapes.png){.absolute top=0 left=500 style="z-index: -1;"}
+
+## Shape
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "6-10"
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      y = bill_depth_mm,
+      shape = species,
+      # double encoding 
+      # with colour
+      # some shapes can
+      # be filled
+      fill = species) +
+  geom_point(size  = 3,
+             stroke = 1) +
+  scale_shape_manual(
+    values = c(21, 24, 22)
+    )
+```
+
+
 ## Colour
 
 - colour ==> yes, use them, they make the graph nicer to see, you can encode continuous and categorica variables with them, with some caveat:
