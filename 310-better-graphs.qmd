@@ -604,30 +604,20 @@ penguins %>%
     )
 ```
 
+## Size and Area
 
-## Colour
 
-- colour ==> yes, use them, they make the graph nicer to see, you can encode continuous and categorica variables with them, with some caveat:
+::: {.columns}
 
-  - Daltonism or Colour blindness ==> Just test for it, use defined colour palettes.
-  - Meanings associated to colours.
-  - Perception. / lineaely percepted scales
-  
-colors are the on that can replace the x, y aesthetics out of the box, in a highly nuanced way.
+::: {.column width="45%"}
 
-## Colours, TO DO
+Linear size and area are widely mapped to quantitative values, such as absolute measurements and percentages.
 
-- What is HUE, what is value?
-- How to use HUE and value for qualitative and quantitative data.
-- linear, divergent, cyclical colour scales.
-- Daltonims, how to check for it.
-- Digital colours and hexcodes.
-- Colours in ggplot.
-- Available colour palettes.
+Size is often used together with colour to display a quantiative value stratified by a qualitative factor.
 
-## Shape
+:::
 
-Ok, also as double encoding, for printing etc.
+:::
 
 ## Size / Area, ok, how is it perceived?
 
