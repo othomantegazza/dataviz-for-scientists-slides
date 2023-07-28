@@ -1892,6 +1892,18 @@
       ],
       "Hash": "d683341b1fa2e8d817efde27d6e6d35b"
     },
+    "svglite": {
+      "Package": "svglite",
+      "Version": "2.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cpp11",
+        "systemfonts"
+      ],
+      "Hash": "29442899581643411facb66f4add846a"
+    },
     "sys": {
       "Package": "sys",
       "Version": "3.4.2",
