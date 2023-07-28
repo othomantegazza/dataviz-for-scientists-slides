@@ -384,6 +384,48 @@ The [palette gallery](https://pmassicotte.github.io/paletteer_gallery/#discrete-
 
 :::
 
+
+##
+
+![](img/2018-warming_stripes-ed-hawkins.png){.absolute top=0 left=0}
+
+::: {.caption .absolute left=0 bottom=0}
+
+::: {.columns}
+
+::: {.column width="31%"}
+
+WARMING STRIPES
+
+Year: 2018
+
+Author: Ed Hawkins
+
+Source: [Climate Lab Book](https://en.wikipedia.org/wiki/File:20181204_Warming_stripes_(global,_WMO,_1850-2018)_-_Climate_Lab_Book_(Ed_Hawkins).png)
+
+:::
+
+::: {.column width="31%"}
+
+*Researcher Ed Hawkins was searching for an intuitive way to represent global warming.*
+
+*He designed the concept of climate stripes, removing everything that's not a direct mapping of data from an heatmap of average temperature.*
+
+:::
+::: {.column width="31%"}
+
+On the x axis, each stripe is a year, from the year when the first data recording is available reliably.
+
+The colour represents the relative change in temperature.
+
+The y axis is not mapped to the data.
+
+:::
+
+:::
+
+:::
+
 ## Colours in R
 
 ::: {.columns}
@@ -506,7 +548,7 @@ You can use [point shapes](https://ggplot2.tidyverse.org/articles/ggplot2-specs.
 
 Shapes are simple and easy to understand.
 
-They can't be used for quantitative data. They could be used for ordered categorical data, but I'd advise against it.
+They can't be used for quantitative data. They could be used for ordered categorical data, but I'd advise against this practice.
 
 :::
 
@@ -543,16 +585,17 @@ ggsave(
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "6-10"
+#| code-line-numbers: "5-11"
 penguins %>% 
   ggplot() +
   aes(x = bill_length_mm,
       y = bill_depth_mm,
+      # you can use both
+      # shape and colour
+      # together
+      # to represent the 
+      # same variable:
       shape = species,
-      # double encoding 
-      # with colour
-      # some shapes can
-      # be filled
       fill = species) +
   geom_point(size  = 3,
              stroke = 1) +
