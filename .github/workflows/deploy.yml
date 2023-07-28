@@ -1,5 +1,9 @@
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+    branches:
+      - 'deploy'
+    
   
 name: "Render and Publish"
 
