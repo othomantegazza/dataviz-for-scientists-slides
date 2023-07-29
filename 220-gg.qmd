@@ -119,7 +119,7 @@ Let's describe three historical graphs in terms of the Grammar of Graphics.
 
 ![](img/robert-plots-history-of-the-weather.png){.absolute top=0 right=350 height="750"}
 
-::: {.caption .absolute left=720 top=0}
+::: {.caption .absolute left=740 top=0}
 
 Describe the weather history by Robert Plot.
 
