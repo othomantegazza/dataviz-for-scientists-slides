@@ -56,7 +56,7 @@ tiger_attack %>%
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="35%"}
 
 On the left hand column, I've printed around 2500 data points.
 
@@ -103,7 +103,7 @@ tiger_attack %>%
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="35%"}
 
 Do summary statistics help?
 
@@ -118,7 +118,7 @@ In general they do, but in this case?
 
 :::: columns
 
-::: {.column width="80%"}
+::: {.column width="77%"}
 
 ```{r}
 #| echo: false
@@ -157,7 +157,7 @@ What if I use a graph, showing the trend of the data.
 
 :::: columns
 
-::: {.column width="80%"}
+::: {.column width="77%"}
 
 ```{r}
 #| echo: false
@@ -187,7 +187,7 @@ Making the trend line more nuanced.
 
 :::: columns
 
-::: {.column width="80%"}
+::: {.column width="77%"}
 
 ```{r}
 #| echo: false
@@ -221,7 +221,7 @@ Even more....
 
 :::: columns
 
-::: {.column width="80%"}
+::: {.column width="77%"}
 
 
 ```{r}
