@@ -5,6 +5,9 @@ project:
   output-dir: docs
   render: 
     - "*.qmd"
+  resources: 
+    - img/
+    - fonts/
   
 format:
   revealjs:
