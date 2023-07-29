@@ -42,13 +42,7 @@ jobs:
         run : |
           quarto render
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: 'docs/'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
-        
+      - name: Deploy on Netlify
+        run: |
+          npm install netlify-cli
+          netlify deploy --dir=docs --prod --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_TOKEN }}
