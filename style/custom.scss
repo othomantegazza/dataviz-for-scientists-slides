@@ -215,6 +215,12 @@ div.caption {
   list-style-position: inside;
 }
 
+/*-- code cell --*/
+
+.reveal div.sourceCode {
+  border: 0px;
+}
+
 /*-- exercise --*/
 
 section[id*=exercise] h2 {
