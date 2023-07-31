@@ -21,7 +21,7 @@ theme_set(
 ```
 
 
-## {background-image="img/minard-russian-campaign.png" background-size="contain" background-repeat="no-repeat"}
+## {background-image="img/minard-russian-campaign.jpg" background-size="contain" background-repeat="no-repeat"}
 
 ## Can you Describe a Graph?
 
@@ -201,7 +201,7 @@ Can you do it with the Grammar of Graphics as before? How many layers of informa
 
 ::::
 
-## {background-image="img/windy.png" background-size="cover" background-repeat="no-repeat"}
+## {background-image="img/windy.jpg" background-size="cover" background-repeat="no-repeat"}
 
 ##
 
