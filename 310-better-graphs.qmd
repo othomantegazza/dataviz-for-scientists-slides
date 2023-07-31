@@ -34,7 +34,7 @@ theme_set(
 
 ##
 
-![](img/1967-bertin-retinal-variables.png){.absolute top=0 left=0 width="1000"}
+![](img/1967-bertin-retinal-variables.jpg){.absolute top=0 left=0 width="1000"}
 
 ::: {.caption .absolute left=760 top=340}
 

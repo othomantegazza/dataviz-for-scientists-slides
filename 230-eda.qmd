@@ -26,7 +26,7 @@ theme_set(
 ```
 
 
-![](img/tukey-boxplot.png){.absolute top=0 right=0 height="750"}
+![](img/tukey-boxplot.jpg){.absolute top=0 right=0 height="750"}
 
 ::: {.caption .rev .absolute right=850 bottom=0}
 
@@ -80,7 +80,7 @@ When you explore data, you have to turn them into insightful formats. Most of th
 
 ##
 
-![](img/tukey-stem-and-leaf.png){.absolute top=0 left=350 height="700"}
+![](img/tukey-stem-and-leaf.jpg){.absolute top=0 left=350 height="700"}
 
 ::: {.caption .rev .absolute right=700 bottom=0}
 
@@ -114,7 +114,7 @@ The [Tidy Data Theory](https://tidyr.tidyverse.org/articles/tidy-data.html) lets
 
 ##
 
-![](img/tidy-data-theory.png){.absolute top=50 left=0 width="1000"}
+![](img/tidy-data-theory.jpg){.absolute top=50 left=0 width="1000"}
 
 ::: {.caption .absolute left=0 bottom=0}
 
