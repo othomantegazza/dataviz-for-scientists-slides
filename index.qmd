@@ -2,8 +2,6 @@
 format: html
 ---
 
-[Master Slides](000-slide-design.html)
-
 # Day 1 
 
 ## Morning
