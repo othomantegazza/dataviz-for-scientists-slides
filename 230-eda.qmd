@@ -15,7 +15,7 @@ knitr:
 #| include: false
 library(tidyverse)
 theme_set(
-  theme_gray(base_size = 12) +
+  theme_gray(base_size = 15) +
     theme(
       legend.position = "bottom",
       legend.box="vertical",
@@ -655,7 +655,12 @@ d_fit %>%
     geom = 'tile'
   ) +
   geom_hline(yintercept = 0,
-             colour = 'blue')
+             colour = 'blue') +
+  scale_fill_continuous(
+    guide = guide_colorbar(
+      barwidth = 15
+    )
+  )
 ```
 
 ## Heatmap
@@ -664,7 +669,7 @@ d_fit %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "21-24" 
+#| code-line-numbers: "21-27" 
 d_fit <- linear_reg() %>% 
   fit(price ~ poly(x, 2),
       data = d_clean) %>% 
@@ -688,7 +693,10 @@ d_fit %>%
   # use colors intuitively
   scale_fill_viridis_c(
     direction = -1,
-    option = 'G')
+    option = 'G',
+    guide = guide_colorbar(
+      barwidth = 15
+    ))
 ```
 
 ## Pairs

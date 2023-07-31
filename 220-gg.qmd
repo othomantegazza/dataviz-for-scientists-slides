@@ -10,7 +10,7 @@ editor_options:
 #| include: false
 library(tidyverse)
 theme_set(
-  theme_gray(base_size = 12) +
+  theme_gray(base_size = 15) +
     theme(legend.position = "bottom",
           legend.box="vertical",
           legend.spacing = unit(2, 'mm'),
