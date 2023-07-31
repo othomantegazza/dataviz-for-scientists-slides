@@ -217,3 +217,5 @@ Size: 700 X width
 - JPEG if no transparent areas, otherwise PNG.
 - Full size: width 1500 or height 900, smaller if not full page
 - Resolution: 2 px/mm
+
+⇒ Remember that if you change the resolution of an image in GIMP, its weight remains the same. If you want to maka an image lighter, you have to change its size.
