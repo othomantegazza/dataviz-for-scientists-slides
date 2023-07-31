@@ -200,7 +200,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Excepte
 ![](img/hierogyph-cursive.jpg){.absolute top=0 right=350 height="700"}
 
 
-::: {.caption .absolute left=700 bottom=0}
+::: {.caption .absolute left=720 bottom=0}
 
 CAPTION HEAD
 
@@ -211,3 +211,9 @@ Size: 700 X width
 *Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*
 
 :::
+
+## Image Guidelines
+
+- JPEG if no transparent areas, otherwise PNG.
+- Full size: width 1500 or height 900, smaller if not full page
+- Resolution: 2 px/mm
