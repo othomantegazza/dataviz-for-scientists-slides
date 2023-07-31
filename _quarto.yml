@@ -19,5 +19,5 @@ format:
 
 knitr:
   opts_chunk: 
-    dev: svglite
+    dev: jpeg
 
