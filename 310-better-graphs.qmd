@@ -606,7 +606,6 @@ penguins %>%
 
 ## Size and Area
 
-
 ::: {.columns}
 
 ::: {.column width="45%"}
@@ -618,6 +617,31 @@ Size is often used together with colour to display a quantiative value stratifie
 :::
 
 :::
+
+##
+
+```{r}
+#| eval: false
+
+# penguins %>% 
+#   ggplot() +
+#   aes(y = island,
+#       fill = species) +
+#   geom_bar()
+
+diamonds %>% 
+  ggplot() +
+  aes(y = color,
+      fill = clarity) +
+  geom_bar()
+
+diamonds %>% 
+  ggplot() +
+  aes(y = color,
+      fill = clarity) +
+  geom_bar(position = 'fill')
+```
+
 
 ## Size / Area, ok, how is it perceived?
 
