@@ -16,12 +16,14 @@ knitr:
 library(tidyverse)
 theme_set(
   theme_gray(base_size = 12) +
-    theme(legend.position = "bottom",
-          legend.box="vertical",
-          legend.spacing = unit(2, 'mm'),
-          legend.margin = margin(1,1,1,1),
-          plot.margin = margin(0,1,1,1)
-          )
+    theme(
+      legend.position = "bottom",
+      legend.box="vertical",
+      legend.spacing = unit(2, 'mm'),
+      legend.margin = margin(1,1,1,1),
+      plot.margin = margin(0,1,1,1),
+      text = element_text(family = "sans")
+    )
 ) 
 ```
 
@@ -114,7 +116,7 @@ The [Tidy Data Theory](https://tidyr.tidyverse.org/articles/tidy-data.html) lets
 
 ##
 
-![](img/tidy-data-theory.jpg){.absolute top=50 left=0 width="1000"}
+![](img/tidy-data-theory.jpg ){.absolute top=50 left=0 width="1000"}
 
 ::: {.caption .absolute left=0 bottom=0}
 
