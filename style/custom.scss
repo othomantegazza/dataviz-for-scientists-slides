@@ -10,13 +10,15 @@
 
 /*-- scss:defaults --*/
 
-$font-family-sans-serif: Helvetica Neue;
+$font-family-sans-serif: Helvetica Neue, Lato, Verdana, sans-serif;
 $font-family-monospace: IBM Plex Mono;
 $presentation-font-size-root: 30px;
 $presentation-h2-font-size: 2.34em;
 $presentation-h3-font-size: 1em;
 
 /*-- scss:rules --*/
+
+/*-- fonts --*/
  
 @font-face {
   font-family:  Noto Serif;
@@ -37,9 +39,39 @@ $presentation-h3-font-size: 1em;
   font-weight: 300 399;
   font-style: italic;
 }
+
+@font-face {
+  font-family: Lato;
+  src: url("../../../../../fonts/Lato-Bold.ttf");
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../../../../../fonts/Lato-Light.ttf");
+  font-weight: 200 399;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../../../../../fonts/Lato-BoldItalic.ttf");
+  font-weight: 400 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../../../../../fonts/Lato-LightItalic.ttf");
+  font-weight: 200 399;
+  font-style: italic;
+}
+
+/*-- variables --*/ 
  
  :root {
-    --title-font: Noto Serif;
+    --title-font: Noto Serif, Serif;
     /*--  --accent-color-opaque: #9e019e33; --*/
     --body-font: Helvetica Neue;
     --h2-color: #f44702;
