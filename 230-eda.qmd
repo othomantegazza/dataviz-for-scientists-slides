@@ -21,8 +21,7 @@ theme_set(
       legend.box="vertical",
       legend.spacing = unit(2, 'mm'),
       legend.margin = margin(1,1,1,1),
-      plot.margin = margin(0,1,1,1),
-      text = element_text(family = "sans")
+      plot.margin = margin(0,1,1,1)
     )
 ) 
 ```
