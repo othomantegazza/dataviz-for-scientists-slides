@@ -161,7 +161,7 @@ Topic: Gregorian Chant
 
 ##
 
-![](img/chopin-prelude.png){.absolute top=0 left=0 width="1000"}
+![](img/chopin-prelude.jpg){.absolute top=0 left=0 width="1000"}
 
 ::: {.caption .absolute left=0 bottom=0}
 
