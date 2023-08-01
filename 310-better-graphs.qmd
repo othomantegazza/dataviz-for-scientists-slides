@@ -97,7 +97,7 @@ ggsave(filename = 'img/planar-variables-raw.png',
        height = 10)
 ```
 
-![](img/planar-variables.png){.absolute top=50 left=500}
+![](img/planar-variables.png){.absolute top=110 left=500 width=600}
 
 :::
 
@@ -117,7 +117,7 @@ Often there is no clear hypothetical relationship of cause effect between two va
 
 :::
 
-![](img/planar-variables-categorical.png){.absolute top=50 left=500 width=650}
+![](img/planar-variables-categorical.png){.absolute top=110 left=500 width=600}
 
 ```{r}
 #| include: false
@@ -197,7 +197,7 @@ ggsave(filename = 'img/retinal-variables-colours-1-raw.png',
        height = 12)
 ```
 
-![](img/retinal-variables-colours-1.png){.absolute top=50 left=500}
+![](img/retinal-variables-colours-1.png){.absolute top=110 left=500 width=500}
 
 ## Color Spaces
 
@@ -272,7 +272,7 @@ ggsave(filename = 'img/retinal-v-color-categorical-raw.png',
        height = 11)
 ```
 
-![](img/retinal-v-color-categorical.png){.absolute top=70 left=500 style="z-index: -1;"}
+![](img/retinal-v-color-categorical.png){.absolute top=110 left=500 width=550 style="z-index: -1;"}
 
 ## Continous Variables
 
@@ -290,7 +290,7 @@ Using colours to encode continuous variables is somehow easier.
 
 :::
 
-![](img/retinal-variables-colours-1.png){.absolute top=70 left=500 style="z-index: -1;"}
+![](img/retinal-variables-colours-1.png){.absolute top=110 left=500 width=500 style="z-index: -1;"}
 
 ## Colour Perception
 
@@ -443,7 +443,7 @@ Check the documentation on [the ggplot2 book](https://ggplot2-book.org/scales.ht
 
 :::
 
-## Colours in R
+## Colours in R - Continuous
 
 ```{r}
 #| output-location: column
@@ -471,7 +471,7 @@ diamonds %>%
   )
 ```
 
-## Colours in R
+## Colours in R - Continuous
 
 ```{r}
 #| output-location: column
@@ -504,7 +504,7 @@ diamonds %>%
   )
 ```
 
-## Colours in R
+## Colours in R - Categorical
 
 ```{r}
 #| output-location: column
@@ -518,7 +518,7 @@ penguins %>%
   geom_point(size  = 4) 
 ```
 
-## Colours in R
+## Colours in R - Categorical
 
 ```{r}
 #| output-location: column
@@ -538,7 +538,7 @@ penguins %>%
 
 ## Shape 
 
-![](img/shapes-examples.png){.absolute top=0 left=500 style="z-index: -1;"}
+![](img/shapes-examples.png){.absolute top=110 left=500  style="z-index: -1;"}
 
 ::: {.columns}
 
@@ -577,7 +577,7 @@ ggsave(
        height = 11)
 ```
 
-![](img/retinal-shapes.png){.absolute top=0 left=500 style="z-index: -1;"}
+![](img/retinal-shapes.png){.absolute top=110 left=500 width=550 style="z-index: -1;"}
 
 ## Shape
 
