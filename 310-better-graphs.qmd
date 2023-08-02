@@ -353,7 +353,7 @@ Check if colours are different, even when plotted in black and white. Otherwise 
 
 Continuous colour palette should be perceived linearly and univocally throughout the spectra. Check that this is true also for color blindness and black and white.
 
-Treat **ordered categorical variables** as if they were quantitative, not categorical.
+You should handle **ordered categorical variables** as if they were quantitative, not categorical.
 
 
 :::
@@ -433,6 +433,11 @@ The y axis is not mapped to the data.
 :::
 
 :::
+
+## Exercise
+
+Check the climate stripes with a tool to simulate colour blind vision. Are the climate stripes colour blind friendly? Motivate your anwser.
+
 
 ## Colours in R
 
@@ -556,7 +561,7 @@ You can use [point shapes](https://ggplot2.tidyverse.org/articles/ggplot2-specs.
 
 Shapes are simple and easy to understand.
 
-They can't be used for quantitative data. They could be used for ordered categorical data, but I'd advise against this practice.
+They can't be used to represent quantitative data. They could be used for ordered categorical data, but I'd advise against this practice.
 
 :::
 
@@ -618,7 +623,7 @@ penguins %>%
 
 ::: {.column width="45%"}
 
-Linear size and area are widely mapped to quantitative values, such as absolute measurements and percentages.
+Linear size and area are often mapped to quantitative values, such as absolute measurements and percentages.
 
 Size is often used together with colour to display a quantiative value stratified by a qualitative factor.
 
@@ -677,8 +682,7 @@ diamonds %>%
 
 ::: {.column width="45%"}
 
-Mapping data to the length of bars is perceived linearly, and is the same as mapping it to the y map.
-
+Even if bars have an area that is directly proportional to the values in the data, when we use a barolot, we are map the data to the length of the bars, not to the area. Otherwise we could not represent negative values.
 :::
 
 :::
@@ -686,24 +690,26 @@ Mapping data to the length of bars is perceived linearly, and is the same as map
 ## Size and Area
 
 ```{r}
+#| eval: false
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
 #| code-line-numbers: "4-8"
 diamonds %>% 
   ggplot() +
-  aes(y = color,
+  aes(x = color,
       fill = clarity) +
   geom_bar(position = 'fill') +
-  scale_x_continuous(
+  scale_y_continuous(
     expand = expansion(
       mult = c(0, .01)
     )
   ) +
-  coord_polar() +
-  facet_wrap(
-    facets = "color"
-    )
+  coord_polar(theta = "y") +
+  facet_grid(
+    facets = "color", scales = "free"
+    ) +
+  theme(aspect.ratio = 1)
 ```
 
 
