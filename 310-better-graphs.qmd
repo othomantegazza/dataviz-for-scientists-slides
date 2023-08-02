@@ -20,7 +20,7 @@ theme_set(
     base_size = 15,
   ) +
   theme(
-    plot.margin = margin(20,5,5,5),
+    plot.margin = margin(10,5,5,5),
     axis.text.x = element_text(hjust = 0),
     axis.text.y = element_text(vjust = 0),
     axis.ticks = element_line(),
@@ -29,6 +29,14 @@ theme_set(
     legend.position = "bottom"
   )
 )
+
+map_to_circle_area <- function(val, max, max_out = 1) {
+  r <- sqrt(val/pi)
+  max_r <- sqrt(max/ pi)
+  r <- scales::rescale(r, from = c(0, max_r), to = c(0, max_out))
+  return(r)
+}
+  
 ```
 
 
@@ -618,28 +626,84 @@ Size is often used together with colour to display a quantiative value stratifie
 
 :::
 
-##
+## Size and Area
 
 ```{r}
-#| eval: false
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4-8"
+# color and clarity of diamonds
+# are ordered categorical 
+# variables
+diamonds %>%
+  ggplot() +
+  aes(y = color,
+      fill = clarity) +
+  geom_bar() +
+  scale_x_continuous(
+    expand = expansion(
+      mult = c(0, .01)
+    )
+  ) 
+```
 
-# penguins %>% 
-#   ggplot() +
-#   aes(y = island,
-#       fill = species) +
-#   geom_bar()
 
+## Size and Area
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4-8"
+# You can show percentages
+# instead of the
+# absolute count
 diamonds %>% 
   ggplot() +
   aes(y = color,
       fill = clarity) +
-  geom_bar()
+  geom_bar(position = 'fill') +
+  scale_x_continuous(
+    expand = expansion(
+      mult = c(0, .01)
+    )
+  )
+```
 
+## Size and Area
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+Mapping data to the length of bars is perceived linearly, and is the same as mapping it to the y map.
+
+:::
+
+:::
+
+## Size and Area
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4-8"
 diamonds %>% 
   ggplot() +
   aes(y = color,
       fill = clarity) +
-  geom_bar(position = 'fill')
+  geom_bar(position = 'fill') +
+  scale_x_continuous(
+    expand = expansion(
+      mult = c(0, .01)
+    )
+  ) +
+  coord_polar() +
+  facet_wrap(
+    facets = "color"
+    )
 ```
 
 
