@@ -15,11 +15,10 @@ library(tidyverse)
 library(palmerpenguins)
 library(paletteer)
 
-theme_set(
-  theme_minimal(
-    base_size = 15,
-  ) +
-  theme(
+base_size <- 15
+
+theme_base <- 
+    theme(
     plot.margin = margin(10,5,5,5),
     axis.text.x = element_text(hjust = 0),
     axis.text.y = element_text(vjust = 0),
@@ -28,6 +27,12 @@ theme_set(
     axis.line = element_line(),
     legend.position = "bottom"
   )
+
+a <- theme_set(
+  theme_minimal(
+    base_size = base_size,
+  ) +
+    theme_base
 )
 
 map_to_circle_area <- function(val, max, max_out = 1) {
@@ -631,7 +636,7 @@ Size is often used together with colour to display a quantiative value stratifie
 
 :::
 
-## Size and Area
+## Size - Bar Chart
 
 ```{r}
 #| output-location: column
@@ -654,7 +659,7 @@ diamonds %>%
 ```
 
 
-## Size and Area
+## Size - Bar Chart
 
 ```{r}
 #| output-location: column
@@ -676,42 +681,65 @@ diamonds %>%
   )
 ```
 
-## Size and Area
+## Size - Bar Chart
 
 ::: {.columns}
 
 ::: {.column width="45%"}
 
-Even if bars have an area that is directly proportional to the values in the data, when we use a barolot, we are map the data to the length of the bars, not to the area. Otherwise we could not represent negative values.
-:::
+When we use a barolot, we  map the data to the length of the bars, not to the area.
+
+The area of the bars is directly proportional to the data values.
+
+Though, conceptually, if we would be mapping the data to  the bars' area instead of their length, we could no represent negative values.
 
 :::
 
-## Size and Area
+:::
+
+## Area - Pie Chart
 
 ```{r}
-#| eval: false
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "4-8"
-diamonds %>% 
+#| code-line-numbers: "3-7"
+diamonds %>%
+  filter(color == "J") %>% 
   ggplot() +
   aes(x = color,
       fill = clarity) +
   geom_bar(position = 'fill') +
-  scale_y_continuous(
+  coord_polar(theta = "y") +
+  scale_y_reverse(
     expand = expansion(
-      mult = c(0, .01)
+      mult = c(0, 0)
     )
   ) +
-  coord_polar(theta = "y") +
-  facet_grid(
-    facets = "color", scales = "free"
-    ) +
-  theme(aspect.ratio = 1)
+  theme_void(
+    base_size = base_size
+  ) +
+  theme(
+    legend.position = "bottom",
+    plot.margin = margin(10,5,5,5)
+    )
 ```
 
+## Area - Pie Chart
+
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+
+Pie charts get a bad reputation for not being a nuanced analytical graphs.
+
+Anyway pie charts are effective at representing percentages, and they outscore barcharts when the number of slices is high.
+
+:::
+
+:::
 
 ## Size / Area, ok, how is it perceived?
 
