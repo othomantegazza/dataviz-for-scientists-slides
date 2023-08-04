@@ -727,17 +727,33 @@ diamonds %>%
 
 ## Area - Pie Chart
 
-
 ::: {.columns}
 
 ::: {.column width="45%"}
-
 
 Pie charts get a bad reputation for not being a nuanced analytical graphs.
 
 Anyway pie charts are effective at representing percentages, and they outscore barcharts when the number of slices is high.
 
 Can you describe the pie chart from the previous page in terms of the grammar of graphics?
+
+:::
+
+:::
+
+## Area of Circles and Shapes
+
+![](img/retinal-variable-circle-area.svg){.absolute top=110 left=500 width=450}
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+You can encode a continuous variable in the area of the circles in a scatterplot, or in the area the plotting character of your choice.
+
+Our perception is not as good at comparing areas, so use this retinal variable with parsimony.
+
+You can map data to the radius of circles or to the area directly. Mapping data to the area directly might be slightly better, although neither chioice is optimal, 
 
 :::
 
