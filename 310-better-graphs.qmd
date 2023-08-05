@@ -854,6 +854,60 @@ Is it good for encoding uncertainty?
 
 ## Orientation
 
+```{r}
+#| include: false
+# deg2rad <-
+#   function(deg) {
+#     deg*pi/180
+#   }
+
+# wind %>% 
+#   mutate(dir_rad = deg2rad(dir),
+#          cos = cos(dir_rad),
+#          speed_x = cos*speed) %>% view()
+```
+
+```{r}
+#| output-location: column
+#| fig-width: 6
+#| fig-height: 6
+#| code-line-numbers: "6-24"
+load('data/wind.data.RData')
+wind <- wind.data
+rm(wind.data)
+wind %>%
+  filter(lon > -5) %>% 
+  ggplot() +
+  aes(
+    x = lon,
+    y = lat,
+    xend = (
+      lon + speed*cos(
+        dir*pi/180
+      )/20
+    ),
+    yend = (
+      lat + speed*sin(
+        dir*pi/180
+      )/20
+    )
+  ) +
+  geom_segment(
+    arrow = arrow(
+      length = unit(1, 'mm')
+    )
+  ) +
+  scale_x_continuous(
+    expand = expansion(
+      mult = c(.01, .01))
+  ) +
+  scale_y_continuous(
+    expand = expansion(
+      mult = c(.01, .01))
+  ) +
+  coord_fixed()
+```
+
 very specific
 
 ## Texture
