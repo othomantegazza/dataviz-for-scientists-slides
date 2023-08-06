@@ -951,6 +951,20 @@ There's evidence that we intuitively associate the size of the cone to the forec
 
 :::
 
+## Area As Uncertainty
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+How to represent uncertainty is an active area of research.
+
+You can check [Dr. Lace Padilla's Work](https://psyarxiv.com/ebd6r/), for an overview of the best practices and the latest findings.
+
+:::
+
+:::
+
 ## Orientation
 
 ![](img/orientation.jpg){.absolute top=140 left=700}
