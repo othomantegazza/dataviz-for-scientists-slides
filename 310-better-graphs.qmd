@@ -858,9 +858,80 @@ A light coloured area is often used to encode for a measurement of uncertainty o
 
 For example, the confidence interval of a regression model, or the prediction of how a natural phenomena will evolve in space and time.
 
+How to represent uncertainty intuituvely, is an active field of research.
+
 :::
 
 :::
+
+## Area As Uncertainty
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: ""
+msleep %>%
+  ggplot() +
+  aes(
+    x = bodywt,
+    y = brainwt
+  ) +
+  geom_point() +
+  geom_smooth(
+    method = lm,
+    colour = '#f44702'
+  ) +
+  scale_x_log10() +
+  scale_y_log10()
+```
+
+## Area As Uncertainty
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: ""
+mpg %>% 
+  ggplot() +
+  aes(
+    x = displ,
+    y = hwy
+  ) +
+  geom_point(
+    alpha = .7
+  ) +
+  geom_smooth(
+    colour = '#f44702'
+  ) 
+```
+
+```{r}
+#| eval: false 
+p <- 
+  mpg %>% 
+  ggplot() +
+  aes(
+    x = displ,
+    y = hwy
+  ) +
+  geom_point(
+    alpha = .7
+  ) +
+  geom_smooth(
+    colour = '#f44702'
+  ) 
+
+ggsave(
+  filename = 'img/uncertainty-area.svg',
+  plot = p
+)
+```
+
+## Area As Uncertainty
+
+![](img/uncertainty-area.jpg){.absolute top=100 left=500 width=500}
 
 ## Orientation
 
