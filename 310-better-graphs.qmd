@@ -937,6 +937,20 @@ ggsave(
 
 ![](img/uncertainty-cone.jpg){.absolute top=0 left=0 width=700}
 
+::: {.caption .absolute left=730 top=0}
+
+HURRICANE PROBABILITY CONE
+
+Year: Current
+
+Website: [NOAA - Hurricane Center](https://www.nhc.noaa.gov/aboutcone.shtml)
+
+*The cone shows the forcasted path of the hurricane, from its current position. The size of the cone grows with the uncertainty in the path's forecast*
+
+There's evidence that we intuitively associate the size of the cone to the forecasted size of the hurricane, not to the uncertainty of its path.
+
+:::
+
 ## Orientation
 
 ![](img/orientation.jpg){.absolute top=140 left=700}
