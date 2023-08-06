@@ -848,9 +848,19 @@ msleep %>%
 ```
 
 
-## Size / Area, ok, how is it perceived?
+## Area As Uncertainty
 
-Is it good for encoding uncertainty?
+::: {.columns}
+
+::: {.column width="45%"}
+
+A light coloured area is often used to encode for a measurement of uncertainty or dispersion of the data.
+
+For example, the confidence interval of a regression model, or the prediction of how a natural phenomena will evolve in space and time.
+
+:::
+
+:::
 
 ## Orientation
 
