@@ -869,14 +869,14 @@ Is it good for encoding uncertainty?
 
 ```{r}
 #| output-location: column
-#| fig-width: 6
+#| fig-width: 5
 #| fig-height: 6
 #| code-line-numbers: "6-24"
 load('data/wind.data.RData')
 wind <- wind.data
 rm(wind.data)
 wind %>%
-  filter(lon > -5) %>% 
+  filter(lon > -7) %>%
   ggplot() +
   aes(
     x = lon,
@@ -905,7 +905,8 @@ wind %>%
     expand = expansion(
       mult = c(.01, .01))
   ) +
-  coord_fixed()
+  coord_map() +
+  theme(plot.margin = margin(0,0,0,0))
 ```
 
 very specific
