@@ -929,7 +929,7 @@ wind %>%
 
 ## Orientation and Size
 
-```{r}
+```{r orientation-size}
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
@@ -972,6 +972,10 @@ wind %>%
   )
 ```
 
+## Orientation and Size
+
+![](img/orientation-labels.svg){.absolute top=130 left=0 width=400}
+![](310-better-graphs_files/figure-revealjs/orientation-size-1.jpeg){.absolute top=110 left=550 width=500}
 
 ## Texture
 
