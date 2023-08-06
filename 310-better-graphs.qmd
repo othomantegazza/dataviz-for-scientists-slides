@@ -854,6 +854,32 @@ Is it good for encoding uncertainty?
 
 ## Orientation
 
+::: {.columns}
+
+::: {.column width="45%"}
+
+The orientation of plotting characters is used to show the vectorial orientation of dimensions such as wind or other types of movements on a map.
+
+The orientation of plotting characters is often used combined with their length, to show intensity and direction.
+
+:::
+
+:::
+
+## Orientation
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+In ggplot there is no way to control the orientation of a plotting character directly. So you'll have to use a segments, calculating their start and end points from data.
+
+:::
+
+:::
+
+## Orientation
+
 ```{r}
 #| include: false
 # deg2rad <-
@@ -909,7 +935,6 @@ wind %>%
   theme(plot.margin = margin(0,0,0,0))
 ```
 
-very specific
 
 ## Texture
 
