@@ -881,26 +881,59 @@ In ggplot there is no way to control the orientation of a plotting character dir
 ## Orientation
 
 ```{r}
-#| include: false
-# deg2rad <-
-#   function(deg) {
-#     deg*pi/180
-#   }
-
-# wind %>% 
-#   mutate(dir_rad = deg2rad(dir),
-#          cos = cos(dir_rad),
-#          speed_x = cos*speed) %>% view()
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4,6-24"
+load('data/wind.data.RData')
+wind <- wind.data
+rm(wind.data)
+wind %>%
+  filter(lon > -7) %>%
+  ggplot() +
+  aes(
+    x = lon,
+    y = lat,
+    xend = (
+      lon + cos(
+        dir*pi/180
+      )/5
+    ),
+    yend = (
+      lat + sin(
+        dir*pi/180
+      )/5
+    )
+  ) +
+  geom_segment(
+    arrow = arrow(
+      length = unit(1, 'mm')
+    )
+  ) +
+  scale_x_continuous(
+    expand = expansion(
+      mult = c(.01, .01))
+  ) +
+  scale_y_continuous(
+    expand = expansion(
+      mult = c(.01, .01))
+  ) +
+  coord_map() +
+  theme(
+    plot.margin = margin(
+      0, 0, 0, 0
+    )
+    )
 ```
+
+
+## Orientation and Size
 
 ```{r}
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "6-24"
-load('data/wind.data.RData')
-wind <- wind.data
-rm(wind.data)
+#| code-line-numbers: "8,13"
 wind %>%
   filter(lon > -7) %>%
   ggplot() +
@@ -932,7 +965,11 @@ wind %>%
       mult = c(.01, .01))
   ) +
   coord_map() +
-  theme(plot.margin = margin(0,0,0,0))
+  theme(
+    plot.margin = margin(
+      0 ,0 ,0, 0
+    )
+  )
 ```
 
 
