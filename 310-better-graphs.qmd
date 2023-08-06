@@ -931,9 +931,15 @@ ggsave(
 
 ## Area As Uncertainty
 
-![](img/uncertainty-area.jpg){.absolute top=100 left=500 width=500}
+![](img/uncertainty-area.jpg){.absolute top=140 left=500 width=500}
+
+##
+
+![](img/uncertainty-cone.jpg){.absolute top=0 left=0 width=700}
 
 ## Orientation
+
+![](img/orientation.jpg){.absolute top=140 left=700}
 
 ::: {.columns}
 
@@ -948,6 +954,8 @@ The orientation of plotting characters is often used combined with their length,
 :::
 
 ## Orientation
+
+![](img/orientation.jpg){.absolute top=140 left=700}
 
 ::: {.columns}
 
