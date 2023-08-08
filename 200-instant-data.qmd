@@ -58,12 +58,12 @@ tiger_attack %>%
 
 ::: {.column width="35%"}
 
-On the left hand column, I've printed around 2500 data points.
+On the left side, I've printed around 2500 data points.
 
 There's a very peculiar content hidden in those data.
 
 Is this enough to convince you that we, human, are very bad at
-recognizing pattern from raw data; if data are presented to us in alphanumeric form?
+recognizing pattern from raw data, if data are presented to us in alphanumeric form?
 
 :::
 
