@@ -208,7 +208,7 @@ In that period, data visualization as we know i, was born under the name of "Sta
 :::
 ::::
 
-## Two Builing Blocks
+## Builing Blocks
 
 :::: {.columns}
 
@@ -220,16 +220,29 @@ Analytical Geometry started with the work on the [Cartesian System](https://en.w
 
 In a plane, the cartesian system is a coordinate system that specifies each point univocally as a pair of real numbers, the distances from two perpendicular axes.
 
-It was invented in parallel by Descartes and Fermat in 17^th^ centurty.
+It was invented in parallel by Descartes and Fermat in 17^th^ century.
+
+:::
+
+::::
+
+## Builing Blocks
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+### Measuring Nature
+
+When people started to look with growing interest to the natural sciences, a question rose: how can we measure things better? How can we make sense of the measurement that we take, which, in a ever changing world, are often, apparently, chaotic?
+
 :::
 
 ::: {.column width="45%"}
 
 ### Probablility and Statistics
 
-When people started to look with growing interest to the natural sciences a question rose: how can we improve our measurements? What can we expect from them.
-
-Like this, [statistical approaches](https://en.wikipedia.org/wiki/History_of_statistics) were deployed first to reduce measurement errors in empirical measurements from Tycho Brahe. At the same time, Pascal and Fermat developed the first [probability theory](https://en.wikipedia.org/wiki/Probability#History).
+Like this, the first [statistical approaches](https://en.wikipedia.org/wiki/History_of_statistics) were developed by Tycho Brahe to reduce measurement errors in empirical measurements. At the same time, Pascal and Fermat developed the first [probability theory](https://en.wikipedia.org/wiki/Probability#History).
 
 :::
 
