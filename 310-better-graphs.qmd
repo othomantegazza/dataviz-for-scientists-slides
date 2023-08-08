@@ -1043,7 +1043,6 @@ wind %>%
     )
 ```
 
-
 ## Orientation and Size
 
 ```{r orientation-size}
@@ -1096,6 +1095,16 @@ wind %>%
 
 ## Texture
 
-cool for communication.
+::: {.columns}
+
+::: {.column width="45%"}
+
+The texture is often used to distinguish various types of lines.
+
+It can also be used to fill shapes in a semiquantitative way. This aspect fell in disuse, but it can be a good choice for printer-friendly visualization.
+
+:::
+
+:::
 
 
