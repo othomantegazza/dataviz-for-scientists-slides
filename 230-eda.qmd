@@ -513,7 +513,9 @@ Which step do you have to define explicitely? Which step are defined implicitely
 
 ## Residual Plot
 
-We can use statistical models to explore data.
+We can use statistical models to transform data and to make more evident, visually, the patterns contained in the data.
+
+We can also use visual exploration of the output of statistical model, to see if the model fit the data properly.
 
 ```{r}
 library(tidymodels)
