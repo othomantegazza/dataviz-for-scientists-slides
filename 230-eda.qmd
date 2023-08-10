@@ -528,64 +528,39 @@ library(tidymodels)
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-diamonds %>%
-  filter(x > 0) %>% 
+penguins %>%
   ggplot() +
-  aes(x = x, 
-      y = price) +
-  geom_point()
-```
-
-## Residual Plot
-
-```{r}
-#| output-location: column
-#| fig-width: 5
-#| fig-height: 6
-#| code-line-numbers: "6-12"
-diamonds %>%
-  filter(x > 0) %>%  
-  ggplot() +
-  aes(x = x, 
-      y = price) +
-  geom_point(alpha = .05) +
-  # add a smoothed summary
-  # with a specific model
+  aes(x = bill_length_mm, 
+      y = bill_depth_mm) +
+  geom_point(aes(
+      colour = sex
+  )) +
   geom_smooth(
-    method = lm,
-    formula = "y ~ poly(x, 2)"
-    )
+    method = 'lm'
+    ) +
+  facet_wrap(
+    facets = 'species',
+    ncol = 2
+  )
 ```
 
 ## Residual Plot
 
 ```{r}
 #| output-location: column
-#| fig-width: 5
-#| fig-height: 6
-d_clean <- 
-  diamonds %>% 
-  filter(x > 0)
 
 # We can define a model
 # before plotting
-linear_reg() %>% 
-  fit(price ~ poly(x, 2),
-      data = d_clean)
-```
-
-## Residual Plot
-
-```{r}
-#| fig-width: 5
-#| fig-height: 6
-d_fit <- linear_reg() %>% 
-  fit(price ~ poly(x, 2),
-      data = d_clean) 
+d_fit <- 
+  linear_reg() %>% 
+  fit(bill_depth_mm ~ 
+        bill_length_mm + 
+        species,
+      data = penguins)
 
 # extract model residuals
 (d_fit <- d_fit %>% 
-  augment(new_data = d_clean))
+  augment(new_data = penguins))
 ```
 
 ## Residual Plot
@@ -595,21 +570,20 @@ d_fit <- linear_reg() %>%
 #| fig-width: 5
 #| fig-height: 6
 #| code-line-numbers: "6-15"
-d_fit <- linear_reg() %>% 
-  fit(price ~ poly(x, 2),
-      data = d_clean) %>% 
-  augment(new_data = d_clean)
 
 # We can use models to trans-
 # form data and inspect
 # patterns
 d_fit %>% 
   ggplot() +
-  aes(x = x,
-      y = .resid) +
-  geom_point(alpha = .05) +
-  geom_hline(yintercept = 0,
-             colour = 'blue')
+  aes(x = bill_length_mm,
+      y = .resid,
+      colour = sex) +
+  geom_point() +
+  geom_hline(
+    yintercept = 0,
+    colour = 'black'
+  )
 ```
 
 ## Residual Plot
@@ -619,25 +593,24 @@ d_fit %>%
 #| fig-width: 5
 #| fig-height: 6
 #| code-line-numbers: "16-19"
-d_fit <- linear_reg() %>% 
-  fit(price ~ poly(x, 2),
-      data = d_clean) %>% 
-  augment(new_data = d_clean)
 
 # We can use models to trans-
 # form data and inspect
 # patterns
 d_fit %>% 
   ggplot() +
-  aes(x = x,
-      y = .resid) +
-  geom_point(alpha = .05) +
-  geom_hline(yintercept = 0,
-             colour = 'blue') +
-  # You can also stratify
-  # transformed data
-  facet_wrap(facets = 'cut',
-             ncol = 2)
+  aes(x = bill_length_mm,
+      y = .resid,
+      colour = sex) +
+  geom_point() +
+  geom_hline(
+    yintercept = 0,
+    colour = 'black'
+  ) +
+  facet_wrap(
+    facets = 'species',
+    ncol = 2
+  )
 ```
 
 ## Heatmap
