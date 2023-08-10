@@ -14,16 +14,27 @@ knitr:
 ```{r}
 #| include: false
 library(tidyverse)
-theme_set(
-  theme_gray(base_size = 15) +
+
+base_size <- 15
+size_scale <- 2.8455 # text in plots vs. text in labels
+
+theme_base <- 
     theme(
-      legend.position = "bottom",
-      legend.box="vertical",
-      legend.spacing = unit(2, 'mm'),
-      legend.margin = margin(1,1,1,1),
-      plot.margin = margin(0,1,1,1)
-    )
-) 
+    plot.margin = margin(10,5,5,5),
+    axis.text.x = element_text(hjust = 0),
+    axis.text.y = element_text(vjust = 0),
+    axis.ticks = element_line(),
+    axis.title = element_blank(),
+    axis.line = element_line(),
+    legend.position = "bottom"
+  )
+
+a <- theme_set(
+  theme_minimal(
+    base_size = base_size,
+  ) +
+    theme_base
+)
 ```
 
 
