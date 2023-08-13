@@ -443,8 +443,15 @@ The y axis is not mapped to the data.
 
 ## Exercise
 
+::: {.columns}
+
+::: {.column width="50%"}
+
 Check the climate stripes with a tool to simulate colour blind vision. Are the climate stripes colour blind friendly? Motivate your anwser.
 
+:::
+
+:::
 
 ## Colours in R
 
