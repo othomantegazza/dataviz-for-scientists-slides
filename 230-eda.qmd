@@ -163,22 +163,21 @@ Paper: [Tidy Data](https://doi.org/10.18637/jss.v059.i10)
 
 :::
 
-## EDA
+## Exploratory Data Analysis
 
 ::: {.columns}
 
 ::: {.column width="31%"}
 
+- Visualize
 
-Visualize
+- Summarize
 
-Summarize
+- Stratify 
 
-Stratify 
+- Transform
 
-Transform
-
-https://r4ds.hadley.nz/eda
+[More on EDA (in R)](https://r4ds.hadley.nz/eda).
 
 :::
 
@@ -520,7 +519,6 @@ We can also use visual exploration of the output of statistical model, to see if
 ```{r}
 library(tidymodels)
 ```
-
 
 ## Residual Plot
 
