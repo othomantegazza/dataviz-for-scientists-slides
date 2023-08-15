@@ -46,3 +46,4 @@ jobs:
         run: |
           npm install netlify-cli
           netlify deploy --dir=docs --prod --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_TOKEN }}
+          
