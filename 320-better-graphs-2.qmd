@@ -1,6 +1,6 @@
 ---
 title: "Better Graphs II"
-subtitle: "Show the data, declutter, basic rules of perception"
+subtitle: "Show the data. Declutter. Foster intuition. Know your audience."
 author: "Otho Mantegazza"
 editor_options:  
   chunk_output_type: console
@@ -9,7 +9,25 @@ knitr:
     dev: jpeg
 ---
 
+When you explore your data, your goal should be very fast and produce many informative graphs from your data.
+
+When you want to communicate results to other, you goal should be to make as few graphs as possible that can inform your audience.
+
+As a scientist, the most likely scenario would be that you are communicating very complex results to an highly educated and informed audience.
+
+Obviously, you should craft your message analyzing your data rigorously.
+
+Be sure to make few graphs, which convey a message that you want to get through to your audience.
+
+The goal of a data visualization in scientific communication is to convey a message. That message should be clear to yourself, first of all, and then clear to your audience. 
+
+To help inform your audience, add as many details you can into your data visualization, but not too many. They should not overcrowd your message.
+
 ## Show the Data
+
+- As much as you can, as nuanced as you can.
+- If it can be turned into a table, is to simple.
+- If the message isn't clear, is too complex
 
 ## Declutter
 
