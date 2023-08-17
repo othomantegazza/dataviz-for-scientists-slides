@@ -31,5 +31,5 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 # Resources
 
-Besides these slides, you can consult any of these [open access books](https://othomantegazza.com/textbook-library) on the topics of data analysis, statistics, programming and data visualization.
+Besides the slides, you can consult any of these [open access books](https://othomantegazza.com/textbook-library) on the topics of data analysis, statistics, programming and data visualization.
 
