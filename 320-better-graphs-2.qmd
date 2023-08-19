@@ -9,6 +9,38 @@ knitr:
     dev: jpeg
 ---
 
+
+```{r}
+#| include: false
+library(tidyverse)
+library(palmerpenguins)
+library(paletteer)
+library(ggrepel)
+
+base_size <- 15
+size_scale <- 2.8455 # text in plots vs. text in labels
+
+theme_base <- 
+    theme(
+    plot.margin = margin(10,5,5,5),
+    axis.text.x = element_text(hjust = 0),
+    axis.text.y = element_text(vjust = 0),
+    axis.ticks = element_line(),
+    # axis.title = element_blank(),
+    axis.line = element_line(),
+    legend.position = "bottom"
+  )
+
+a <- theme_set(
+  theme_minimal(
+    base_size = base_size,
+  ) +
+    theme_base
+)
+
+```
+
+
 ##
 
 ![](img/ggmaplot-3.jpg){.absolute top=0 left=0}
@@ -50,13 +82,181 @@ The y axis is not mapped to the data.
 
 :::
 
-##
+## Communicating to Others
 
-When you explore your data, your goal should be very fast and produce many informative graphs from your data.
+::: {.columns}
 
-When you want to communicate results to other, you goal should be to make as few graphs as possible that can inform your audience.
+::: {.column width="50%"}
+
+When you explore your data, your goal should be to produce quickly as many graphs as possible, to gain insights.
+
+When you want to communicate results to other, you goal should be to make as few graphs as possible that convey a message to your audience in a clear and informative way.
 
 As a scientist, the most likely scenario would be that you are communicating very complex results to an highly educated and informed audience.
+
+:::
+
+:::
+
+## Keep in Mind
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+1. Show the data (as much as you can).
+2. Declutter.
+3. Use intuition.
+4. Know your audience's expectations.
+
+:::
+
+:::
+
+## Show the Data
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "7-9"
+penguins %>% 
+  drop_na() %>% 
+  group_by(sex) %>% 
+  summarise(
+    mean_body_mass_g =
+      mean(body_mass_g,
+           na.rm = T)
+    ) %>% 
+  ggplot() +
+  aes(x = sex,
+      y = mean_body_mass_g) +
+  geom_col(
+    colour = 'black',
+    fill = 'grey80',
+    size = 1
+    ) +
+  scale_y_continuous(
+    expand = expansion(
+      mult = c(0, .05)
+    )
+  )
+```
+
+## Show the Data
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "7-9"
+penguins %>% 
+  drop_na() %>% 
+  ggplot() +
+  aes(x = sex,
+      y = body_mass_g) +
+  geom_boxplot(
+    # colour = 'black',
+    # fill = 'grey80',
+    # size = 1
+    ) +
+  scale_y_continuous(
+    expand = expansion(
+      mult = c(0, .05)
+    )
+  )
+```
+
+## Show the Data
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "7-9"
+penguins %>% 
+  drop_na() %>% 
+  ggplot() +
+  aes(x = sex,
+      y = body_mass_g) +
+  geom_jitter(
+    # colour = 'black',
+    # fill = 'grey80',
+    # size = 1
+    ) +
+  scale_y_continuous(
+    expand = expansion(
+      mult = c(0, .05)
+    )
+  )
+```
+
+
+## Show the Data
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "7-9"
+penguins %>% 
+  drop_na() %>% 
+  ggplot() +
+  aes(x = sex,
+      y = body_mass_g) +
+  geom_jitter(
+    # colour = 'black',
+    # fill = 'grey80',
+    # size = 1
+    ) +
+  geom_boxplot(
+    fill = '#FFFFFF00',
+    colour = '#f44702',
+    size = 1
+  ) +
+  scale_y_continuous(
+    expand = expansion(
+      mult = c(0, .05)
+    )
+  )
+
+```
+
+## Show the Data
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "7-9"
+penguins %>% 
+  drop_na() %>% 
+  ggplot() +
+  aes(x = sex,
+      y = body_mass_g) +
+  geom_jitter(
+    # colour = 'black',
+    # fill = 'grey80',
+    # size = 1
+    ) +
+  geom_boxplot(
+    fill = '#FFFFFF00',
+    colour = '#f44702',
+    size = 1
+  ) +
+  facet_wrap(
+    facets = 'species'
+  ) +
+  scale_y_continuous(
+    expand = expansion(
+      mult = c(0, .05)
+    )
+  )
+
+```
+
+
+##
 
 Obviously, you should craft your message analyzing your data rigorously.
 
