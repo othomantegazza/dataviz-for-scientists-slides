@@ -9,6 +9,49 @@ knitr:
     dev: jpeg
 ---
 
+##
+
+![](img/ggmaplot-3.jpg){.absolute top=0 left=0}
+
+::: {.caption .absolute left=0 bottom=0}
+
+::: {.columns}
+
+::: {.column width="31%"}
+
+MA PLOT
+
+Source: [ggpubr](https://rpkgs.datanovia.com/ggpubr/index.html)
+
+Field: Omics Disciplines
+
+:::
+
+::: {.column width="31%"}
+
+*A highly specialized diagnostic visual model used in the omics disciplines.*
+
+
+
+*He designed the concept of climate stripes, removing everything that's not a direct mapping of data from an heatmap of average temperature.*
+
+:::
+::: {.column width="31%"}
+
+On the x axis, each stripe is a year, from the year when the first data recording is available reliably.
+
+The colour represents the relative change in temperature.
+
+The y axis is not mapped to the data.
+
+:::
+
+:::
+
+:::
+
+##
+
 When you explore your data, your goal should be very fast and produce many informative graphs from your data.
 
 When you want to communicate results to other, you goal should be to make as few graphs as possible that can inform your audience.
