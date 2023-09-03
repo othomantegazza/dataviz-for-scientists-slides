@@ -614,14 +614,26 @@ d_fit %>%
 
 ## Heatmap
 
+:::: {.columns}
+
+::: {.column width="70%"}
+
+Heatmap are useful for exploring big datasets, where many observation are similar to one another. To avoid overplotting, on those datasets, you can turn scatterplots into heatmaps.
+
+In a heatmap we map a quantitative value to a color. Heatmaps can be used both with categorical x and y axes, or binned continuous axes.
+
+In this case we are binning the data both on the x and y axis, and mapping counts to a continuous color palette.
+
+:::
+
+:::
+
 ## Heatmap
 
 ```{r}
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "13-18"
-
 diamonds %>% 
   filter(x > 0) %>% 
   ggplot() +
@@ -646,7 +658,11 @@ diamonds %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "21-27" 
+#| code-line-numbers: "1-4,16-21" 
+# If you work on a white background,
+# use a colour palette that maps low 
+# values to light colours and high values
+# to dark colours
 diamonds %>% 
   filter(x > 0) %>% 
   ggplot() +
@@ -658,7 +674,6 @@ diamonds %>%
     ),
     geom = 'tile'
   ) +
-  # use colors intuitively
   scale_fill_viridis_c(
     direction = -1,
     option = 'G',
