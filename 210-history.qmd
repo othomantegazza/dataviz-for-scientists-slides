@@ -304,7 +304,7 @@ The graphs doesn't show data points but an empirical probability density.
 
 ##
 
-![](img/robert-plots-history-of-the-weather.png){.absolute top=0 right=350 height="750"}
+![](img/robert-plots-history-of-the-weather.jpg){.absolute top=0 right=350 height="750"}
 
 ::: {.caption .absolute left=710 bottom=0}
 
