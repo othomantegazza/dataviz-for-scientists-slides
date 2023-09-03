@@ -199,7 +199,7 @@ library(palmerpenguins)
 
 :::
 
-## One variable summaries
+## One Variable Summaries
 
 ## Histogram
 
@@ -341,7 +341,7 @@ penguins %>%
   geom_boxplot()
 ```
 
-## Two variables
+## Two Variables Summaries
 
 
 ## Scatterplot
@@ -363,10 +363,10 @@ diamonds %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "2-4"
+#| code-line-numbers: "1-2,4"
+# remove points with
+# unlikely values
 diamonds %>%
-  # remove points with
-  # unlikely values
   filter(x > 0) %>% 
   ggplot() +
   aes(x = x, 
@@ -380,15 +380,13 @@ diamonds %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "8-9"
+#| code-line-numbers: "1,7"
+# avoid overplotting
 diamonds %>%
-  # remove points with
-  # unlikely values
   filter(x > 0) %>% 
   ggplot() +
   aes(x = x, 
       y = price) +
-  # avoid overplotting
   geom_point(alpha = .1)
 ```
 
@@ -398,17 +396,14 @@ diamonds %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "10-11"
+#| code-line-numbers: "1,8"
+# add a smoothed summary
 diamonds %>%
-  # remove points with
-  # unlikely values
   filter(x > 0) %>% 
   ggplot() +
   aes(x = x, 
       y = price) +
-  # avoid overplotting
   geom_point(alpha = .1) +
-  # add a smoothed summary
   geom_smooth()
 ```
 
@@ -418,18 +413,15 @@ diamonds %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "11-18"
+#| code-line-numbers: "1-2,9-12"
+# add a smoothed summary
+# with a specific model
 diamonds %>%
-  # remove points with
-  # unlikely values
   filter(x > 0) %>% 
   ggplot() +
   aes(x = x, 
       y = price) +
-  # avoid overplotting
   geom_point(alpha = .1) +
-  # add a smoothed summary
-  # with a specific model
   geom_smooth(
     method = lm,
     formula = "y ~ poly(x, 2)"
@@ -445,20 +437,17 @@ diamonds %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "9-10"
+#| code-line-numbers: "1-2,9"
+# map another variable only in
+# one layer
 diamonds %>%
-  # remove points with
-  # unlikely values
   filter(x > 0) %>% 
   ggplot() +
   aes(x = x, 
       y = price) +
-  # avoid overplotting
-  # use color to stratify
-  geom_point(aes(colour = cut),
+  geom_point(
+    aes(colour = clarity),
       alpha = .1) +
-  # add a smoothed summary
-  # with a specific model
   geom_smooth(
     method = lm,
     formula = "y ~ poly(x, 2)"
@@ -478,26 +467,20 @@ diamonds %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "18-21"
+#| code-line-numbers: "1-2,14-15"
+# Use facets to further
+# stratify the data
 diamonds %>%
-  # remove points with
-  # unlikely values
   filter(x > 0) %>% 
   ggplot() +
   aes(x = x, 
       y = price) +
-  # avoid overplotting
-  # use color to stratify
-  geom_point(aes(colour = cut),
+  geom_point(aes(colour = clarity),
       alpha = .1) +
-  # add a smoothed summary
-  # with a specific model
   geom_smooth(
     method = lm,
     formula = "y ~ poly(x, 2)"
     ) +
-  # Use facets to 
-  # stratify the data
   facet_wrap(facets = 'cut',
              ncol = 2) +
   scale_y_continuous(
