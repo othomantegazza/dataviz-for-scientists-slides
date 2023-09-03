@@ -8,9 +8,12 @@ editor_options:
 
 ```{r}
 #| include: false
+
+base_size <- 15
+
 library(tidyverse)
 theme_set(
-  theme_gray(base_size = 15) +
+  theme_bw(base_size = base_size) +
     theme(legend.position = "bottom",
           legend.box="vertical",
           legend.spacing = unit(2, 'mm'),
@@ -293,12 +296,13 @@ A set of mappings from variables to aesthetics...
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "3-6"
 penguins %>%  
-  ggplot(
-    aes(
+  ggplot() +
+  aes(
       x = bill_length_mm,
-      y = bill_depth_mm)
-  )
+      y = bill_depth_mm
+    )
 ```
 
 ##
@@ -309,12 +313,13 @@ One or more layers, with geometric object, related to the aesthetic mappings.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-penguins %>% 
-  ggplot(
-    aes(
+#| code-line-numbers: "7"
+penguins %>%  
+  ggplot() +
+  aes(
       x = bill_length_mm,
-      y = bill_depth_mm)
-  ) + 
+      y = bill_depth_mm
+    ) + 
   geom_point()
 ```
 
@@ -327,6 +332,7 @@ More variables mapped to aesthetics and represented in the geometric object.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "5-6"
 penguins %>% drop_na() %>%
   ggplot(
     aes(x = bill_length_mm,
@@ -346,6 +352,7 @@ A layer with a different geometric object and a statistical transformation.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "9"
 penguins %>% drop_na() %>%
   ggplot(
     aes(x = bill_length_mm,
@@ -366,6 +373,7 @@ A layer with a different geometric object and a statistical transformation.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "9"
 penguins %>% drop_na() %>%
   ggplot(
     aes(x = bill_length_mm,
@@ -386,6 +394,7 @@ A facet specification.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "10-11"
 penguins %>% drop_na() %>%
   ggplot(
     aes(x = bill_length_mm,
@@ -422,6 +431,7 @@ A set of mappings from variables to aesthetics...
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "3"
 penguins %>% 
   ggplot() +
   aes(x = bill_length_mm)
@@ -435,6 +445,7 @@ A layer including geometric objects and a statistical transformation.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "4"
 penguins %>% 
   ggplot() +
   aes(x = bill_length_mm) +
@@ -449,6 +460,7 @@ More aesthetic mappings.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "4"
 penguins %>% 
   ggplot() +
   aes(x = bill_length_mm,
@@ -465,6 +477,7 @@ The facet specification.
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "6-7"
 penguins %>% 
   ggplot() +
   aes(x = bill_length_mm,
@@ -483,6 +496,7 @@ Remove a legend guide that's no longer needed...
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
+#| code-line-numbers: "8"
 penguins %>% 
   ggplot() +
   aes(x = bill_length_mm,
@@ -492,6 +506,25 @@ penguins %>%
              ncol = 1) +
   guides(fill = 'none')
 ```
+
+##
+
+Remap fills to another variable
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "4"
+penguins %>% 
+  ggplot() +
+  aes(x = bill_length_mm,
+      fill = sex) +
+  geom_histogram() +
+  facet_wrap(facets = 'species',
+             ncol = 1) 
+```
+
 
 ## A Horizontal Stacked Bar Chart
 
