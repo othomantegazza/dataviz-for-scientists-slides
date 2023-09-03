@@ -1,7 +1,7 @@
 ---
 title: "A Grammar for Graphics"
 subtitle: "A collection of terms and concepts to declare data visualization systematically"
-author: "Otho Mantegazza"
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 2.2"
 editor_options:  
   chunk_output_type: console
 ---
@@ -57,6 +57,8 @@ The "Grammar of Graphics" was developed by [Leeland Wilkinson](https://en.wikipe
 
 It was later [extended](https://vita.had.co.nz/papers/layered-grammar.html) by Hadley Wickham, who started encoding it in the R package [ggplot2](https://ggplot2.tidyverse.org/).
 
+Recently, a new API in the style of ggplot2 was included in a new version of [Seaborn](https://seaborn.pydata.org/tutorial/objects_interface.html), making the layered grammar of graphics available also in Python, 
+
 ::: 
 
 :::: 
@@ -67,7 +69,7 @@ It was later [extended](https://vita.had.co.nz/papers/layered-grammar.html) by H
 
 ::: {.column width="70%"}
 
-The layered grammar of graphics states that:
+The layered grammar of graphics defines graphics as composed of:
 
 - A default dataset and set of mappings from variables to aesthetics.
 - One or more layers, with each layer having one geometric object, one statistical transformation, one position adjustment, and optionally, one dataset and set of aesthetic mappings.
@@ -126,7 +128,7 @@ Describe the weather history by Robert Plot.
 - Aesthetics Mapping: 
   - x: atmospheric pressure
   - y: day of the month
-- Statistical Trasformation:
+- Statistical Transformation:
   - none / identity
 - Geometric Object:
   - stepped line
@@ -148,7 +150,7 @@ Describe this semigraph by Lambert.
 - Aesthetics Mapping: 
   - x: ...
   - y: ...
-- Statistical Trasformation:
+- Statistical Transformation:
   - ...
 - Geometric Object:
   - ...
@@ -172,7 +174,7 @@ Describe the radial histogram by Nightingale
 - Aesthetics Mapping: 
   - x: ...
   - y: ...
-- Statistical Trasformation:
+- Statistical Transformation:
   - ...
 - Geometric Object:
   - ...
@@ -214,7 +216,7 @@ Describe the weather map by the app [Windy](https://www.windy.com/).
 - Aesthetics Mapping: 
   - x: ...
   - y: ...
-- Statistical Trasformation:
+- Statistical Transformation:
   - ...
 - Geometric Object:
   - ...
@@ -378,7 +380,7 @@ penguins %>% drop_na() %>%
 
 ##
 
-The facet specification.
+A facet specification.
 
 ```{r}
 #| output-location: column
@@ -585,7 +587,7 @@ penguins %>% drop_na() %>%
 
 ##
 
-Change the position adjustement.
+Change the position adjustment.
 
 ```{r}
 #| output-location: column
