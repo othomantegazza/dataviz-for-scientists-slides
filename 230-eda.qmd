@@ -574,11 +574,9 @@ d_fit <-
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "6-15"
-
-# We can use models to trans-
-# form data and inspect
-# patterns
+#| code-line-numbers: ""
+# Let's plot the residuals of
+# the linear model
 d_fit %>% 
   ggplot() +
   aes(x = bill_length_mm,
@@ -597,11 +595,7 @@ d_fit %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "16-19"
-
-# We can use models to trans-
-# form data and inspect
-# patterns
+#| code-line-numbers: "11-14"
 d_fit %>% 
   ggplot() +
   aes(x = bill_length_mm,
