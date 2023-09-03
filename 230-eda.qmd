@@ -24,7 +24,7 @@ theme_base <-
     axis.text.x = element_text(hjust = 0),
     axis.text.y = element_text(vjust = 0),
     axis.ticks = element_line(),
-    axis.title = element_blank(),
+    # axis.title = element_blank(),
     # axis.line = element_line(),
     legend.position = "bottom"
   )
