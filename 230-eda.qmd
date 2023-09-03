@@ -25,12 +25,12 @@ theme_base <-
     axis.text.y = element_text(vjust = 0),
     axis.ticks = element_line(),
     axis.title = element_blank(),
-    axis.line = element_line(),
+    # axis.line = element_line(),
     legend.position = "bottom"
   )
 
 a <- theme_set(
-  theme_minimal(
+  theme_bw(
     base_size = base_size,
   ) +
     theme_base
