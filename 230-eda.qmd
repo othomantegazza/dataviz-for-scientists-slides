@@ -684,6 +684,19 @@ diamonds %>%
 
 ## Pairs
 
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+You can use pair plots to plot each pairwise relationships in a dataset. 
+
+Pair plots are a very quick way to explore relationships in reasonably big datasets.
+
+:::
+
+:::
+
 ```{r}
 library(GGally)
 ```
