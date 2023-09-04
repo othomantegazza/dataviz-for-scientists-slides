@@ -53,7 +53,7 @@ map_to_circle_area <- function(val, max, max_out = 1) {
 
 ::: {.caption .absolute left=760 top=340}
 
-AUTHOR: Jaques Bertin
+AUTHOR: Jacques Bertin
 
 YEAR: 1967
 
@@ -74,7 +74,7 @@ When you draw a data visualization on a two dimensional screen, you map values f
 - Planar Variables: *x, y*.
 - Retinal Variables: *colour hue, color value, shape, orientation, size, area, texture*.
 
-In terms of the grammar of graphics, the graphical variables are the aesthetics that you map yor data to.
+In terms of the grammar of graphics, the graphical variables are the aesthetics that you map your data to.
 
 :::
 
@@ -238,7 +238,7 @@ On a screen, colours are **defined** as [three hexadecimal strings](https://duck
 
 Colors are perceived non linearly, and the model of how colors are perceived by people gets constantly updated. The most used model is [CIECAM02](https://en.wikipedia.org/wiki/CIECAM02).
 
-What shoud interest you is:
+What should interest you is:
 
 - HUE: what we call colour.
 - LIGHTNESS: how close to black?
@@ -373,7 +373,7 @@ You should handle **ordered categorical variables** as if they were quantitative
 
 ::: {.column width="45%"}
 
-Remember, data viusalization is processed intuitively by the readers.
+Remember, data visualization is processed intuitively by the readers.
 
 Colours have meaning. Don't represent ice coverage in red, don't represent the warming of the ocean in blue, ask yourself if your colour palette is appropriate for the topic your data are about.
 
@@ -394,6 +394,8 @@ There are plenty of colour palette available in R, so it's unlikely that you'll 
 It's more likely that you'll have to be able to choose a good one.
 
 The [palette gallery](https://pmassicotte.github.io/paletteer_gallery/#discrete-palettes) from the [paletteer](https://emilhvitfeldt.github.io/paletteer/) package is a great place to start.
+
+Also, check the blog posts presenting [cubehelix](https://www.mrao.cam.ac.uk/~dag/CUBEHELIX/), the [viridis](https://bids.github.io/colormap/) and [batlow](https://www.fabiocrameri.ch/colourmaps/) for an intro on perceptually uniform color maps. 
 
 :::
 
@@ -445,9 +447,9 @@ The y axis is not mapped to the data.
 
 ::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="70%"}
 
-Check the climate stripes with a tool to simulate colour blind vision. Are the climate stripes colour blind friendly? Motivate your anwser.
+Check the climate stripes with a [tool to simulate colour blind vision](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/simulation/index.html). Are the climate stripes colour blind friendly? Motivate your anwser.
 
 :::
 
@@ -639,7 +641,7 @@ penguins %>%
 
 Linear size and area are often mapped to quantitative values, such as absolute measurements and percentages.
 
-Size is often used together with colour to display a quantiative value stratified by a qualitative factor.
+Size is often used together with colour to display a quantitative value stratified by a qualitative factor.
 
 :::
 
@@ -694,7 +696,7 @@ diamonds %>%
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 When we use a barolot, we  map the data to the length of the bars, not to the area.
 
@@ -742,7 +744,7 @@ diamonds %>%
 
 Pie charts get a bad reputation for not being a nuanced analytical graphs.
 
-Anyway pie charts are effective at representing percentages, and they outscore barcharts when the number of slices is high.
+But pie charts are effective at representing percentages, and they outscore barcharts when the number of slices is high.
 
 Can you describe the pie chart from the previous page in terms of the grammar of graphics?
 
@@ -762,7 +764,7 @@ You can encode a continuous variable in the area of the circles in a scatterplot
 
 Our perception is not as good at comparing areas, so use this retinal variable with parsimony.
 
-You can map data to the radius of circles or to the area directly. Mapping data to the area directly might be slightly better, although neither chioice is optimal, 
+You can map data to the radius of circles or to the area directly. Mapping data to the radius might be perceptually better, although neither choice is optimal.
 
 :::
 
@@ -859,13 +861,13 @@ msleep %>%
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 A light coloured area is often used to encode for a measurement of uncertainty or dispersion of the data.
 
 For example, the confidence interval of a regression model, or the prediction of how a natural phenomena will evolve in space and time.
 
-How to represent uncertainty intuituvely, is an active field of research.
+How to represent uncertainty intuitively, is an active field of research.
 
 :::
 
@@ -952,7 +954,7 @@ Year: Current
 
 Website: [NOAA - Hurricane Center](https://www.nhc.noaa.gov/aboutcone.shtml)
 
-*The cone shows the forcasted path of the hurricane, from its current position. The size of the cone grows with the uncertainty in the path's forecast*
+*The cone shows the forecasted path of the hurricane, from its current position. The size of the cone grows with the uncertainty in the path's forecast*
 
 There's evidence that we intuitively associate the size of the cone to the forecasted size of the hurricane, not to the uncertainty of its path.
 
