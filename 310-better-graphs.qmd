@@ -67,7 +67,7 @@ BOOK: The Semiology of Graphics
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 When you draw a data visualization on a two dimensional screen, you map values from data variables to graphical variables:
 
@@ -155,7 +155,7 @@ ggsave(filename = 'img/planar-variables-categorical-raw.png',
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 
 The retinal variables are all those other graphical variables, that cannot be interpreted directly as a position on the screen's x and y.
@@ -371,7 +371,7 @@ You should handle **ordered categorical variables** as if they were quantitative
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 Remember, data visualization is processed intuitively by the readers.
 
@@ -459,7 +459,7 @@ Check the climate stripes with a [tool to simulate colour blind vision](https://
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 Like any other graphical variables, colours in ggplot2 can be encoded with the family of functions:
 
@@ -637,7 +637,7 @@ penguins %>%
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 Linear size and area are often mapped to quantitative values, such as absolute measurements and percentages.
 
@@ -740,7 +740,7 @@ diamonds %>%
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 Pie charts get a bad reputation for not being a nuanced analytical graphs.
 
@@ -964,7 +964,7 @@ There's evidence that we intuitively associate the size of the cone to the forec
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
 How to represent uncertainty is an active area of research.
 
