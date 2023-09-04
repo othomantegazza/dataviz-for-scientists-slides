@@ -247,7 +247,7 @@ penguins %>%
 #| output-location: column
 #| fig-width: 5
 #| fig-height: 6
-#| code-line-numbers: "13-21"
+#| code-line-numbers: "13-22"
 penguins %>% 
   drop_na() %>% 
   ggplot() +
@@ -261,8 +261,8 @@ penguins %>%
     stroke = 1
     ) +
   stat_summary(
-    fun.y = median,
-    geom = point,
+    fun = median,
+    geom = 'point',
     shape = '_',
     size = 20,
     colour = 'black'
