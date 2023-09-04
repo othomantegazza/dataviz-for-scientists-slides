@@ -1106,11 +1106,13 @@ wind %>%
 
 ::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="70%"}
 
-The texture is often used to distinguish various types of lines.
+The texture is often used to encode categorical data in various types of lines.
 
-It can also be used to fill shapes in a semiquantitative way. This aspect fell in disuse, but it can be a good choice for printer-friendly visualization.
+It can also be used to fill shapes in a semi-quantitative way. This aspect fell in disuse, but it can be a good choice for printer-friendly visualization.
+
+Unfortunately python does not have good support for texture filling areas; the example on the side is from [texture.js](https://riccardoscalco.it/textures/).
 
 :::
 
