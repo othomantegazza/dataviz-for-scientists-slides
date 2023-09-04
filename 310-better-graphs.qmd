@@ -1152,9 +1152,7 @@ crickets %>%
     values = c('11', '3212')
   ) +
   guides(shape = 'none')
-
 ```
-
 
 ## Exercise #1
 
