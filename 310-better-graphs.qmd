@@ -15,6 +15,7 @@ library(tidyverse)
 library(palmerpenguins)
 library(paletteer)
 library(ggrepel)
+library(tidymodels)
 
 base_size <- 15
 size_scale <- 2.8455 # text in plots vs. text in labels
@@ -1104,6 +1105,8 @@ wind %>%
 
 ## Texture
 
+![](img/texture.jpg){.absolute top=110 left=750 width=300}
+
 ::: {.columns}
 
 ::: {.column width="70%"}
@@ -1112,11 +1115,46 @@ The texture is often used to encode categorical data in various types of lines.
 
 It can also be used to fill shapes in a semi-quantitative way. This aspect fell in disuse, but it can be a good choice for printer-friendly visualization.
 
-Unfortunately python does not have good support for texture filling areas; the example on the side is from [texture.js](https://riccardoscalco.it/textures/).
+GGplot does not support filling shapes with patterns natively. But you can do it with the package [ggpattern](https://coolbutuseless.github.io/package/ggpattern/).
+
+The example on the side is from [texture.js](https://riccardoscalco.it/textures/) instead, a js library for textured web graphics.
 
 :::
 
 :::
+
+## Line Type
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+crickets %>% 
+  ggplot() +
+  aes(
+    x = temp,
+    y = rate,
+    linetype = species,
+    shape = species
+  ) +
+  geom_point(
+    stroke = 1.2,
+    size = 3
+  ) +
+  stat_summary(
+    geom = "line",
+    size = 1
+  ) +
+  scale_shape_manual(
+    values = c(1, 2),
+  ) +
+  scale_linetype_manual(
+    values = c('11', '3212')
+  ) +
+  guides(shape = 'none')
+
+```
+
 
 ## Exercise #1
 
