@@ -278,13 +278,91 @@ penguins %>%
 ```
 
 
+## Show as Much Data as You Can
+
+::: {.columns}
+
+::: {.column width="70%"}
+
+Show the data is a good mindset to make informative plots.
+
+Though, for the sake of clarity and simplicity, you might decide to hide some of the raw data behind statistical transformation.
+
+It’s up to you to find the balance between detail and simplicity that suits your audience.
+
+:::
+
+:::
+
+## Show as Much Data as You Can
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+# In this case overplotting 
+# saturates the chart
+diamonds %>% 
+  filter(carat < 3) %>% 
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_point(shape = 1)
+```
+
+## Show as Much Data as You Can
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "1-2,8-9"
+# We can use transparency 
+# to overcome overplotting a bit
+diamonds %>% 
+  filter(carat < 3) %>% 
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_point(shape = 1,
+             alpha = .05)
+```
+
+## Show as Much Data as You Can
+
+```{r}
+#| output-location: column
+#| fig-width: 5
+#| fig-height: 6
+#| code-line-numbers: "1-3,11-19"
+# And add a red point that shows a robust
+# summary of the data: the median
+# of price over binned carat
+diamonds %>% 
+  filter(carat < 3) %>% 
+  ggplot() +
+  aes(x = carat,
+      y = price) +
+  geom_point(shape = 1,
+             alpha = .05) +
+  stat_summary(
+    aes(
+      x = carat %>% round(1)
+    ),
+    fun = median,
+    colour = '#f44702',
+    geom = 'point',
+    size = 3
+  )
+```
+
 ## Show the Data
 
 ::: {.columns}
 
 ::: {.column width="70%"}
 
-Your graph should deliver a message.
+Your graph should always deliver a message.
 
 While delivering this message, you should provide as much information as possible, showing the data.
 
