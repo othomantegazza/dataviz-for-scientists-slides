@@ -89,6 +89,13 @@ If you have to hide your data behind a statistical transformation, use one which
 
 :::
 
+## Test function
+
+```{r}
+mean_cl_normal(1:3)
+```
+
+
 ## Show the Data
 
 ```{r}
@@ -133,13 +140,14 @@ penguins %>%
   aes(x = sex,
       y = body_mass_g) +
   stat_summary(
+    fun = mean,
     geom = 'bar',
     colour = 'black',
     fill = 'grey80',
     size = 1
     ) +
   stat_summary(
-    fun.data = 'mean_cl_normal',
+    fun.data = mean_cl_normal,
     geom = 'errorbar',
     colour = 'black',
     size = 1,
