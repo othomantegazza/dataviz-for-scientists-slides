@@ -11,23 +11,22 @@ author: "[Otho Mantegazza](https://othomantegazza.com/)"
 
 Slides for a three days, hands-on, workshop on data visualization in R, Javascript and Quarto, for scientists.
 
-# Day 1 
+# Part 1: R
 
-## Morning
+1. [Intro to R](100-intro.html)
 
-## Afternoon
+# Part 2: Intro to Data Visualization
 
 1. [Instant Knowledge](200-instant-data.html)
 2. [Quick history of Dataviz](210-history.html)
 3. [The Grammar of Graphics](220-gg.html)
 4. [Exploratory Data Analysis](230-eda.html)
 
-# Day 2
 
-## Morning
+# Part 3: Better Graphs
 
-5. [Better Graphs - Part I](310-better-graphs.html)
-6. [Better Graphs - Part II](320-better-graphs-2.html)
+1. [Better Graphs - Part I](310-better-graphs.html)
+2. [Better Graphs - Part II](320-better-graphs-2.html)
 
 # Resources
 

@@ -1,0 +1,108 @@
+---
+title: "About R"
+subtitle: "An open source programming language about statistics."
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 1.0"
+editor_options:  
+  chunk_output_type: console
+knitr:
+  opts_chunk: 
+    dev: jpeg
+---
+
+## The [R Project]((https://www.r-project.org/)) for Statistical Computing
+
+::: {.column width="70%"}
+
+- Started in 1991 by Ross Ihaka and Robert Gentleman at the University of Auckland (NZ).
+- Made open source in 1995.
+- Official "peer reviewed" packages are hosted on [CRAN](https://cran.r-project.org/).
+- Has multiple "universes" of packages, including [Bioconductor](https://bioconductor.org/) dedicated to bioinformatics, and the [Tidyverse](https://www.tidyverse.org/) for Data Science. 
+- Great for analyzing data, for statistics, for research and for communicating data to others.
+
+:::
+
+## A bit more on R
+
+::: {.column width="70%"}
+
+- We are going to use the [Tidyverse](https://www.tidyverse.org/). But you might have to learn also a bit of the original idiom, now called base R, which sometimes helps if you have to programm your own functions.
+-  [Rstudio](https://www.rstudio.com/), which is a great open source IDE dedicated to R. But you can use it also from [visual studio code](https://code.visualstudio.com/) or any IDE of your choice.
+
+:::
+
+
+## Resources 
+
+::: {.column width="70%"}
+
+If you need help, as always, Google and [Stackoverflow](https://stackoverflow.com/questions/tagged/r?sort=MostVotes) are your friends.
+
+But sometimes you need to learn on a support that is structured, nuanced and detailed, such as books. 📚
+
+:::
+
+## A helpful and welcoming community 📚
+
+::: {.column width="70%"}
+
+One of the things that makes R great is its community of users and programmer.
+
+It is **open source** and **open access** oriented and highly dedicated to lowering the barrier to learning R and data science, and make their tools available and usable to everyone.
+
+:::
+
+## Open Books
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**[Bookdown](https://bookdown.org/)**: a package and a repository for open access books about R.
+:::
+
+::: {.column width="40%"}
+![](https://bookdown.org/yihui/bookdown/images/logo.png)
+:::
+
+::::
+
+## Open Books 
+
+::: {.column width="70%"}
+
+Many authors have made their books on R open access, you can [find a selection of my favourites here](https://othomantegazza.com/textbook-library).
+
+:::
+
+## More ⬇️⬇️⬇️ {.scrollable}
+
+::: {.column width="70%"}
+
+<br>
+
+### Slack Spaces
+
+- [R for Data Science Community](R https://www.rfordatasci.com/) a slack chanel for R networking.
+
+<br>
+
+### Blogs
+
+- [Alison Hill's Blog](https://www.apreshill.com/blog/); great for everything Rmarkdown.
+
+- [Simply Statistics](https://simplystatistics.org/); modern statistics and R.
+
+- [Julia Silge's Blog](https://juliasilge.com/blog/); learn about R machine learning framework from one of its main developer.
+
+- [Gina Reynolds Flipbooks](https://evamaerey.github.io/mytidytuesday/2022-06-20-tabyl/2022-06-20-tabyl.html#1); for more tidyverse and Rmarkdown mastery.
+
+- [Fornkonstin](https://fronkonstin.com/); at the interface between math, art and coding.
+
+- [Data imaginist](https://www.data-imaginist.com/); more art in R 🎨.
+
+### Collaborative Challenges
+
+- [Tidytuesday](https://www.google.com/search?client=firefox-b-d&q=github.com+tidytuesday) Tidy and visualize a dataset and share your results with the R community every week on Tuesday.
+
+:::
+
+
