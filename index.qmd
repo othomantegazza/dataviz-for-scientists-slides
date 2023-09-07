@@ -13,7 +13,8 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 # Part 1: R
 
-1. [Intro to R](100-intro.html)
+1. [Introduction](100-intro.html)
+2. [Meet R](110-meet-r.html)
 
 # Part 2: Intro to Data Visualization
 

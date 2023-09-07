@@ -154,6 +154,10 @@ div.caption {
   border: 0px;
 }
 
+.reveal div.cell-output.cell-output-stdout pre code{
+  background-color: #EEEEFF;
+}
+
 /*-- exercise --*/
 
 section[id*=exercise] h2 {
@@ -176,4 +180,8 @@ section[id*=exercise] h2 {
 
 .fa-bar {
  color: black; 
+}
+
+aside {
+  color: black !important;
 }

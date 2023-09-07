@@ -1,0 +1,468 @@
+---
+title: "Meet R"
+subtitle: "Your first hands on session"
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 1.1"
+editor_options: 
+  chunk_output_type: console
+---
+
+## R understands you
+
+Write someting at the R console:
+
+. . .
+
+A simple number...
+ 
+```{r}
+2
+```
+
+. . .
+
+Some operation...
+
+```{r}
+3 + 7
+```
+
+. . .
+
+Text must be quoted...
+
+```{r}
+'hello'
+```
+
+. . .
+
+Otherwise it is interpreted as the name of a variable:
+
+```{r}
+#| error: true
+my_var
+```
+
+## Define variables with <-
+
+::: {.column width="70%"}
+
+You can define a variable and assign a value to it with the operator **<-** 
+
+```{r}
+# a numeric variable
+this_year <- 2022
+ 
+# a character variable
+italian_greetings <- 'ciao'
+```
+
+If you type the name of a variable without quotes, r prints its value:
+
+```{r}
+this_year
+```
+
+```{r}
+italian_greetings
+```
+
+:::
+
+## Define variables with <-
+
+::: {.column width="70%"}
+
+Use the keyboard shortcut **"alt/option"** + **"-"** to write the assignment operator **<-** more easily.
+
+:::
+
+## Data Types
+
+When you define an object R guesses its type.
+
+. . .
+
+`typeof()` returns the internal type of an object.
+
+```{r}
+typeof(this_year)
+typeof(italian_greetings)
+```
+
+. . .
+
+`class()` returns a the class attribute of an object.
+
+```{r}
+class(this_year)
+class(italian_greetings)
+```
+
+## Everything in R is an object
+
+And objects have a types.
+
+. . .
+
+```{r}
+class(2)
+```
+
+. . .
+
+```{r}
+class('hello')
+```
+
+. . .
+
+```{r}
+class(FALSE)
+```
+
+. . .
+
+```{r}
+class(mean)
+```
+
+. . .
+
+```{r}
+class(`<-`)
+```
+
+. . .
+
+```{r}
+class(Sys.Date())
+```
+
+## Exercise {.exercise}
+
+::: {.column width="70%"}
+
+1. Use the function **c(arg_1, arg_2, ..., arg_n)** to put together in a vector many objects that you expect to have the same class. Try with different ones.
+
+2. Now do the same, but try to put together in a vector data with different types, what happened?
+
+::: aside
+Learn more about [vectors and types at Advanced R](https://adv-r.hadley.nz/vectors-chap.html).
+:::
+
+:::
+
+## All Data Are Vectors
+
+Vectors store one or more data point of the same class:
+
+```{r}
+num_vector <- c(1, 3, 5, 3, 6)
+
+character_vector <- c('Hi', ',', 'I', 'am', 'a', 'character', 'vector')
+
+logical_vector <- c(TRUE, FALSE, FALSE, TRUE, FALSE)
+```
+
+. . .
+
+<br>
+
+```{r}
+class(num_vector)
+class(character_vector)
+class(logical_vector)
+```
+
+## Classes can be coherced
+
+::: {.column width="70%"}
+
+TRUE and FALSE can be coerced into numeric zeroes and ones, or also into characters.
+
+```{r}
+c(2, TRUE, 5, FALSE, 4)
+```
+
+. . .
+
+Numbers can be coerced into characters.
+
+```{r}
+c('a', TRUE, 5, FALSE, 4)
+```
+
+:::
+
+## Classes can be coherced
+
+::: {.column width="70%"}
+
+Classes can be coerced explicitly.
+
+```{r}
+logical_vector <- c(T, F, F, T, T, F)
+logical_vector
+as.numeric(logical_vector)
+as.character(logical_vector)
+```
+
+
+. . .
+
+If an element can't be coerced to the desired class, R returns a missing value **"NA"**.
+
+```{r}
+as.numeric(c('1', 'two', '3'))
+```
+
+
+:::
+
+## Atomic elements are vectors
+
+::: {.column width="70%"}
+
+```{r}
+atomic_vector <- 1
+long_vector <- 1:50
+```
+
+. . .
+
+```{r}
+atomic_vector
+long_vector
+```
+
+:::
+
+## Atomic elements are vectors
+
+::: {.columns}
+
+::: {.column width="47%"}
+
+```{r}
+class(atomic_vector)
+length(atomic_vector)
+is.vector(atomic_vector)
+```
+
+:::
+
+::: {.column width="47%"}
+
+```{r}
+class(long_vector)
+length(long_vector)
+is.vector(long_vector)
+```
+
+:::
+
+:::
+
+## Vectorized Functions
+
+::: {.column width="70%"}
+
+Most base R functions are vectorized.
+
+If I want to apply an operation over a vector, I can just write it as it is without a for loop. For example:
+
+- Add an integer to every number in a vector:
+
+:::
+
+```{r}
+long_vector + 100
+```
+
+## Vectorized Functions
+
+- Multiply every number in a vector by an integer:
+
+```{r}
+long_vector * 2
+```
+
+
+## Vectorized Functions
+
+Take the square root of every number in a vector:
+
+```{r}
+sqrt(long_vector)
+```
+
+## Exercise {.exercise}
+
+::: {.column width="70%"}
+
+1. Generate a vector of 100 (semi-) random numbers with a normal distribution.
+
+2. Use a for loop (even if you don't need one) to multiply eachs number in the vector by 2.
+
+:::aside
+[For loops in R](https://bookdown.org/rdpeng/rprogdatascience/control-structures.html#for-loops) according to Roger D. Peng.
+:::
+
+:::
+
+## Lists
+
+::: {.column width="70%"}
+
+If you need to collect together and store data of different types, you can use lists.
+
+```{r}
+#| output-location: column
+list(
+  'hello',
+  1,
+  FALSE,
+  1:25
+)
+```
+
+:::
+
+## Data frames
+
+::: {.column width="70%"}
+
+We learned that vector contain elements of the same type, for example, numeric, character, logical.
+
+According to the [Tidy Data](https://tidyr.tidyverse.org/articles/tidy-data.html) theory, in rectangular data frames:
+
+- Each row is an observation.
+- Each column is a variable.
+
+By definiton variables of your data, must be made by atomic elements of the same type. So we can use vectors of the same length to build the columns of a dataframe.
+
+:::
+
+## Data frames
+
+::: {.column width="70%"}
+
+Let's prepare three vectors with the first observations of [Iris](https://en.wikipedia.org/wiki/Iris_flower_data_set) and use them to make a data frame.
+
+:::
+
+```{r}
+#| output-location: column
+sepal_length <- c(5.1, 7.0, 6.3)
+sepal_width <- c(3.5, 3.2, 3.3)
+species <- c(
+  'setosa', 'versicolor', 'virginica'
+)
+
+iris_simple <- 
+  data.frame(
+    species,
+    sepal_length,
+    sepal_width
+  )
+
+iris_simple
+```
+
+## And... We have data 
+
+The variable iris_simple now points to a data frame that stores rectangular data.
+
+```{r}
+class(iris_simple)
+```
+
+```{r}
+dim(iris_simple)
+```
+
+We can access its columns with the operator **$**. Each column is a vector.
+
+```{r}
+iris_simple$sepal_length
+```
+
+```{r}
+class(iris_simple$sepal_length)
+```
+
+```{r}
+is.vector(iris_simple$sepal_length)
+```
+
+## {background-image='img/stephan-quintet.jpg'}
+
+[Now that we have data, let's take our first stroll into the Tidyverse.]{style="color:#ffffff; font-size:80px"}
+
+## Tibbles
+
+::: {.column width="70%"}
+
+Tibbles are a modern take on data frames:
+
+Let's attach the whole [Tidyverse](https://www.tidyverse.org/), which includes also the [Tibble](https://tibble.tidyverse.org/) package...
+
+```{r}
+library(tidyverse)
+```
+
+...and convert the data frame iris_simple into a tibble.
+
+```{r}
+iris_simple <- as_tibble(iris_simple)
+```
+
+:::
+
+## Tibbles
+
+::: {.column width="70%"}
+
+The print method for a tibble, provides a handy and informative output.
+
+```{r}
+iris_simple
+```
+
+:::
+
+## Tibbles
+
+Let's compare the print method for the data frame iris, before and after we convert it to a tibble.
+
+```{r}
+iris
+```
+
+## Tibbles
+
+Let's compare the print method for the data frame iris, before and after we convert it to a tibble.
+
+```{r}
+as_tibble(iris)
+```
+
+## Exercise {.exercise}
+
+::: {.nonincremental}
+
+1. Check the weather forecast for your hometown (or a place of your choice).
+
+2. Assign the forecasted temperature in one vector and the corresponding time in another vector for at least 5 data points.
+
+3. Make a data frame with those two variables.
+
+4. What's the average temperature? And what's its standard deviation?
+
+5. Then, visualize those data with a line-chart in which the x axis represents time and the y axis represents the forecasted temperature.
+
+:::
+
+
+
