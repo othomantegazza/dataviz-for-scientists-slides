@@ -434,7 +434,11 @@ iris_simple
 
 ## Tibbles
 
+::: {.column width="70%"}
+
 Let's compare the print method for the data frame iris, before and after we convert it to a tibble.
+
+:::
 
 ```{r}
 iris
@@ -442,7 +446,11 @@ iris
 
 ## Tibbles
 
+::: {.column width="70%"}
+
 Let's compare the print method for the data frame iris, before and after we convert it to a tibble.
+
+:::
 
 ```{r}
 as_tibble(iris)
@@ -450,7 +458,7 @@ as_tibble(iris)
 
 ## Exercise {.exercise}
 
-::: {.nonincremental}
+::: {.column width="70%"}
 
 1. Check the weather forecast for your hometown (or a place of your choice).
 
