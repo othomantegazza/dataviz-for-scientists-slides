@@ -8,7 +8,7 @@ editor_options:
 
 ## R understands you
 
-Write someting at the R console:
+Write something at the R console:
 
 . . .
 
@@ -303,7 +303,7 @@ sqrt(long_vector)
 
 1. Generate a vector of 100 (semi-) random numbers with a normal distribution.
 
-2. Use a for loop (even if you don't need one) to multiply eachs number in the vector by 2.
+2. Use a for loop (even if you don't need one) to multiply each number in the vector by 2.
 
 :::aside
 [For loops in R](https://bookdown.org/rdpeng/rprogdatascience/control-structures.html#for-loops) according to Roger D. Peng.
@@ -340,7 +340,7 @@ According to the [Tidy Data](https://tidyr.tidyverse.org/articles/tidy-data.html
 - Each row is an observation.
 - Each column is a variable.
 
-By definiton variables of your data, must be made by atomic elements of the same type. So we can use vectors of the same length to build the columns of a dataframe.
+By definition variables of your data, must be made by atomic elements of the same type. So we can use vectors of the same length to build the columns of a data frame.
 
 :::
 

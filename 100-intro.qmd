@@ -25,7 +25,7 @@ knitr:
 
 ::: {.column width="70%"}
 
-- We are going to use the [Tidyverse](https://www.tidyverse.org/). But you might have to learn also a bit of the original idiom, now called base R, which sometimes helps if you have to programm your own functions.
+- We are going to use the [Tidyverse](https://www.tidyverse.org/). But you might have to learn also a bit of the original idiom, now called base R, which sometimes helps if you have to program your own functions.
 -  [Rstudio](https://www.rstudio.com/), which is a great open source IDE dedicated to R. But you can use it also from [visual studio code](https://code.visualstudio.com/) or any IDE of your choice.
 
 :::
@@ -81,7 +81,7 @@ Many authors have made their books on R open access, you can [find a selection o
 
 ### Slack Spaces
 
-- [R for Data Science Community](R https://www.rfordatasci.com/) a slack chanel for R networking.
+- [R for Data Science Community](R https://www.rfordatasci.com/) a slack channel for R networking.
 
 <br>
 
