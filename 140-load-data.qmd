@@ -253,7 +253,7 @@ pangaea_data <-
              skip = 49)
 ```
 
-## {}
+##
 
 ::: {.column width="70%"}
 
@@ -266,7 +266,7 @@ pangaea_data %>% glimpse()
 ```
 
 
-## {.scrollable}
+##
 
 Now the data that we've imported into R looks fine.
 
@@ -287,13 +287,16 @@ pangaea_data %>% skimr::skim()
 
 :::
 
-## {.scrollable}
+##
 
 ::: {.column width="70%"}
 
 A more formal way to check for missing values.
 
+:::
+
 ```{r}
+#| output-location: column
 pangaea_data %>% 
   summarise(
     across(
@@ -302,8 +305,6 @@ pangaea_data %>%
   ) %>% 
   glimpse()
 ```
-
-:::
 
 ## Checklist
 
@@ -318,7 +319,7 @@ When you read new data into R, always:
 
 :::
 
-## Exercise {.exercise}
+## Exercise
 
 ::: {.column width="70%"}
 
