@@ -42,7 +42,7 @@ In R missing values are written **NA**.
 
 Most operation on missing values return NAs.
 
-Ask yourself what is one plus "a number that I don't know" (**NA**). The anwser is "I dont know" (**NA**). 
+Ask yourself what is one plus "a number that I don't know" (**NA**). The answer is "I don't know" (**NA**). 
 
 ```{r}
 NA + 1
