@@ -386,7 +386,7 @@ species
 
 With non-standard evaluation we can write names without quoting them. This makes writing code for iterative data exploration faster.
 
-If you come from a more strict programming language, it could be hard to get use to this behaviour.
+If you come from a more strict programming language, it could be hard to get use to this behavior.
 
 Most function of the Tidyverse do non-standard evaluation.
 
