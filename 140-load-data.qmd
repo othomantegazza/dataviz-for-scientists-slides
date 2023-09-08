@@ -1,0 +1,333 @@
+---
+title: "Get Data into R"
+subtitle: "Get any type of data into R, so that you can visualize and analyze them."
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 1.4"
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| include: false
+library(dplyr)
+library(readr)
+library(magrittr)
+library(tidyr)
+library(palmerpenguins)
+library(tibble)
+library(ggplot2)
+library(readr)
+library(here)
+```
+
+## Rectangular Data
+
+::: {.column width="70%"}
+
+More often than not when we mention **data sets** or **data frames**, we speak about rectangular data, i.e., data in **two-dimensional table**, made of values organized in rows and columns.
+
+- Each **cell** stores a value.
+- Each value belongs to one **column** and one **row**.
+
+Rectangular data are the easiest to use. When we get data that are not rectangular, we try to turn them in a rectangular shape.
+
+:::
+
+## Tools: Readr
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+[Readr](https://readr.tidyverse.org/) is a package that loads (reads) **Rectangular Text** data in R.
+
+It's fast, it guesses column types explicitly and it's pipe friendly.
+
+You can use it to read both local data and online data from a URL.
+
+For example we can use it to read data in CSV and TSV formats and many more.
+
+:::
+
+::: {.column width="35%"}
+
+![](https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/readr.svg)
+
+:::
+
+::::
+
+## Read Data From URL
+
+::: {.column width="70%"}
+
+We can use again on the [Palmer Penguins Dataset](https://allisonhorst.github.io/palmerpenguins/)
+
+The [source code of this package](https://github.com/allisonhorst/palmerpenguins/), is on github; we can find the [tidy CSV data](https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv) in the [inst/exdata folder](https://github.com/allisonhorst/palmerpenguins/tree/main/inst/extdata).
+
+:::
+
+## Read Data From URL {.scrollable}
+
+```{r}
+#| message: true
+penguin_csv_url <- 
+  'https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv'
+ 
+read_csv(penguin_csv_url)
+```
+
+## Parsing
+
+::: {.column width="70%"}
+
+The tibble that we have loaded and generated from CSV is not identical to the one that comes already loaded with the **palmerpenguins** package:
+
+```{r}
+penguins_from_csv <- 
+  penguin_csv_url %>% 
+  read_csv()
+
+identical(
+  penguins_from_csv,
+  palmerpenguins::penguins
+)
+```
+
+:::
+
+## Parsing
+
+Let's compare them side by side:
+
+:::: {.columns}
+
+::: {.column width="48%"}
+
+```{r}
+palmerpenguins::penguins %>% 
+  glimpse(width = 40)
+```
+
+:::
+
+::: {.column width="48%"}
+
+```{r}
+penguins_from_csv %>% 
+  glimpse(width = 40)
+```
+
+:::
+
+::::
+
+<br>
+
+Can you spot that column types are different?
+
+## Parsing 
+
+::: {.column width="70%"}
+
+When we read data from text encoded "delimited" files, such as CSV, we use function that [parse](https://en.wikipedia.org/wiki/Parsing) the file.
+
+When we parse something, we formalize its structure applying a set of grammatical rules.
+
+No parsing rule is perfect, thus we should often review the results and fix potential parsing mistakes".
+
+:::
+
+## Parsing 
+
+```{r}
+# specify column types manually
+penguins_from_csv <-
+  penguin_csv_url %>% 
+  read_csv(
+    col_types = cols(
+      species = col_factor(),
+      island = col_factor(),
+      flipper_length_mm = col_integer(),
+      body_mass_g = col_integer(),
+      sex = col_factor(),
+      year = col_integer()
+    )
+  )
+```
+
+
+## Parsing
+
+```{r}
+penguins_from_csv %>% glimpse()
+```
+
+## Exercise
+
+::: {.column width="70%"}
+
+Find the source code of the [readr package](https://readr.tidyverse.org/).
+
+In the **inst/extdata** folder you can find 10 datasets that display different challenges that you might encounter when you have to load data from an external file.
+
+Load in R at least 3 of those datasets using functions from **readr**.
+
+Get help from [readr's documentation](https://readr.tidyverse.org/) and the [data import chapter](https://r4ds.had.co.nz/data-import.html) of r4ds.
+
+Which function did you use? Did you encounter any parsing failure? How did you fix it?
+
+:::
+
+## Read From Local File
+
+::: {.column width="70%"}
+
+[PANGAEA](https://www.pangaea.de/), a Data repository for the environmental sciences.
+
+For our exercise we will use [this dataset](https://doi.pangaea.de/10.1594/PANGAEA.946258) from Wu et al: 
+
+> "Effect of barite-bound Sr on detrital Sr isotope systematics in marine sediments with pertinent Mediterranean examples".
+
+::: {.aside}
+[https://doi.pangaea.de/10.1594/PANGAEA.946258](https://doi.pangaea.de/10.1594/PANGAEA.946258)
+:::
+
+:::
+
+## Read From Local File
+
+::: {.column width="70%"}
+
+If you want to read data from a local file, first you must find the path to that file.
+
+```{r}
+pangaea_filename <- 'Dataset_S2_HCl-leaching.tab'
+
+pangaea_path <- here('data/Wu-etal_2022/datasets', pangaea_filename)
+
+pangaea_path
+```
+
+You can learn how to navigate the shell in the first chapter of [this open access intro to computer science](https://missing.csail.mit.edu/2020/course-shell/).
+
+:::
+
+## Read From Local File
+
+Let's try to read the data file **r pangaea_filename**.
+
+It's a **.tab** file. 
+
+```{r}
+#| warning: true
+
+pangaea_data <- 
+  pangaea_path %>% 
+  read_delim()
+```
+
+## Read From Local File
+
+If we call **problems()** readr tells us what went wrong.
+
+```{r}
+pangaea_data
+```
+
+## Read From Local File
+
+::: {.column width="70%"}
+
+Let's provide more arguments to the parsing function:
+
+- **delim = '\t'** to tell **read_delim()** that we are reading a file delimited by tabulature (\\t).
+- **skip = 49** to tell it that the first 49 rows must be skipped.
+
+:::
+
+```{r}
+pangaea_data <- 
+  pangaea_path %>% 
+  read_delim(delim = '\t',
+             skip = 49)
+```
+
+## {}
+
+::: {.column width="70%"}
+
+Now the data that we've imported into R looks fine.
+
+:::
+
+```{r}
+pangaea_data %>% glimpse()
+```
+
+
+## {.scrollable}
+
+Now the data that we've imported into R looks fine.
+
+```{r}
+#| output: asis
+pangaea_data %>% skimr::skim()
+```
+
+
+## Check for Missing Values
+
+::: {.column width="70%"}
+
+**skimr::skim()** shows you how many values are missing in your dataset:
+
+- How many missing value are there?
+- Where do they occur?
+
+:::
+
+## {.scrollable}
+
+::: {.column width="70%"}
+
+A more formal way to check for missing values.
+
+```{r}
+pangaea_data %>% 
+  summarise(
+    across(
+      .fns = ~is.na(.) %>% sum()
+    )
+  ) %>% 
+  glimpse()
+```
+
+:::
+
+## Checklist
+
+::: {.column width="70%"}
+
+When you read new data into R, always:
+
+- Check for missing values.
+- Check the column types, are they what you expect?
+- Check the row number and the column names.
+- Optional, check the **head()** and the **tail()** of the file.
+
+:::
+
+## Exercise {.exercise}
+
+::: {.column width="70%"}
+
+[Tidytuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at learning, collaborating and networking the R ecosystem.
+
+Find this week's dataset and read it in R. Run the checklist from the previous slide on the data that you've read.
+
+If you are donw early, proceed reading data from the previous week or find a colleague to help.
+
+Check Tidytuesday submissions on [Twitter with the hashtag #TidyTuesday](https://twitter.com/hashtag/TidyTuesday)
+
+:::

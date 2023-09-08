@@ -12,3 +12,5 @@ The fonts in the folder fonts/ are under licensed under the Open Font License by
 - Lato ⇒ tyPoland / Google 
 
 The dataset `secret-message.csv` was modified from: [Wang L, Czedik-Eysenberg A, Mertz RA, Si Y, Tohge T et al. (2014)](https://www.ebi.ac.uk/gxa/experiments/E-CURD-26/Results) and is available under  Creative Commons Attribution 4.0 International License.
+
+The dataset in [data/data/Wu-etal_2022/](data/Wu-etal_2022/) come from https://doi.pangaea.de/10.1594/PANGAEA.946258
