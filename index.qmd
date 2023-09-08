@@ -15,6 +15,7 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 1. [Introduction](100-intro.html)
 2. [Meet R](110-meet-r.html)
 3. [Use Data in R](120-manipulate.html)
+4. [Missing Values](130-missing-values.html)
 
 # Part 2: Intro to Data Visualization
 
