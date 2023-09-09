@@ -1,0 +1,313 @@
+---
+title: "Clean and Tidy Data"
+subtitle: "When you get new data, you have to clean and organize them. Cleaning new data helps you exploring their content and structure"
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 1.5"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+library(dplyr)
+library(readr)
+library(magrittr)
+library(tidyr)
+library(palmerpenguins)
+library(tibble)
+library(ggplot2)
+library(readr)
+library(here)
+library(stringr)
+```
+
+## Which Dataset is Tidy?
+
+::: {.column width="70%"}
+
+A common practical way to **structure** (empirical) data.
+
+- Every column is a variable.
+- Every row is an observation.
+- Every cell is a single value.
+- (Every observational unit is in its own table).
+
+
+Plus: fixed variables should come first, followed by measured variables.
+
+Reference: An Introduction to [Tidy Data](https://tidyr.tidyverse.org/articles/tidy-data.html)
+
+:::
+
+## Which Dataset is Tidy?
+
+![](https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png)
+
+Source: [R4DS - Tidy Data](https://r4ds.had.co.nz/tidy-data.html)
+
+
+##
+
+```{r}
+#| echo: false
+
+friends <- tribble(
+  ~name, ~surname, ~age,
+  'Joey', 'Tribbiani', 27, 
+  'Monica', 'Geller', 24,
+  'Rachel', 'Green', 23,
+  'Phoebe', 'Buffay', 27,
+  'Ross', 'Geller', 26,
+  'Chandler', 'Bing', 26
+)
+
+set.seed(5)
+
+friends_vector <- 
+  friends %>% 
+  as.vector() %>% 
+  unlist() %>% 
+  unname() %>%
+  tibble(text = .) %>% 
+  mutate(
+    left = runif(n(), 0, 1000),
+    top = runif(n(), 0, 700)
+  ) %>% 
+  rowwise() %>% 
+  mutate(
+    html_div = glue::glue(
+      '<div style="position:absolute; left:',
+      left,
+      'px; top:',
+      top,
+      '200px; font-size:40px;">',
+      text ,
+      '</div>'
+    )
+  ) %>% 
+  pull(html_div) %>% 
+  paste(collapse = '')
+```
+
+`r friends_vector`
+
+## Semantics of (tidy) Data
+
+::: {.column width="70%"}
+
+Always quoting the [Tidy Data](https://tidyr.tidyverse.org/articles/tidy-data.html) article:
+
+1. A dataset is a collection of **values**.
+2. Every value belongs to a **variable** and an **observation**.
+3. A **variable** contains all values that measure the same underlying attribute (like height, temperature, duration) across units.
+4. An **observation** contains all values measured on the same unit (like a person, or a day, or a race) across attributes.
+
+:::
+
+## Tools: Tidy data with Tidyr
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+[Tidyr](https://tidyr.tidyverse.org/) provides functions for:
+
+- Pivoting data.
+- Rectangling data.
+- Nesting data.
+- Combining and splitting columns.
+- Make missing values explicit.
+
+:::
+
+::: {.column width="37%"}
+![](https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/tidyr.svg)
+:::
+
+::::
+
+## Tidy Pangea Data
+
+Remember the dataset from Pangaea?
+
+```{r}
+pangaea_filename <- 'Dataset_S2_HCl-leaching.tab'
+
+pangaea_path <- 
+  here(
+    'data/Wu-etal_2022/datasets',
+    pangaea_filename
+  )
+
+pangaea_data <- 
+  pangaea_path %>% 
+  read_delim(delim = '\t',
+             skip = 49)
+```
+
+## Tidy Pangea Data
+
+```{r}
+pangaea_data %>% 
+  glimpse()
+```
+
+## Better Column Names
+
+::: {.column width="70%"}
+
+we can remove capitalization, spaces, and strange characters from the column names with the function **clean_names()** from the [Janitor Package]('https://www.rdocumentation.org/packages/janitor/versions/2.1.0').
+
+:::
+
+```{r}
+pangaea_data <- 
+  pangaea_data %>% 
+  janitor::clean_names()
+```
+
+## Better Column Names
+
+```{r}
+pangaea_data %>%
+  glimpse()
+```
+
+## Better Column Names
+
+::: {.column width="70%"}
+
+Watch out: Janitor transforms **µ** into **m** (so micrograms become milligrams). 
+
+Micrograms on grams is also known as part per million, **ppm**.
+
+```{r}
+pangaea_data <- 
+  pangaea_data %>% 
+  rename_all(
+    ~str_replace(., 'mg_g', 'ppm')
+  )
+```
+
+:::
+
+## Fixed Variables in Front
+
+::: {.column width="70%"}
+
+Which column is a fixed variable?
+
+I'm not sure if **ca_co3_percent** is a measured variable, and if it belongs to another informational unit.
+
+Besides that, the fixed variables are already in front. 
+
+:::
+
+
+## Pivot Longer
+
+![](https://d33wubrfki0l68.cloudfront.net/3aea19108d39606bbe49981acda07696c0c7fcd8/2de65/images/tidy-9.png)
+
+Source : [R4DS - Tidy Data](https://r4ds.had.co.nz/tidy-data.html)
+
+## No Values in Column Names
+
+::: {.column width="70%"}
+
+Let's pivot the measured variables.
+
+```{r}
+pangaea_long <- 
+  pangaea_data %>% 
+  pivot_longer(
+    cols = contains(match = c('leachate', 'residue')),
+    values_to = 'concentration',
+    names_to = 'element'
+  )
+```
+
+:::
+
+## No Values in Column Names
+
+::: {.column width="70%"}
+
+When we pivot data we move them from a wide to a long format and vice-versa.
+
+:::
+
+```{r}
+pangaea_long %>% 
+  glimpse()
+```
+
+## One Value Per Cell
+
+::: {.column width="70%"}
+
+Now it's clear that **element** contains more than one value.
+
+For example: **ba_ppm_leachate** is not a single values and could be split into:
+
+- element: **ba**.
+- unit: **ppm*.
+- fraction: **leachate**.
+
+Let's split this column at the **_** and reconstitute it in a tidy way
+
+:::
+
+## One Value Per Cell
+
+```{r}
+pangaea_tidy <- 
+  pangaea_long %>% 
+  separate(element, 
+           into = c(
+             'element', 
+             'unit', 
+             'fraction'
+           ),
+           sep = '_')
+```
+
+## One Value Per Cell
+
+```{r}
+pangaea_tidy %>% glimpse()
+```
+
+## Data can take many shapes
+
+```{r}
+pangaea_also_tidy <- 
+  pangaea_tidy %>% 
+  pivot_wider(names_from = 'element', values_from = 'concentration')
+```
+
+## Data can take many shapes
+
+```{r}
+pangaea_also_tidy %>% glimpse()
+```
+
+## Pivot Wider
+
+![](https://d33wubrfki0l68.cloudfront.net/8350f0dda414629b9d6c354f87acf5c5f722be43/bcb84/images/tidy-8.png)
+
+Source : [R4DS - Tidy Data](https://r4ds.had.co.nz/tidy-data.html)
+
+## Exercise
+
+Tidy the iris dataset:
+
+```{r}
+iris %>% 
+  as_tibble()
+```
+
+
+## Exercise
+
+Tidy last week's schedule:
+
+![](img/week-schedule.png)
