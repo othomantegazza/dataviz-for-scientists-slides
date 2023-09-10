@@ -1,9 +1,18 @@
 ---
 title: "Dataviz for Scientists"
-format:
-  html:
-    theme: [default, style/fonts-landing.scss, style/custom-landing.scss]
 author: "[Otho Mantegazza](https://othomantegazza.com/)"
+format: 
+  html:
+    theme:
+        - style/fonts-landing.scss
+        - style/custom-landing.scss
+    include-in-header: 
+      text: >
+        <meta property="og:title" content="Intro">
+        <meta property="og:description" content=" Material and exercises for a three days workshop on data visualization for scientists in R and a bit of Javascript. By Otho Mantegazza.">
+        <meta property="og:image" content="img/front.jpg">
+        <meta property="og:site-name" content="Data Visualization for Scientists">
+        <meta property="og:locale" content="en_EU">
 ---
 
 <span style="background-color: yellow;">Work in progress!</span>
