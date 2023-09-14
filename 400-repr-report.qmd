@@ -110,10 +110,76 @@ In HTML, if you want to write *hello* in italic, you write:
 
 `<em>hello<\em>`
 
-:::
+When you write in WYSIWYM,you use markup languages.
 
 :::
 
+:::
 
+## Markdown
 
+::: {.column width="70%"}
+
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that's simple and easy to read.
+
+```md
+# This is a title
+
+## This is level 2 title
+
+### This is a level 3 title
+
+This is a paragraph with **bold text** and *italic text*.
+
+Another paragraph with [a link to Wikipedia](https://en.wikipedia.org/wiki/Markdown)
+
+```
+
+:::
+
+## More Markdown
+
+```md
+
+1. This is
+1. A numbered
+1. List
+
+And:
+
+- This is
+- A Bullet
+- List
+
+```
+
+## More Markdown
+
+```md
+You can also insert images:
+
+![](https://commons.wikimedia.org/wiki/Main_Page#/media/File:Nacreous_clouds_Antarctica.jpg)
+
+And add tables
+
+| First Column | Second Column |
+|--------------|---------------|
+| Content   1A | Content    1B |
+| Content   2A | Content    2B |
+
+> Indented Quote
+
+```
+
+## Exercise
+
+::: {.column width="70%"}
+
+Use this [online markdown editor](https://markdownlivepreview.com/) to reproduce (by copying abd pasting) the main content of [R for Data Science's Chapter on Quarto](https://r4ds.hadley.nz/quarto). 
+
+Try to reproduce all formatting, such a bold text, lists, code blocks. Add the functional links.
+
+If needed, get help [this markdown guide](https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html) or any manual and forum that you find and like.
+
+:::
 
