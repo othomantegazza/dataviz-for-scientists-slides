@@ -19,7 +19,7 @@ format:
 
 Slides for a three days, hands-on, workshop on data visualization in R, Javascript and Quarto, for scientists.
 
-# Part 1: R
+# Part 1: Welcome to R
 
 1. [Introduction](100-intro.html)
 2. [Meet R](110-meet-r.html)
@@ -40,6 +40,12 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 1. [Better Graphs - Part I](310-better-graphs.html)
 2. [Better Graphs - Part II](320-better-graphs-2.html)
+
+# Part 4: Scientific Publishing
+
+1. [Reproducible Reporting](400-repr-report.html)
+2. [Quarto](410-quarto.html)
+3. [Quarto For the Web](420-quarto-for-web.html)
 
 # Resources
 
