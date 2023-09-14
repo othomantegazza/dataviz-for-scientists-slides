@@ -9,6 +9,15 @@ knitr:
     dev: jpeg
 ---
 
+
+## Let's Try it
+
+::: {.column width="70%"}
+
+This is one of the most hands on section of the workshop. The best way to learn how to use this publishing tool, is to use it.
+
+:::
+
 ##
 
 ![](img/1794-dalton-color-long.jpg){.absolute top=0 right=550 height="700"}
@@ -37,7 +46,25 @@ The main form of publication for a scientist still is the article on peer review
 
 Although, as a scientist, you will find yourself communicating your work in many channels, such as reports, blog posts, presentations, books.
 
+Or videos, posts on social media that unfortunately we will not cover here.
+
 None of them less important than the peer reviewed article for making sure that your work reaches the people that need it and have an impact.
+
+:::
+
+## Literate Programming
+
+![](img/literate-prog-flow.svg){.absolute top=120 left=0} 
+
+::: {.absolute top=500 left=0}
+
+::: {.column width="70%"}
+
+Literate programming is a paradigm that allows us to mix analytic code and markup natural language. The main R tools for it a [Rmarkdown](https://rmarkdown.rstudio.com/), and now [Quarto](https://quarto.org/).
+
+We will use Quarto.
+
+:::
 
 :::
 
@@ -53,6 +80,40 @@ This will make your analyses more reproducible.
 
 :::
 
-## Literate Programming
+## Markdown
+
+Markdown is an extremely simplified markup language. Also known is [WYSIWYM](https://xkcd.com/1341/): what you see is what you mean. When you write in Quarto you use markdown.
+
+![](https://imgs.xkcd.com/comics/types_of_editors_2x.png){.absolute top=250 left=0}
+
+## Two Editor Paradigms
+
+::: {.columns}
+
+::: {.column width="47%"}
+
+### WYSIWYG
+
+What you see is what you get: while your write, on your screen, you see formatted text. If you want to break a paragraph you see a paragraph break, if you want italic text you see italic text and so on.
+
+For sure you have used WYSIWYG editors, such as Microsoft Words, or [Google Docs](https://www.google.com/docs/about/).
+
+:::
+
+::: {.column width="47%"}
+
+### WYSIWYM
+
+What you see is what you mean: both body text and its formatting are expressed in text. You might have experience with it if you have used [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) or [LaTeX](https://www.latex-project.org/).
+
+In HTML, if you want to write *hello* in italic, you write:
+
+`<em>hello<\em>`
+
+:::
+
+:::
+
+
 
 
