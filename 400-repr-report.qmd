@@ -1,0 +1,58 @@
+---
+title: "Open Tools for Scientific Publishing"
+subtitle: "Present your research in an elegant and reproducible way."
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 4.0"
+editor_options:  
+  chunk_output_type: console
+knitr:
+  opts_chunk: 
+    dev: jpeg
+---
+
+##
+
+![](img/1794-dalton-color-long.jpg){.absolute top=0 right=550 height="700"}
+
+::: {.caption .absolute left=540 bottom=0}
+
+SCIENTIFIC PUBLICATION ON THE DISCOVERY OF COLOUR BLINDNESS
+
+Author: John Dalton
+
+Year: 1794
+
+Source: [Hathi Trust](https://catalog.hathitrust.org/Record/011812155)
+
+*The father of the atomic theory John Dalton, realized that people might perceive colour differently and devised an experiment to test it. Discovering colour blindness, and that he was colour blind himself,*
+
+Early scientific publications where in the shape of carefully crafted, exstensively discoursive booklets. Obviously, printed on paper.
+
+:::
+
+## Scientific Publishing
+
+::: {.column width="70%"}
+
+The main form of publication for a scientist still is the article on peer reviewed journals.
+
+Although, as a scientist, you will find yourself communicating your work in many channels, such as reports, blog posts, presentations, books.
+
+None of them less important than the peer reviewed article for making sure that your work reaches the people that need it and have an impact.
+
+:::
+
+## Data Driven Documents
+
+::: {.column width="70%"}
+
+As a quantitative scientist, your publications will often be data driven. 
+
+To make a data driven report, your best choice is to prepare documents with in which text and analytic code are tightly knit together, in this way you don't have to update the results manually if the starting data or the analytic code change on the way.
+
+This will make your analyses more reproducible.
+
+:::
+
+## Literate Programming
+
+
