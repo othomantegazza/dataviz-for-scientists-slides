@@ -8,7 +8,7 @@ format:
         - style/custom-landing.scss
     include-in-header: 
       text: >
-        <meta property="og:title" content="Intro">
+        <meta property="og:title" content="Dataviz for Scientists">
         <meta property="og:description" content=" Material and exercises for a three days workshop on data visualization for scientists in R and a bit of Javascript. By Otho Mantegazza.">
         <meta property="og:image" content="img/front.jpg">
         <meta property="og:site-name" content="Data Visualization for Scientists">
