@@ -403,7 +403,7 @@ On data, you have many options:
 
 - Any dataset from previous exercises, that you liked and that you would like to keep working on.
 
-Feel free to experiment with Quarto, to modify styles, headers and settings, don't be afraid to brack things.
+Feel free to experiment with Quarto, to modify styles, headers and settings, don't be afraid to break things.
 
 :::
 
