@@ -397,10 +397,24 @@ More info on next page...
 
 On data, you have many options:
 
-- Schengen [statistics on short stay visa](https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en), which are already included in the example Quarto project](https://github.com/othomantegazza/quarto-example).
+- Schengen [statistics on short stay visa](https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en), which are already included in the [example Quarto project](https://github.com/othomantegazza/quarto-example).
 
 - This dataset on [microchip development](https://chip-dataset.vercel.app/).
 
 - Any dataset from previous exercises, that you liked and that you would like to keep working on.
 
+Feel free to experiment with Quarto, to modify styles, headers and settings, don't be afraid to brack things.
+
 :::
+
+## Exercise 
+
+(EXTRA)
+
+Publish your results online in a website.
+
+1. Make a free [Netlify account](https://app.netlify.com).
+2. Start a new website from manual deploy.
+3. Drag and drop the **docs/** folder of your quarto project into Netlify and see it go live online.
+
+Watch out! everything that's in the **docs/** folder will become public, check that you did not include any sensitive personal information in your analysis.
