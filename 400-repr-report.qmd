@@ -183,3 +183,106 @@ If needed, get help [this markdown guide](https://garrettgman.github.io/rmarkdow
 
 :::
 
+## Quarto
+
+::: {.column width="70%"}
+
+With [Quarto]() you can combine markdown text with code in many programming languages and produce many types of output.
+
+:::
+
+## Quarto Languages
+
+Programming Languages:
+
+- R
+- Python
+- Julia
+- Javascript
+
+## Quarto Output
+
+::: {.columns}
+
+::: {.column width=31%}
+
+### Websites:
+
+- Reports
+- Blogs
+- Slides
+  
+:::
+
+::: {.column width=31%}
+
+### PDF / EPUB
+  
+- PDF:
+  - Journal Articles
+  - Reports
+
+- Epub
+
+:::
+
+::: {.column width=31%}
+
+### Others
+
+- MS Words
+- MS Power Point
+- Open Office
+
+:::
+
+:::
+
+<br><br>
+
+[Many More](https://quarto.org/docs/output-formats/all-formats.html)...
+
+## Quarto File
+
+![](img/quarto-file.jpg){.absolute top=110 left=0}
+
+::: {.columns}
+
+::: {.column width="48%"}
+x
+:::
+
+::: {.column width="48%"}
+
+```{r echo = FALSE}
+cat(readr::read_file("data/quarto-example.md"))
+```
+
+
+:::
+
+:::
+
+## My Quarto Project Structure
+
+```txt
+├── .Rprofile
+├── .Rproj.user
+├── .git
+├── .gitignore
+├── .quarto
+├── LICENSE
+├── README.md
+├── _quarto.yml
+├── data
+├── docs
+├── fonts
+├── img
+├── index.qmd
+├── js
+├── quarto-starter.Rproj
+├── renv
+├── renv.lock
+└── style
+```
+
