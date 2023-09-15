@@ -265,24 +265,32 @@ cat(readr::read_file("data/quarto-example.md"))
 
 ## My Quarto Project Structure
 
-```txt
-├── .Rprofile
-├── .Rproj.user
-├── .git
-├── .gitignore
-├── .quarto
-├── LICENSE
-├── README.md
-├── _quarto.yml
-├── data
-├── docs
-├── fonts
-├── img
-├── index.qmd
-├── js
-├── quarto-starter.Rproj
-├── renv
-├── renv.lock
-└── style
+![](img/quarto-structure.png){.absolute top=110 left=550 width="450px"}
+
+::: {.column width="47%"}
+
+This is the project structure that I use for Quarto, when I work on web based project (such as these slides).
+
+You can download a starter folder with this structure from [this Github repo](https://github.com/othomantegazza/quarto-starter).
+
+:::
+
+## Exercise
+
+::: {.columns width="70%"}
+
+Try Quarto:
+
+1. Install [Quarto CLI](https://quarto.org/docs/get-started/) on your computer.
+2. Download and unzip the [quarto-starter folder](https://github.com/othomantegazza/quarto-starter) from this Github repo.
+3. On your computer, open the file **quarto-starter.Rproj** in Rstudio.
+4. Serve the Quarto project locally, by typing at the terminal console:
+
+```sh
+quarto preview
 ```
 
+5. On [your browser](https://www.mozilla.org/en-US/firefox/new/) open the local host [http://localhost:4200](http://localhost:4200) to preview your quarto project.
+6. Open the file **index.qmd** in rstudio, edit it, save your results. See how the preview in the browser changes accordingly. 
+
+:::
