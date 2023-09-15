@@ -258,7 +258,6 @@ x
 cat(readr::read_file("data/quarto-example.md"))
 ```
 
-
 :::
 
 :::
@@ -292,5 +291,59 @@ quarto preview
 
 5. On [your browser](https://www.mozilla.org/en-US/firefox/new/) open the local host [http://localhost:4200](http://localhost:4200) to preview your quarto project.
 6. Open the file **index.qmd** in rstudio, edit it, save your results. See how the preview in the browser changes accordingly. 
+
+:::
+
+## Files in Quarto Projects
+
+::: {.columns width="70%"}
+
+The main files in a web based Quarto projects are:
+
+- _quarto.yaml
+- index.qmd
+- Any other .qmd files
+
+:::
+
+## _quarto.yml
+
+**\_quarto.yml** is a configuration file in [YAML format](https://yaml.org/):
+
+```{r echo = FALSE}
+cat(readr::read_file("data/quarto-yml-example.yml"))
+```
+
+## index.qmd
+
+::: {.column width=70%}
+
+**index.qmd** is the quarto file that produce the page that stands at the root (home page) of your website.
+
+```{r echo = FALSE}
+cat(readr::read_file("index.qmd"))
+```
+
+:::
+
+## Style
+
+::: {.column width=70%}
+
+If the output of your project is web based, you can style it with [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), or [SCSS](https://quarto.org/docs/output-formats/html-themes-more.html).
+
+CSS or SCSS are a complex but powerful tool to style the web, you can style each HTML element by name.
+
+For example, style the main title with:
+
+```css
+h1 {
+  font-family: Noto Serif, Serif;
+  font-weight: 400;
+  font-size: 50px; 
+}
+```
+
+You can find an example in the folder **style/custom.scss**.
 
 :::
