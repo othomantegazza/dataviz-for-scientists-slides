@@ -34,7 +34,7 @@ Source: [Hathi Trust](https://catalog.hathitrust.org/Record/011812155)
 
 *The father of the atomic theory John Dalton, realized that people might perceive colour differently and devised an experiment to test it. Discovering colour blindness, and that he was colour blind himself,*
 
-Early scientific publications where in the shape of carefully crafted, exstensively discoursive booklets. Obviously, printed on paper.
+Early scientific publications where in the shape of carefully crafted, extensively discursive booklets. Obviously, printed on paper.
 
 :::
 
@@ -175,7 +175,7 @@ And add tables
 
 ::: {.column width="70%"}
 
-Use this [online markdown editor](https://markdownlivepreview.com/) to reproduce (by copying abd pasting) the main content of [R for Data Science's Chapter on Quarto](https://r4ds.hadley.nz/quarto). 
+Use this [online markdown editor](https://markdownlivepreview.com/) to reproduce (by copying and pasting) the main content of [R for Data Science's Chapter on Quarto](https://r4ds.hadley.nz/quarto). 
 
 Try to reproduce all formatting, such a bold text, lists, code blocks. Add the functional links.
 
