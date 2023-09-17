@@ -12,7 +12,7 @@ knitr:
 
 ## Let's Try it
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 This is one of the most hands on section of the workshop. The best way to learn how to use this publishing tool, is to use it.
 
@@ -40,7 +40,7 @@ Early scientific publications where in the shape of carefully crafted, extensive
 
 ## Scientific Publishing
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 The main form of publication for a scientist still is the article on peer reviewed journals.
 
@@ -58,7 +58,7 @@ None of them less important than the peer reviewed article for making sure that 
 
 ::: {.absolute top=500 left=0}
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 Literate programming is a paradigm that allows us to mix analytic code and markup natural language. The main R tools for it a [Rmarkdown](https://rmarkdown.rstudio.com/), and now [Quarto](https://quarto.org/).
 
@@ -70,7 +70,7 @@ We will use Quarto.
 
 ## Data Driven Documents
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 As a quantitative scientist, your publications will often be data driven. 
 
@@ -118,7 +118,7 @@ When you write in WYSIWYM,you use markup languages.
 
 ## Markdown
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a markup language that's simple and easy to read.
 
@@ -173,7 +173,7 @@ And add tables
 
 ## Exercise
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 Use this [online markdown editor](https://markdownlivepreview.com/) to reproduce (by copying and pasting) the main content of [R for Data Science's Chapter on Quarto](https://r4ds.hadley.nz/quarto). 
 
@@ -185,7 +185,7 @@ If needed, get help [this markdown guide](https://garrettgman.github.io/rmarkdow
 
 ## Quarto
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 With [Quarto]() you can combine markdown text with code in many programming languages and produce many types of output.
 
@@ -276,7 +276,7 @@ You can download a starter folder with this structure from [this Github repo](ht
 
 ## More Info
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 For more information on Quarto, please follow the tutorial on [Quarto's website](https://quarto.org/docs/get-started/hello/rstudio.html), they are very clear and well done.
 
@@ -284,7 +284,7 @@ For more information on Quarto, please follow the tutorial on [Quarto's website]
 
 ## Exercise
 
-::: {.columns width="70%"}
+::: {.columns width="80%"}
 
 Try Quarto:
 
@@ -304,7 +304,7 @@ quarto preview
 
 ## Files in Quarto Projects
 
-::: {.columns width="70%"}
+::: {.columns width="80%"}
 
 The main files in a web based Quarto projects are:
 
@@ -324,7 +324,7 @@ cat(readr::read_file("data/quarto-yml-example.yml"))
 
 ## index.qmd
 
-::: {.column width=70%}
+::: {.column width=80%}
 
 **index.qmd** is the quarto file that produce the page that stands at the root (home page) of your website.
 
@@ -336,7 +336,7 @@ cat(readr::read_file("index.qmd"))
 
 ## Style
 
-::: {.column width=70%}
+::: {.column width=80%}
 
 If the output of your project is web based, you can style it with [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), or [SCSS](https://quarto.org/docs/output-formats/html-themes-more.html).
 
@@ -375,7 +375,7 @@ You can use it to identify the name of the page elements that you want to style.
 
 ## Exercise 
 
-::: {.column width=70%}
+::: {.column width=80%}
 
 Explore data in your own web based Quarto project.
 
@@ -391,7 +391,7 @@ More info on next page...
 
 ## Exercise 
 
-::: {.column width=70%}
+::: {.column width=80%}
 
 ...chose some data that you would like to analyze and report on them, combining data visualization, and text.
 
@@ -409,6 +409,8 @@ Feel free to experiment with Quarto, to modify styles, headers and settings, don
 
 ## Exercise 
 
+::: {.column width=80%}
+
 (EXTRA)
 
 Publish your results online in a website.
@@ -418,3 +420,5 @@ Publish your results online in a website.
 3. Drag and drop the **docs/** folder of your quarto project into Netlify and see it go live online.
 
 Watch out! everything that's in the **docs/** folder will become public, check that you did not include any sensitive personal information in your analysis.
+
+:::
