@@ -45,6 +45,10 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 1. [Quarto: Open Tools for Scientific Publishing](410-sci-pub-tool.html)
 
+# Part 5: Web Development
+
+1. [Why learn web development?](500-web-dev.html)
+
 # Resources
 
 Besides the slides, you can consult any of these [open access books](https://othomantegazza.com/textbook-library) on the topics of data analysis, statistics, programming and data visualization. The authors of those books made them open access, so they can be consulted online anytime.
