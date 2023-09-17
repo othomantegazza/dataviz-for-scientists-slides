@@ -43,9 +43,7 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 # Part 4: Scientific Publishing
 
-1. [Open Tools for Scientific Publishing](400-repr-report.html)
-2. [Quarto](410-quarto.html)
-3. [Quarto For the Web](420-quarto-for-web.html)
+1. [Quarto: Open Tools for Scientific Publishing](410-sci-pub-tool.html)
 
 # Resources
 
