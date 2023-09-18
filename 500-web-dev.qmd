@@ -15,10 +15,43 @@ We have learned that one of the best outuput of Quarto is a web page.
 
 :::
 
-## Quarto for the Web
+## Quarto for The Web
 
 ![](img/markdown-to-html.jpg)
 
-## Quarto for the Web
+## Quarto for The Web
 
 ![](img/md-html-js.jpg)
+
+## Why Outputs For The Browser
+
+- Free and open source.
+- Best and most complete graphic tool available.
+  - Full set of typographical tools.
+  - Vector organization of shapes in space.
+  - Transitions.
+  - Interaction.
+
+## Why Outputs For The Browser
+
+Combination of elegant and consolidated open standards:
+
+- **HTML** Text markup
+- **CSS** Style (fonts, colors, pagination)
+- **JS** Program in the browser
+
+## Program in The Browser
+
+::: {.column width=80%}
+
+With Javascript you can run code on the front end.
+
+This means that you can build data visualization directly on the reader's device:
+
+It scales better, looks better, interacts better.
+
+But it takes a lot of code to build a good data visualization with Javascript.
+
+Let's try.
+
+:::
