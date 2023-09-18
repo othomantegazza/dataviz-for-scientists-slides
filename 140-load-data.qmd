@@ -319,6 +319,29 @@ When you read new data into R, always:
 
 :::
 
+## You Can Read Data From Excel
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+[Readr](https://readxl.tidyverse.org/) is a package that loads (reads) **Rectangular** data in R from excel files (.xls, .xlsx).
+
+It's fast, it reads also data types and it's pipe friendly.
+
+You can point it to specific sheets and cell ranges.
+
+:::
+
+::: {.column width="35%"}
+
+![](https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/readxl.svg)
+
+:::
+
+:::
+
+
 ## Exercise
 
 ::: {.column width="70%"}
