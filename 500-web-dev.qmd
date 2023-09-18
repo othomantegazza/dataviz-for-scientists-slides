@@ -1,0 +1,20 @@
+---
+title: "Why Developing For The Web"
+subtitle: "Most of the times you read something, is on your computer screen, more often than not, in your browser."
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 5.0"
+editor_options: 
+  chunk_output_type: console
+---
+
+## Quarto for The Web
+
+
+::: {.column width="80%}
+
+We have learned that one of the best outuput of Quarto is a web page.
+
+:::
+
+## Quarto for the Web
+
+![](img/markdown-to-html.jpg)
