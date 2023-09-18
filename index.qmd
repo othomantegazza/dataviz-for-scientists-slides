@@ -47,7 +47,7 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 # Part 5: Web Development
 
-1. [Why learn web development?](500-web-dev.html)
+1. [Why Learn Web Development?](500-web-dev.html)
 
 # Resources
 
