@@ -18,3 +18,7 @@ We have learned that one of the best outuput of Quarto is a web page.
 ## Quarto for the Web
 
 ![](img/markdown-to-html.jpg)
+
+## Quarto for the Web
+
+![](img/md-html-js.jpg)
