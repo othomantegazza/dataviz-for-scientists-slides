@@ -10,6 +10,41 @@ editor_options:
 
 This is not a comprehensive introduction to data visualization in javascript, it's just for breaking the ice.
 
+## Javascript
+
+::: {.column width="80%"}
+
+Javascirpt (JS) Was developed as a programming language to run directly in the browser.
+
+- It was released in 1995 by Brendan Eich,
+- Javascript latest version is ECMAScript 6, abbreviated as ES6.
+- Besides the name, it has nothing to do with Java.
+
+Today javascript can run both in the browser (client side or front end), or independently from the browser, such as R (server side or back end).
+
+:::
+
+## Javascript
+
+::: {.column width="80%"}
+
+Javascript is what makes things happen on web pages, and in many apps. It is a very widely used programming language.
+
+:::
+
+## Try JS
+
+You can try JS by opening the [browser console](https://firefox-source-docs.mozilla.org/devtools-user/). 
+
+But most of the time it is easier to try it in dedicated tools, such as:
+
+- [Codepen](https://codepen.io/).
+- [https://jsfiddle.net/](JS Fiddle)
+
+Otherwise you can also install JS locally with [node.js](https://nodejs.org/en).
+
+
+
 ## CSS 
 
 ```
