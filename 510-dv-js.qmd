@@ -1,0 +1,72 @@
+---
+title: "Data Visualization in Javascript"
+subtitle: "Build visualizations in the reader's device"
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 5.0"
+editor_options: 
+  chunk_output_type: console
+---
+
+## 
+
+This is not a comprehensive introduction to data visualization in javascript, it's just for breaking the ice.
+
+## CSS 
+
+```
+h1 {
+  color: Black;
+}
+
+.bar {
+  background: #0373fc;
+  background-clip: content-box;
+  box-shadow: inset 0 0 0 5px #7f94ad;
+  display: block;
+  height: 20px;
+  padding: 5px;
+  border-radius: 3px;
+  transition: width 0.5s cubic-bezier(1, 0.01, 0, 1);
+}
+```
+
+## JS
+
+```
+const pop = [
+  {
+    "town": "Rome",
+    "pop": 2.761,
+  },
+  {
+    "town": "Milan",
+    "pop": 1.352,
+  },
+  {
+    "town": "Naples",
+    "pop": 0.914,
+  },
+]
+
+var tbl = document.getElementById("pop")
+
+pop.forEach((town) => {
+	 let html = `<tr>
+   								<td>${town.town}</td>
+                  <td class="bar" style="width:${town.pop*100}px;"></td>
+                </tr>`
+   console.log(town)
+   tbl.insertAdjacentHTML( 'beforeend', html )
+  }) 
+```
+
+## HTML 
+
+```
+<h1>Population</h1>
+  
+<table>
+<tbody id="pop">
+  
+</tbody>
+</table>
+```
