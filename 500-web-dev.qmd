@@ -11,7 +11,7 @@ editor_options:
 
 ::: {.column width="80%}
 
-We have learned that one of the best outuput of Quarto is a web page.
+We have learned that one of the best output of Quarto is a web page.
 
 :::
 
@@ -64,13 +64,13 @@ Use Javascript to change the content of this slides:
 
 1. Open the [browser javascript console](https://firefox-source-docs.mozilla.org/devtools-user/).
 
-2. Make a new variable that stores the string "Ciao!"
+2. Make a new variable that stores the string "Ciao!".
 
 ```js
 var newContent = "Ciao!"
 ```
 
-3. Select the content of this page, and change it to what's stored in **newContent** 
+3. Select the content of this page, and change it to what's stored in **newContent**.
 
 ```js
 document.getElementById('exercise').innerHTML = newContent
