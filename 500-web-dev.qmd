@@ -60,7 +60,7 @@ Let's try.
 
 ::: {.column width="80%"}
 
-Change the content of this slides:
+Use Javascript to change the content of this slides:
 
 1. Open the [browser javascript console](https://firefox-source-docs.mozilla.org/devtools-user/).
 
