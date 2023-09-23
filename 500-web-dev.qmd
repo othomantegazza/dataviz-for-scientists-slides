@@ -55,3 +55,27 @@ But it takes a lot of code to build a good data visualization with Javascript.
 Let's try.
 
 :::
+
+## Exercise
+
+::: {.column width="80%"}
+
+Change the content of this slides:
+
+1. Open the [browser javascript console](https://firefox-source-docs.mozilla.org/devtools-user/).
+
+2. Make a new variable that stores the string "Ciao!"
+
+```js
+var newContent = "Ciao!"
+```
+
+3. Select the content of this page, and change it to what's stored in **newContent** 
+
+```js
+document.getElementById('exercise').innerHTML = newContent
+```
+
+The content of the page was changed only on your device. If you reload it you'll get the original content back.
+
+:::
