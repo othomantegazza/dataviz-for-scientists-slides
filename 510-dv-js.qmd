@@ -208,6 +208,33 @@ Put the two pieces together, and you have an incredible tool for data visualizat
 
 :::
 
+## Dataviz in the browser.
+
+For example you can make a bar chart out of a table:
+
+<iframe width="100%" height="300" src="//jsfiddle.net/othomantegazza/tk394a5n/89/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+##
+
+![](img/table-bar-chart.svg)
+
+## Exercise
+
+::: {.column width="80%"}
+
+Open this [JS Fiddle](https://jsfiddle.net/othomantegazza/tk394a5n/89/) that makes a bar chart out of an excel table, from data on the population of italian cities.
+
+- Change the color of the bars.
+- Add curved round the corner of the bars rectangles.
+- Add a new bar with the fourth highest populated city.
+- Arrange the bars from smaller to the bigger.
+- Color in yellow only the bar that shows data about Milan.
+- [OPTIONAL] Make a vertical bar chart.
+
+
+:::
+
+
 ## CSS 
 
 ```
