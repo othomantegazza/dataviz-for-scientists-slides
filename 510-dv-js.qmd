@@ -1,7 +1,7 @@
 ---
 title: "Data Visualization in Javascript"
 subtitle: "Build visualizations in the reader's device"
-author: "Otho Mantegazza _ Dataviz for Scientists _ Part 5.0"
+author: "Otho Mantegazza _ Dataviz for Scientists _ Part 5.1"
 editor_options: 
   chunk_output_type: console
 ---
@@ -34,6 +34,8 @@ Javascript is what makes things happen on web pages, and in many apps. It is a v
 
 ## Try JS
 
+::: {.column width="80%"}
+
 You can try JS by opening the [browser console](https://firefox-source-docs.mozilla.org/devtools-user/). 
 
 But most of the time it is easier to try it in dedicated tools, such as:
@@ -43,7 +45,116 @@ But most of the time it is easier to try it in dedicated tools, such as:
 
 Otherwise you can also install JS locally with [node.js](https://nodejs.org/en).
 
+:::
 
+## Assignment
+
+::: {.column width="80%"}
+
+You can define variable with: **let**, **var** or **const**, and assign values to them with **=**  The first two can be reassigned, the last one is a constant and cannot be associated to a new value.
+
+```js
+var a = "some text"
+let b = "more text"
+const c = "something else"
+```
+:::
+
+## Data structures
+
+The most used data structures are **arrays** and **objects**.
+
+
+## Arrays
+
+::: {.column width="80%"}
+
+Arrays are series of values between square brackets **[...]**.
+
+```js
+let arr = [1, 2, "hi!"]
+let arr2 = [
+  1,
+  [1, 3, "r", 1],
+  arr
+  ]
+```
+
+An array can contain any data type, and it is ordered. Any item can be accessed by index and can be iterated upon. 
+
+:::
+
+## Objects
+
+::: {.column width="80%"}
+
+Objects are collections of key-value pairs.
+
+```js
+let cities = {
+    "Rome": {
+    "pop": 2.761,
+  },
+  "Milan": {
+    "pop": 1.352,
+  },
+  "Naples": {
+    "pop": 0.914,
+  },
+}
+```
+
+They can contain any data type. Any item can be accessed by key, and they can be iterated upon.
+
+:::
+
+## Objects and Arrays
+
+Javascript objects can contain arrays and vice versa:
+
+```js
+const pop = [
+  {
+    "town": "Rome",
+    "pop": 2.761,
+  },
+  {
+    "town": "Milan",
+    "pop": 1.352,
+  },
+  {
+    "town": "Naples",
+    "pop": 0.914,
+  },
+]
+```
+
+## JSON
+
+::: {.column width="80%"}
+
+The combination of objects and array notation is known as JSON, or JavaScript Object Notation. 
+
+```json
+[
+  {
+    "town": "Rome",
+    "pop": 2.761,
+  },
+  {
+    "town": "Milan",
+    "pop": 1.352,
+  },
+  {
+    "town": "Naples",
+    "pop": 0.914,
+  },
+]
+```
+
+The JSON notation can be used to store data in plain text files, such as CSV.
+
+:::
 
 ## CSS 
 
