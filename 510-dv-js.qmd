@@ -47,18 +47,58 @@ Otherwise you can also install JS locally with [node.js](https://nodejs.org/en).
 
 :::
 
-## Assignment
+## Assignments
 
 ::: {.column width="80%"}
 
-You can define variable with: **let**, **var** or **const**, and assign values to them with **=**  The first two can be reassigned, the last one is a constant and cannot be associated to a new value.
+You can define variable with: **var**, **let** or **const**; and assign values to them with **=**. **var** can be reassigned, **let** and **const** are constants and cannot be reassigned.
 
 ```js
 var a = "some text"
 let b = "more text"
 const c = "something else"
 ```
+
+Check what's stored in a variable with **console.log()**.
+
+```js
+console.log(a)
+```
 :::
+
+## Basic operations
+
+In JS you can run all fundamental arithmetic operations.
+
+The plus sign can also be used to concatenate strings.
+
+```js
+"Hello" + " " + "world" + "!"
+```
+
+## Control Flow
+
+### Loops
+
+```js
+let arr = [1, 2, "hi!"]
+for (index in arr) {
+  console.log("value", arr[index], "detected at postion", index)
+}
+```
+
+<br>
+
+### If Else
+
+```js
+let a = 3
+if (a === 3) {
+  console.log('a is equal to', a)
+} else {
+  console.log('nope')
+}
+```
 
 ## Data structures
 
@@ -152,7 +192,19 @@ The combination of objects and array notation is known as JSON, or JavaScript Ob
 ]
 ```
 
-The JSON notation can be used to store data in plain text files, such as CSV.
+JSON files store data in plain text, such as CSV.
+
+:::
+
+## Dataviz in the browser.
+
+::: {.column width="80%"}
+
+Through HTML and CSS, the browser is one of the most sophisticated graphical tools available.
+
+With JS, you can program in the browser, meaning that you can load data, and map the data to graphical elements in the browser.
+
+Put the two pieces together, and you have an incredible tool for data visualization.
 
 :::
 
