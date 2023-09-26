@@ -52,9 +52,36 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 Besides the slides, you can consult any of these [open access books](https://othomantegazza.com/textbook-library) on the topics of data analysis, statistics, programming and data visualization. The authors of those books made them open access, so they can be consulted online anytime.
 
+# Packages
+
+There's some package that we are going to use in most exercise. To be sure that you have them ready, install them by running at the R console:
+
+```r
+install.packages(
+  c('tidyverse', 
+    'palmerpenguins', 
+    'here', 
+    'janitor', 
+    'paletteer')
+)
+```
+At the beginning of each one of your script, you can load them by writing:
+
+```r
+library(tidyverse)
+library(palmerpenguins)
+library(here)
+library(janitor)
+library(paletteer)
+```
+
+# Source Code
+
+The source code for these slides is on Github at [https://github.com/othomantegazza/dataviz-for-scientists-slides](https://github.com/othomantegazza/dataviz-for-scientists-slides)
+
 # License
 
-This work is licensed by Otho Mantegazza under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). For more information about the non-original bits and pieces, please check the file [LICENSE](https://github.com/othomantegazza/dataviz-for-scientists-slides-python/blob/main/LICENSE) on this course's [Github repo](https://github.com/othomantegazza/dataviz-for-scientists-slides-python).
+This work is licensed by Otho Mantegazza under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). For more information about the non-original bits and pieces, please check the file [LICENSE](https://github.com/othomantegazza/dataviz-for-scientists-slides/blob/main/LICENSE) on this course's [Github repo](https://github.com/othomantegazza/dataviz-for-scientists-slides).
 
 # Acknowledgements
 
