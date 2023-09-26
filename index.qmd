@@ -15,8 +15,6 @@ format:
         <meta property="og:locale" content="en_EU">
 ---
 
-<span style="background-color: yellow;">Work in progress!</span>
-
 Slides for a three days, hands-on, workshop on data visualization in R, Javascript and Quarto, for scientists.
 
 # Part 1: Welcome to R
