@@ -295,11 +295,30 @@ Download and run the website locally as you did on the [exercise on Quarto fro, 
 
 :::
 
-## Let's Try Them
+## Exercise
 
 ::: {.column width="80%"}
 
+Run the [quarto-d3-example](https://github.com/othomantegazza/quarto-d3-example) locally:
 
+1. Familiarize yourself with the javascript code in [js/scatterplot.js](https://github.com/othomantegazza/quarto-d3-example/blob/main/js/scatterplot.js). 
+
+  - Remove and change pieces, see what happens.
+  - Use the function **console.log()** to print the variables at the javascript console, and understand what's in there.
+  
+2. Color the circles.
+3. Color the border of the circle, leave the center empty.
 
 :::
+
+## Exercise
+
+::: {.column width="80%"}
+
+4. Transform the axes to log scale.
+5. Change the variables represented in the x or y axes.
+6. EXTRA: Map the species of the penguins to the color of the circles.
+ 
+:::
+
 
