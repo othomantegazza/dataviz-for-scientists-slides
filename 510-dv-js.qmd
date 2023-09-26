@@ -1,6 +1,6 @@
 ---
 title: "Data Visualization in Javascript"
-subtitle: "Build visualizations in the reader's device"
+subtitle: "Build visualizations in the reader's device."
 author: "Otho Mantegazza _ Dataviz for Scientists _ Part 5.1"
 editor_options: 
   chunk_output_type: console
@@ -247,6 +247,59 @@ Open this [JS Fiddle](https://jsfiddle.net/othomantegazza/tk394a5n/89/) that mak
 
 ## No Need To Hack HTML
 
-Although it might be fun sometimes.
+::: {.column width="80%"}
 
+Although it might be fun sometimes, there's no need to hack HTML elements to make data visualization on the web.
+
+You can use two building blocks: SVG and D3.
+
+:::
+
+
+## D3
+
+::: {.column width="80%"}
+
+Javascript, as a programming language, is not dedicated to data analysis.
+
+Indeed when Maya Gans, Toby Hodges, and Greg Wilson wrote [their book "Javascript for Data Science"](https://third-bit.com/js4ds/), they were suggested to change the title to "Javascript versus Data Science".
+
+[D3](https://d3js.org/) is a javascript library that partially fills this gap. 
+
+It was developed by Mike Bostock, and it provides fundamental functions to transform data into web based visualizations, with SVG or Canvas.
+ 
+:::
+
+## SVG
+
+::: {.column width="80%"}
+
+[SVG is a vector graphics specification language](https://developer.mozilla.org/en-US/docs/Web/SVG) that allows you to declare the position, shape and style of geometrical elements in space.
+
+All SVG is human readable, so a circle is defined by the tag "\<circle\>", a rectangle by "\<rect\>", and a line by "\<path\>".
+
+You can use D3 to build SVG visualization on the web.
+
+:::
+
+## Let's Try Them
+
+::: {.column width="80%"}
+
+Let's go together through a basic quarto website that builds a visualization in the front end with D3 and SVG, starting from the penguins dataset.
+
+1. You can find the source code from Github at: [https://github.com/othomantegazza/quarto-d3-example](https://github.com/othomantegazza/quarto-d3-example).
+2. And the website already deployed at [https://quarto-d3-example.otho.app/](https://quarto-d3-example.otho.app/).
+
+Download and run the website locally as you did on the [exercise on Quarto fro, the silde deck 4.1](410-sci-pub-tool.html#/exercise-1).
+
+:::
+
+## Let's Try Them
+
+::: {.column width="80%"}
+
+
+
+:::
 
