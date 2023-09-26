@@ -222,76 +222,31 @@ For example you can make a bar chart out of a table:
 
 ::: {.column width="80%"}
 
-Open this [JS Fiddle](https://jsfiddle.net/othomantegazza/tk394a5n/89/) that makes a bar chart out of an excel table, from data on the population of italian cities.
+Open this [JS Fiddle](https://jsfiddle.net/othomantegazza/tk394a5n/89/) that makes a bar chart out of an excel table, about the population of Italian cities.
 
 - Change the color of the bars.
-- Add curved round the corner of the bars rectangles.
+- Add curved round corners to the bars.
 - Add a new bar with the fourth highest populated city.
 - Arrange the bars from smaller to the bigger.
-- Color in yellow only the bar that shows data about Milan.
+- Color yellow only the bar that shows data about Milan.
 - [OPTIONAL] Make a vertical bar chart.
-
 
 :::
 
+## Some Resources About JS
 
-## CSS 
+::: {.column width="80%"}
 
-```
-h1 {
-  color: Black;
-}
 
-.bar {
-  background: #0373fc;
-  background-clip: content-box;
-  box-shadow: inset 0 0 0 5px #7f94ad;
-  display: block;
-  height: 20px;
-  padding: 5px;
-  border-radius: 3px;
-  transition: width 0.5s cubic-bezier(1, 0.01, 0, 1);
-}
-```
+- [Javascript for Data Science](https://third-bit.com/js4ds/) an introduction to modern Javascript by Maya Gans, Toby Hodges, and Greg Wilson.
+- [D3 in Depth](https://www.d3indepth.com/) visualize data on the web with D3, by Peter Cook.
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). An introdution to web development by the Mozilla Foundation.
+- [W3school Javascript Tutorial](https://www.w3schools.com/js/), by Refsnes Data.
 
-## JS
+:::
 
-```
-const pop = [
-  {
-    "town": "Rome",
-    "pop": 2.761,
-  },
-  {
-    "town": "Milan",
-    "pop": 1.352,
-  },
-  {
-    "town": "Naples",
-    "pop": 0.914,
-  },
-]
+## No Need To Hack HTML
 
-var tbl = document.getElementById("pop")
+Although it might be fun sometimes.
 
-pop.forEach((town) => {
-	 let html = `<tr>
-   								<td>${town.town}</td>
-                  <td class="bar" style="width:${town.pop*100}px;"></td>
-                </tr>`
-   console.log(town)
-   tbl.insertAdjacentHTML( 'beforeend', html )
-  }) 
-```
 
-## HTML 
-
-```
-<h1>Population</h1>
-  
-<table>
-<tbody id="pop">
-  
-</tbody>
-</table>
-```
