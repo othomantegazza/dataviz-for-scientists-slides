@@ -291,14 +291,30 @@ Try Quarto:
 1. Install [Quarto CLI](https://quarto.org/docs/get-started/) on your computer.
 2. Download and unzip the [quarto-starter folder](https://github.com/othomantegazza/quarto-starter) from this Github repo.
 3. On your computer, open the file **quarto-starter.Rproj** in Rstudio.
-4. Serve the Quarto project locally, by typing at the terminal console:
+4. Run this line of code at the R console to install all the packages used in this project through [renv](https://rstudio.github.io/renv/articles/renv.html)
+
+```r
+renv::restore()
+```
+
+*Continue the on next page → *
+
+:::
+
+## Exercise
+
+::: {.columns width="80%"}
+
+*→ from the previous page.*
+
+5. Serve the Quarto project locally, by typing at the terminal console:
 
 ```sh
 quarto preview
 ```
 
-5. On [your browser](https://www.mozilla.org/en-US/firefox/new/) open the local host [http://localhost:4200](http://localhost:4200) to preview your quarto project.
-6. Open the file **index.qmd** in rstudio, edit it, save your results. See how the preview in the browser changes accordingly. 
+6. On [your browser](https://www.mozilla.org/en-US/firefox/new/) open the local host [http://localhost:4200](http://localhost:4200) to preview your quarto project.
+7. Open the file **index.qmd** in rstudio, edit it, save your results. See how the preview in the browser changes accordingly. 
 
 :::
 
