@@ -14,7 +14,7 @@ This is not a comprehensive introduction to data visualization in javascript, it
 
 ::: {.column width="80%"}
 
-Javascirpt (JS) Was developed as a programming language to run directly in the browser.
+JavaScript (JS) Was developed as a programming language to run directly in the browser.
 
 - It was released in 1995 by Brendan Eich,
 - Javascript latest version is ECMAScript 6, abbreviated as ES6.
@@ -240,7 +240,7 @@ Open this [JS Fiddle](https://jsfiddle.net/othomantegazza/tk394a5n/89/) that mak
 
 - [Javascript for Data Science](https://third-bit.com/js4ds/) an introduction to modern Javascript by Maya Gans, Toby Hodges, and Greg Wilson.
 - [D3 in Depth](https://www.d3indepth.com/) visualize data on the web with D3, by Peter Cook.
-- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). An introdution to web development by the Mozilla Foundation.
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction). An introduction to web development by the Mozilla Foundation.
 - [W3school Javascript Tutorial](https://www.w3schools.com/js/), by Refsnes Data.
 
 :::
