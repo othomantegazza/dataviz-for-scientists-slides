@@ -405,7 +405,7 @@ With the penguin dataset:
 Get help from:
 
 - [Dplyr's website](https://dplyr.tidyverse.org/).
-- The [Data Wrangling Chapter]() of R4DS.
+- The [Data Transformation Chapter](https://r4ds.hadley.nz/data-transform) of R4DS.
 
 :::
 
