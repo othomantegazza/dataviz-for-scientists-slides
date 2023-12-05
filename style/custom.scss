@@ -15,6 +15,7 @@ $presentation-h3-font-size: 1em;
  
  :root {
     --title-font: Noto Serif, Serif;
+    --monospace-font: IBM Plex Mono;
     --body-font: Helvetica Neue, Lato, Verdana, sans-serif;
     --h2-color: #f44702;
     --h2-color-execrise: #60a595;
@@ -119,6 +120,15 @@ code {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25em;
+  width: fit-content;
+  display: block;
+}
+
+div.cell-output.cell-output-display {
+  font-size: 20px;
+  font-family: var(--monospace-font) !important;
+  font-weight: 400;
+  line-height: 1.25em; 
   width: fit-content;
   display: block;
 }
