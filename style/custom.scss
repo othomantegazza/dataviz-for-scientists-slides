@@ -185,3 +185,11 @@ section[id*=exercise] h2 {
 aside {
   color: black !important;
 }
+
+a {
+  text-decoration: underline solid .06em;
+}
+
+ul {
+  list-style-type: "- " !important;
+}
