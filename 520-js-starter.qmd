@@ -2,6 +2,11 @@
 title: "JS Starter"
 subtitle: ""
 author: "Otho Mantegazza _ Dataviz for Scientists _ Part 5.1"
+format: 
+  html:
+    theme:
+        - style/fonts-landing.scss
+        - style/custom-landing.scss
 editor_options: 
   chunk_output_type: console
 ---
