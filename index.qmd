@@ -3,6 +3,7 @@ title: "Dataviz for Scientists"
 author: "[Otho Mantegazza](https://othomantegazza.com/)"
 format: 
   html:
+    toc: true
     theme:
         - style/fonts-landing.scss
         - style/custom-landing.scss
@@ -15,9 +16,25 @@ format:
         <meta property="og:locale" content="en_EU">
 ---
 
+# Introduction
+
+Communication is essential for any kind of scientist. Your research findings might contain the most important results, but if you don’t manage to communicate them to others, they might be like a tree falling in a forest with no one around. Do they make a sound?
+
+A huge part of results today depends on data, and communicating data effectively is a skill made of many components. Representing data graphically is a big part of it.
+
+In this workshop you will learn how to communicate data graphically, and how to use literate programming to make your graphics available to others, together with text and analytical code.
+
+With Quarto, a modern literate programming tool dedicated to scientific communication, you will be able to communicate your data in beautifully formatted outputs, which are easy to read, but also reproducible and transparent for the analytical mind.
+
+In the extensively hands-on sessions we will focus on real-world data, and if you would like to, you are welcomed to bring your own data to the workshop.
+
+All the software, programming language, and resources used in this workshop are open source and open access. In this way the participants will have full control on the tools that they use and will be able to access them after the class is over, free from unfavorable commercial licenses. All the tools are cutting edge in both industry and academic fields.
+
+# Slides
+
 Slides for a three days, hands-on, workshop on data visualization in R, Javascript and Quarto, for scientists.
 
-# Part 1: Welcome to R
+## Part 1: Welcome to R
 
 1. [Introduction](100-intro.html)
 2. [Meet R](110-meet-r.html)
@@ -26,7 +43,7 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 5. [Load New Data Into R](140-load-data.html)
 6. [Clean and Tidy Data](150-clean.html)
 
-# Part 2: Intro to Data Visualization
+## Part 2: Intro to Data Visualization
 
 1. [Instant Knowledge](200-instant-data.html)
 2. [Quick History of Dataviz](210-history.html)
@@ -34,16 +51,16 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 4. [Exploratory Data Analysis](230-eda.html)
 
 
-# Part 3: Better Graphs
+## Part 3: Better Graphs
 
 1. [Better Graphs - Part I](310-better-graphs.html)
 2. [Better Graphs - Part II](320-better-graphs-2.html)
 
-# Part 4: Scientific Publishing
+## Part 4: Scientific Publishing
 
 1. [Quarto: Open Tools for Scientific Publishing](410-sci-pub-tool.html)
 
-# Part 5: Web Development
+## Part 5: Web Development
 
 1. [Why Learn Web Development?](500-web-dev.html)
 2. [Data Visualization in Javascript](510-dv-js.html)
