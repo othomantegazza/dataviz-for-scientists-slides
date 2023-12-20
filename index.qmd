@@ -24,7 +24,9 @@ A huge part of results today depends on data, and communicating data effectively
 
 In this workshop you will learn how to communicate data graphically, and how to use literate programming to make your graphics available to others, together with text and analytical code.
 
-With [Quarto](https://quarto.org/), a modern literate programming tool dedicated to scientific communication, you will be able to communicate your data in beautifully formatted outputs, which are easy to read, but also reproducible and transparent for the analytical mind.
+For this three days workshop, we will use R and Javascript to analyze and visualize the data.
+
+With [Quarto](https://quarto.org/), a modern literate programming tool dedicated to scientific communication, we will put it all together, to let you communicate your data in beautifully formatted outputs, which are easy to read, but also reproducible and transparent for the analytical mind.
 
 In the extensively hands-on sessions we will focus on real-world data, and if you would like to, you are welcomed to bring your own data to the workshop.
 
@@ -32,9 +34,11 @@ All the software, programming language, and resources used in this workshop are 
 
 # Slides
 
-Slides for a three days, hands-on, workshop on data visualization in R, Javascript and Quarto, for scientists.
+Below you can find the link to the slides. 
 
 ## Part 1: Welcome to R
+
+Day 1.
 
 1. [Introduction](100-intro.html)
 2. [Meet R](110-meet-r.html)
@@ -45,22 +49,29 @@ Slides for a three days, hands-on, workshop on data visualization in R, Javascri
 
 ## Part 2: Intro to Data Visualization
 
+Day 2, morning.
+
 1. [Instant Knowledge](200-instant-data.html)
 2. [Quick History of Dataviz](210-history.html)
 3. [The Grammar of Graphics](220-gg.html)
 4. [Exploratory Data Analysis](230-eda.html)
 
-
 ## Part 3: Better Graphs
+
+Day 2, afternoon.
 
 1. [Better Graphs - Part I](310-better-graphs.html)
 2. [Better Graphs - Part II](320-better-graphs-2.html)
 
 ## Part 4: Scientific Publishing
 
+Day 3, morning.
+
 1. [Quarto: Open Tools for Scientific Publishing](410-sci-pub-tool.html)
 
 ## Part 5: Web Development
+
+Day 3, afternoon.
 
 1. [Why Learn Web Development?](500-web-dev.html)
 2. [Data Visualization in Javascript](510-dv-js.html)
