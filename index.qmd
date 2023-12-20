@@ -24,7 +24,7 @@ A huge part of results today depends on data, and communicating data effectively
 
 In this workshop you will learn how to communicate data graphically, and how to use literate programming to make your graphics available to others, together with text and analytical code.
 
-With Quarto, a modern literate programming tool dedicated to scientific communication, you will be able to communicate your data in beautifully formatted outputs, which are easy to read, but also reproducible and transparent for the analytical mind.
+With [Quarto](https://quarto.org/), a modern literate programming tool dedicated to scientific communication, you will be able to communicate your data in beautifully formatted outputs, which are easy to read, but also reproducible and transparent for the analytical mind.
 
 In the extensively hands-on sessions we will focus on real-world data, and if you would like to, you are welcomed to bring your own data to the workshop.
 
